@@ -1,0 +1,86 @@
+description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	gagueData_Move	gagueData_Motion	gagueData_Damage	gagueData_Stun Damage	gagueData_Chains into itself	gagueData_Special Cancel	gagueData_Super Cancel	Throw Range	Kara-Throw	Kara-Throw Range	Blocked Damage	Gauge Needed
+Attack up (If Taunt connects, no bonus given).	Taunt	HP+HK	5	0	No	No	No	21	3	1	?	?	?	L	L	4(6)	?	?	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien jabs into the air quickly, primary uses include comboing into s.MP, a quick,
+								mediocre anti-air, hiding a charge, in mid-screen unblockable combos, a ""filler"" attack
+								when going for pressure and confusing an opponent before a throw. Cancelable into: Self,
+								MP, Special, Super"	Far Jab	LP	15(3 life points)	3	Yes	Yes	Yes	4	2	6	+3	+3	+3	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien stretches with his right hand very far for a nice punch, solid poke, very good
+								counter-poke, works as a decent anti-air, for resets, and stops some moves pretty clean
+								(mostly rushing attacks). If used as anti-air, can be canceled into a tackle, headbutt
+								or anti-air fireball to mess up would be air-parries. Combos into headbutts and tackles
+								from close range. Good all around move. Best move for wiffing to gain meter."	Far Strong	MP	80(14 life points)	9	No	Yes	Yes	5	5	10	0	+1	+2	HL	H	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien throws out a mean karate chop. Great move, comes out fast, unpunishable from a good
+								range, does great stun and a lot of damage, knocks aerial opponents to the ground,
+								stuffs a lot of good moves, a great poke to throw out, has an extremely large variety of
+								uses, possibly Urien's best normal attack."	Far Fierce	HP	130(23 life points)	15	No	No	No	10	4	15	-3	-1	+1	HL	H	3	10	19	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien shifts his foot forward a little bit, like LP except worse in almost every way,
+								except it doesn't whiff versus crouching opponents (in which a crouching LP would work
+								just as well in that case). Cancels into: Special, Super"	Short	LK	30(5 life points)	3	No	Yes	Yes	5	2	7	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien fully extends his right leg in a side kick, poke with great range, can be used to
+								keep certain characters like Hugo and Q in their place. Not much use otherwise. Good to
+								throw out there every once and a while."	Forward	MK	80(14 life points)	9	No	No	No	8	2	15	-4	-3	-2	HL	H	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien lifts his leg torwards the sky and swings it down like an axe. Slow overhead, makes
+								Urien back up a TINY bit, so it can be used to avoid certain moves as well as to avoid
+								throws. Good to throw out during throw setups to catch people off gaurd. Two hits,
+								knocks down in air. Not a good every day move but it's nice to throw out every once in a
+								while. Unsafe on block, can be reversaled by certain moves (Shippu for example)"	Roundhouse	HK	140(50+90)(16 life points)	12(3+9)	No	No	No	17	3	20	-7	-5	-3	HL	H	3	10	19	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien places his elbow near his thigh and holds it in place. Pathetic range, stays out
+								his entire jump."	Jump Jab	(Air) LP	50(7 life points)	7	No	No	No	4	Until landing	-	-5～+7	-5～+7	+4～+7	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Strong	(Air) MP	90(9 life points)	9	No	No	No	6	4	-	+3～+10	+3～+10	+10	H	H	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+"Urien slams slightly downward, lots of hitstun and good damage. But still worse than
+								jumping HK in every concievable way."	Jump Fierce	(Air) HP	130(11 life points)	11	No	No	No	7	3	-	+3～+13	+3～+13	+11～+13	H	H	3	10	19	4	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Short	(Air) LK	50(8 life points)	7	No	No	No	4	10	-	-7～+7	-7～+7	+2～+7	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+Frame Data	Jump Forward	(Air) MK	90(16 life points)	9	No	No	No	6	4	-	+2～+10	+2～+10	+9～+10	H	H	-	-	-	-	Jump Roundhouse	(Air) HK	130(23 life points)	11	No	No	No	-	-	-	-	-
+Comments here	Universal Overhead	MP+MK	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+"An 8-hit neutral throw. When you perform this throw, drum your fingers across all 3
+								punches in a piano like fashion to speed up the process. If all 8 hits connect, it does
+								more stun than Spartan Bomb. However, the drawback is you will never be able to pull off
+								all 8 since the opponent can mash out of it. Thus, you will never use this throw as the
+								Spartan Bomb is better than this throw in every way."	Destroy Claw	LP+LK	100(20x6)(15 life points)	18(3x6)	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	12(6x2)	-	-	-	-	-	-	-	-	26	F.MP / C.HP	30 / 28	-	-
+"One of the best throws in the game. Its range is superior than most, the damage is great,
+								and the throw keeps the opponent right next to you. Always try to throw your opponents
+								in the direction closer to the corner; a well-placed back throw into the corner can
+								straight up steal a round from your opponent."	Spartan Bomb	B/F+LP+LK	140(24 life points)	9	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	7	-	-	-	-	-	-	-	-	26	F.MP / C.HP	30 / 28	-	-
+Comments here	Crouch Jab	D+LP	15(3 life points)	3	Yes	Yes	Yes	4	2	7	+3	+3	+3	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+"MP - An elbow attack that slides Urien forward, not many uses for this move except
+								keeping an opponent cornered for a few attacks, can also be used to go behind opponents
+								when they are jumping in for an attack. Goes under Remy's High LOV, and can escape demon
+								flip mixups."	Crouch Strong	D+MP	60(10 life points)	3	No	Yes	Yes	11	4	15	-2	-1	0	HL	HL	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+"HP - Urien palms upward, followed by a rising elbow attack in the same motion, Basic
+								launcher, extremely crucial to Uriens game, starts juggles. 2 hits, can be used twice in
+								a row versus some characters, limited mid-juggle use."	Crouch Fierce	D+HP	110(70+40)(18 life points)	18(9+9)	No	Yes	No	9	1	25	-10	Down	DOWN	HL	HL	3	8	18	4	-	-	-	-	-	-	-	-	-	-	-	-
+"LK - Used in unblockable situations and as a quick poke. A solid low attack. Great for
+								breaking out of pressure strings. Cancelable into: Special, Super"	Crouch Short	D+LK	15(3 life points)	3	No	Yes	Yes	5	1	9	+1	+1	+1	L	L	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Forward	D+MK	70(12 life points)	3	No	No	No	7	3	11	0	+1	+2	L	L	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Roundhouse	D+HK	100(17 life points)	3	No	No	No	12	3	21	-13	Down	Down	L	L	3	10	19	4	-	-	-	-	-	-	-	-	-	-	-	-
+"This move is quite good for an anti-air as the reach is far, however, try to use it at
+								maximum range. When you are executing a corner juggle, use this as a finisher to reset
+								the opponent. This is a viable poke for taller characters such as Hugo, Q, Urien, Alex,
+								and Dudley when they are on the ground. Can be cancelled into F+HP."	Quarrel Punch	F+MP	80(14 life points)	9	No	No	No	9	2	14	-3	-2	-1	HL	H	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+"This is an overhead attack. The move comes out pretty fast, and makes for a good meaty
+								attack."	Terrible Smash	F+HP	120(21 life points)	3	No	No	No	14	1	21	-6	-4	-2	HL	H	3	10	19	4	-	-	-	-	-	-	-	-	-	-	-	-
+"This move has great reach, however it is easily parried. It has a great number of active
+								frames, and is thus used as the standard guard break for Aegis Reflector unblockables.
+								Other than that, do not use it."	Quarrel Kick	F+MK	90(16 life points)	9	No	No	No	16	3	12	-2	-1	0	HL	H	2	6	11	4	-	-	-	-	-	-	-	-	-	-	-	-
+"You'll only land both hits on a standing opponent if they were quite close, but on a
+								crouching opponent the F+MP will whiff.
+								Not too great of a combo as most of the cast are too short to get hit by F+MP, and not
+								only that, when you do happen to connect the first hit, the F+HP will miss unless you
+								were quite close, thus not utilizing the great range of the first attack to it's
+								potential."	Target Combo	Close LP -> Close MP	100+60	7+5	No	Yes/Yes	Yes/Yes	4	-	-	-2	0	+2	HL/HL	H/H	2+?	4+1	8+1	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-
+-	Metallic Sphere (Jab)	QCF+LP	70(12 life points)	3	-	-	Yes	13～77	1	39	-8	-7	-7	HL	H	0	1	2	4	Metallic Sphere (Jab)	-	-	-	-	-	-	-	-	-	4	-
+-	Metallic Sphere (Strong)	QCF+MP	70(12 life points)	3	-	-	Yes	13～77	1	35	-4	-3	-3	HL	H	0	1	2	4	Metallic Sphere (Strong)	-	-	-	-	-	-	-	-	-	4	-
+-	Metallic Sphere (Strong)	QCF+HP	70(12 life points)	3	-	-	Yes	13～77	1	35	-4	-3	-3	HL	H	0	1	2	4	Metallic Sphere (Fierce)	-	-	-	-	-	-	-	-	-	4	-
+-	Chariot Tackle (Short)	Charge B,F+LK	120(24 life points)	7	-	-	Yes	7	10	18/26 Guard/25 Far	-10	0	2	HL	H	3	10	19	4	Chariot Tackle (Short)	-	-	-	-	-	-	-	-	-	8	-
+-	Chariot Tackle (Forward)	Charge B,F+MK	135(26 life points)	9	-	-	Yes	10	12	19/27 Guard/28 Far	-11	-1	1	HL	H	3	10	19	4	Chariot Tackle (Forward)	-	-	-	-	-	-	-	-	-	9	-
+-	Chariot Tackle (Forward)	Charge B,F+HK	150(29 life points)	11	-	-	Yes	10	12	19/27 Guard/28 Far	-11	-1	1	HL	H	3	10	19	4	Chariot Tackle (Roundhouse)	-	-	-	-	-	-	-	-	-	10	-
+-	Violence Knee Drop (Short)	Charge D,U+LK	110(19 life points)	11	-	-	No	24	12	7	+8/-10～-20	Down	Down	HL	H	3	12	18	4	Violence Knee Drop (Short)	-	-	-	-	-	-	-	-	-	14	-
+-	Violence Knee Drop (Forward)	Charge D,U+MK	110(19 life points)	11	-	-	No	24	13	7	+8/-10～-20	Down	Down	HL	H	3	12	18	4	Violence Knee Drop (Forward)	-	-	-	-	-	-	-	-	-	14	-
+-	Violence Knee Drop (Forward)	Charge D,U+HK	110(19 life points)	11	-	-	No	24	13	7	+8/-10～-20	Down	Down	HL	H	3	12	18	4	Violence Knee Drop (Roundhouse)	-	-	-	-	-	-	-	-	-	14	-
+-	Dangerous Headbutt (Jab)	Charge D,U+LP	120(21 life points)	13	-	-	No	7	2	16	-2	Down	Down	HL	HL	3	15	13	4	Dangerous Headbutt (Jab)	-	-	-	-	-	-	-	-	-	15	-
+-	Dangerous Headbutt (Strong)	Charge D,U+MP	130(23 life points)	15	-	-	No	9	4	15	-3	Down	Down	HL/HL	HL/HL	3	15	13	4	Dangerous Headbutt (Strong)	-	-	-	-	-	-	-	-	-	16	-
+-	Dangerous Headbutt (Strong)	Charge D,U+HP	140(24 life points)	17	-	-	No	9	4	15	-3	Down	Down	HL/HL	HL/HL	3	15	13	4	Dangerous Headbutt (Fierce)	-	-	-	-	-	-	-	-	-	18	-
+Comments here	Metallic Sphere (EX)	QCF+PP	160(80+80)(27 life points)	6(3+3)	-	-	Yes	13	1	55	-16	-15	-15	HLx2	Hx2	-	-	-	8(4+4)	Metallic Sphere (EX)	-	-	-	-	-	-	-	-	-	10(5+5)	40
+Comments here	Chariot Tackle (EX)	Charge B,F+KK	170(90+80)(29 life points)	18(9+9)	-	-	Yes/No	6・30	24・10	19/28 Guard/39 Far	-9	+2	+4	HLx2	Hx2	-	-	-	8(4+4)	Chariot Tackle (EX)	-	-	-	-	-	-	-	-	-	11(6+5)	40
+Comments here	Dangerous Headbutt (EX)	Charge D,U+PP	160(80+80)(27 life points)	22(11+11)	-	-	No	9・11	2・2	12	+2	Down	Down	HL	H	-	-	-	8(4+4)	Dangerous Headbutt (EX)	-	-	-	-	-	-	-	-	-	20(10+10)	40
+Comments here	Violence Kneedrop (EX)	Charge D,U+KK	140(30+110)(23 life points)	18(5+13)	-	-	No/No	26・32	5・2	7	+8/-10～-20	-7	-5	HLx2	Hx2	-	-	-	8(4+4)	Violence Kneedrop (EX)	-	-	-	-	-	-	-	-	-	18(4+14)	40

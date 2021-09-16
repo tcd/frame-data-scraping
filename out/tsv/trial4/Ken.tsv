@@ -1,0 +1,50 @@
+description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Juggle Value	Throw Range	Kara-Throw	Kara-Throw Range	Blocked Damage	gagueData_Move	Gauge Needed
+Comments here	Taunt	HP+HK	5/5	3/3	No	No	No	15/9	1/1	27	?	?	?	HL	HL	4(6)	?	?	8(4+4)	-	-	-	-	-	-	-
+Comments here	Far Jab	LP	20(3 life points)	3	Yes	Yes	Yes	5	3	4	+4	+4	+4	HL	HL	0	1	2	4	15	-	-	-	-	-	-
+Comments here	Far Strong	MP	90(16 life points)	11	No	No	No	6	3	10	+3	+4	+5	HL	H	2	4	8	4	15	-	-	-	-	-	-
+Comments here	Far Fierce	HP	130(23 life points)	13	No	No	No	9	3	15	0	+2	+4	HL	H	3	6	14	4	15	-	-	-	-	-	-
+Comments here	Close Jab	(Close to opponent) LP	20(3 life points)	3	No	Yes	Yes	3	3	5	+3	+3	+3	HL	HL	0	1	2	4	15	-	-	-	-	-	-
+Comments here	Close Strong	(Close to opponent) MP	100(17 life points)	7	No	Yes	Yes	4	4	10	+1	+2	+3	HL	H	2	4	8	4	15	-	-	-	-	-	-
+Comments here	Close Fierce	(Close to opponent) HP	130(23 life points)	15	No	Yes	Yes	6	3	15	-2	0	+2	HL	H	3	6	14	4	15	-	-	-	-	-	-
+Comments here	Short	LK	40(7 life points)	3	No	No	No	4	4	7	+2	+2	+2	HL	HL	0	1	2	4	15	-	-	-	-	-	-
+Comments here	Forward	MK	110(19 life points)	15	No	No	No	8	7	16	-6	-2	0	HL	H	2	4	8	4	7	-	-	-	-	-	-
+Comments here	Roundhouse	HK	150(26 life points)	11	No	No	No	11	6	19	-4	-2	0	HL	H	3	6	14	4	15	-	-	-	-	-	-
+Comments here	Jump Jab	(Air) LP	50(60 if neutral jump)(8/10 life points)	7	No	No	No	4(5 if neutral jump)	Until landing	-	-5～+7	-5～+7	+4～+7	H	H	0	1	2	4	3	-	-	-	-	-	-
+Comments here	Jump Strong	(Air) MP	100(17 life points)	11	No	No	No	5(6 if neutral jump)	5	-	-2～+10	-2～+10	+7～+10	H	H	2	4	8	4	3	-	-	-	-	-	-
+Comments here	Jump Fierce	(Air) HP	130(17 life points)	15	No	No	No	6	4	-	-2～+10	-2～+10	+7～+10	H	H	3	6	14	4	3	-	-	-	-	-	-
+Comments here	Neutral Jump Fierce	(Air) HP	130(23 life points)	15	No	No	No	7	3	-	+3～+13/+6～+13	+3～+13/+6～+13	+10～+13/+12～+13	H	H	3	6	14	4	3	-	-	-	-	-	-
+Comments here	Jump Short	(Air) LK	50(8 life points)	5(7 if neutral jump)	No	No	No	4(5 if neutral jump)	10(19 if neutral jump)	-	-8～+7	-8～+7	0～+7	H	H	0	1	2	4	3	-	-	-	-	-	-
+Comments here	Jump Forward	(Air) MK	90(16 life points)	9	No	No	No	5	6	-	-6～+10/-3～+10	-6～+10/-3～+10	+6～+10/+7～+10	H	H	2	4	8	4	3	-	-	-	-	-	-
+Comments here	Neutral Jump Forward	(Air) MK	90(16 life points)	9	No	No	No	5	6	-	-6～+10/-3～+10	-6～+10/-3～+10	+6～+10/+7～+10	H	H	2	4	8	4	3	-	-	-	-	-	-
+Comments here	Jump Roundhouse	(Air) HK	125(22 life points)	13	No	No	No	6	4	-	+2～+13	+2～+13	+8～+13/+10～+13	H	H	3	6	14	4	3	-	-	-	-	-	-
+Comments here	Neutral Jump Roundhouse	(Air) HK	130(23 life points)	13	No	No	No	7	5	-	+2～+13	+2～+13	+8～+13/+10～+13	H	H	3	6	14	4	3	-	-	-	-	-	-
+Comments here	Universal Overhead	MP+MK	40(7 life points)	3	No	No	No	15	8	7	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	1	-	-	-	-	-	-
+Comments here	Hiza Geri	LP+LK	160(40x6)(27 life points)	12(3x6)	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	12(6x2)	-	-	24	C+MK/C+HK/B+MK/MK/HK	37/37/34/32/32	-	-	-
+Comments here	Seoi Nage	F+LP+LK	120(21 life points)	9	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	7	-	-	24	C+MK/C+HK/B+MK/MK/HK	37/37/34/32/32	-	-	-
+Comments here	Jigoku Guruma	B+LP+LK	110(19 life points)	15	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	7	-	-	24	C+MK/C+HK/B+MK/MK/HK	37/37/34/32/32	-	-	-
+Comments here	Crouch Jab	D+LP	20(3 life points)	3	Yes	Yes	Yes	4	3	5	+3	+3	+3	HL	HL	0	1	2	4	15	-	-	-	-	-	-
+Comments here	Crouch Strong	D+MP	90(16 life points)	7	No	Yes	Yes	5	4	7	+3	+4	+5	HL	HL	2	4	8	4	15	-	-	-	-	-	-
+Comments here	Crouch Fierce	D+HP	130(23 life points)	13	No	Yes	Yes	7	5	17	-8	-6	-4	HL	HL	3	6	14	4	15	-	-	-	-	-	-
+Comments here	Crouch Short	D+LK	20(3 life points)	3	Yes	Yes	Yes	5	3	7	+1	+1	+1	L	L	0	1	2	4	15	-	-	-	-	-	-
+Comments here	Crouch Forward	D+MK	85(15 life points)	3	No	Yes	Yes	6	5	17	-3	-3	-1	L	L	2	4	8	4	15	-	-	-	-	-	-
+Comments here	Crouch Roundhouse	D+HK	130(23 life points)	3	No	No	No	6	5	26	-13	Down	Down	L	L	3	6	14	4	15	-	-	-	-	-	-
+Comments here	Fumikomi Mae Geri	F+MK	80(14 life points)	7	No	No	No	16	4	15	-4	-1	0	HL	H	3	6	14	4	3	-	-	-	-	-	-
+Comments here	Inazuma Kakato Wari	B+MK	130(60+80)(21 life points)	11(7+7)	No	No	No	18	2(0)2	10	+1	+2	+3	H/H	H/H	2(2+0)	3(2+1)	9(7+2)	8(4+4)	2 • 1	-	-	-	-	-	-
+Comments here	Inazuma Kakato Wari	Hold MK	110/130(60+80)(29 life points)	15/11(7+7)	No	No	No	8 > 25	4/2/2	10	+1	+2	+3	HL/H/H	H/H/H	4(2+2+0)	7(4+2+1)	17(8+7+2)	12(4+4+4)	2 • 1	-	-	-	-	-	-
+Comments here	Shiden Kakato Otoshi	F+HK	120(80)(21 life points)	11(9)	No	No	No	30	5	14	-1	+1	+3	H	H	3(0)	6(1)	14(2)	4	2	-	-	-	-	-	-
+Comments here	Shiden Kakato Otoshi (Fake)	F+HK (Hold HK)	-	-	No	No	No	30	5	18	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Target Combo	Close MP -> Close HP	100+60	7+5	No	Yes/Yes	Yes/Yes	4	-	-	-2	0	+2	HL/HL	H/H	2+?	4+1	8+1	8(4+4)	15/15	-	-	-	-	-	-
+Comments here	Hadouken	QCF+P	60(10 life points)	3	-	-	Yes	10	1	38	-11	-10	-10	HL	H	0	1	1	4	7	-	-	-	4	-	-
+-	Shoryuken (Jab)	F, D, DF+LP	150(100)(60)(26 life points)	11	-	-	Yes	2	8	26	-17	Down	Down	HL	HL	3	10	15	4	3	-	-	-	19(6)(4)	Shoryuken (Jab)	-
+-	Shoryuken (Strong)	F, D, DF+MP	165(110+55)(28 life points)	15(11+5)	-	-	Yes/No	3	2/12	28	-24	Down	Down	HL/HL	HL/HL	3	11(10+1)	17(15+2)	8(4+4)	3 • 3	-	-	-	21(14+7)	Shoryuken (Strong)	-
+-	Shoryuken (Strong)	F, D, DF+HP	185(80+60+50)(32 life points)	17(11+3+3)	-	-	Yes/Yes/No	3	2/12	28	-24	Down	Down	HL/HL	HL/HL	3	12(10+1+1)	19(15+2+2)	12(4+4+4)	3 • 3 • 3	-	-	-	21(10+8+3)	Shoryuken (Fierce)	-
+-	Tatsumaki Senpuu Kyaku (Short)	QCB+LK	115(80+30)(19 life points)	10(7+3)	-	-	Yes/No	6・16・22	2・3・2	14	-5	-3	-3	HL/HL	H/H	3	9(8+1)	15(13+2)	8(4+4)	3 • 15	-	-	-	12(10+2)	Tatsumaki Senpuu Kyaku (Short)	-
+-	Tatsumaki Senpuu Kyaku (Forward)	QCB+MK	140(60+30(x3))(23 life points)	15(7+3(x3))	-	-	Yes/No/No/No	6・12・17・22・27・32・37	2x7	15	-6	-4	-4	HL/HL/HL/HL	H/H/H/H	3	11(8+1x3)	19(13+2x3)	16(4+4+4+4)	3 • 3 • 3 • 15	-	-	-	14(8+2(x3))	Tatsumaki Senpuu Kyaku (Forward)	-
+-	Tatsumaki Senpuu Kyaku (Forward)	QCB+HK	160(60+30(x4))(27 life points)	17(7+3(x4))	-	-	Yes/No/No/No/No	6・12・17・22・27・32・37	2x7	15	-6	-4	-4	HL/HL/HL/HL	H/H/H/H	3	12(8+1x4)	21(13+2x4)	20(4+4+4+4+4)	(3x4) • 15	-	-	-	16(8+2(x4))	Tatsumaki Senpuu Kyaku (Roundhouse)	-
+-	Air Tatsumaki Senpuu Kyaku (Short)	(Air) QCB+LK	160*(80x4)(27 life points)	10***(5x4)	-	-	No/No	7・10・15・18	1x4	12	-	-	-	HL	H/H	2(1x2)	4(2x2)	18(9x2)	8(4+4)	3x4	-	-	-	5**(5x4)	Air Tatsumaki Senpuu Kyaku (Short)	-
+-	Air Tatsumaki Senpuu Kyaku (Forward)	(Air) QCB+MK	160*(80x6)(40 life points)	10***(5x6)	-	-	No/No	7・10・15・18・23・26	1x6	12	-	-	-	HL	H/H/H	3(1x3)	6(2x3)	27(9x3)	12(4+4+4)	3x6	-	-	-	5**(5x6)	Air Tatsumaki Senpuu Kyaku (Forward)	-
+-	Air Tatsumaki Senpuu Kyaku (Forward)	(Air) QCB+HK	160*(80x8)(40 life points)	10***(5x8)	-	-	No/No	7・10・15・18・23・26	1x6	12	-	-	-	HL	H/H/H	4(1x4)	8(2x4)	36(9x4)	16(4+4+4+4)	3x8	-	-	-	5**(5x8)	Air Tatsumaki Senpuu Kyaku (Roundhouse)	-
+Comments here	Hadouken (EX)	QCF+PP	120(60+60)(20 life points)	6(3+3)	-	-	Yes	10	1	38	-6	Down	Down	HL	H	-	-	-	8(4+4)	3 • 7	-	-	-	8(4+4)	Hadouken (EX)	40
+Comments here	Shoryuken (EX)	F, D, DF+PP	210(80+50+40+40)(34 life points)	20(11+3(x3))	-	-	Yes	1	2/2/2/14	38	-36	Down	Down	HL	HL	-	-	-	16(4+4+4+4)	1 • 1 • 3 • 3	-	-	-	24(10+6+5+3)	Hadouken (EX)	40
+Comments here	Tatsumaki Senpuu Kyaku (EX)	QCB+KK	200(60+35(x4)+30)(34 life points)	20(7+3(x5))	-	-	Yes	4・11・15・19・23・27・31・35・39・43・48	2×11	13	-3	-1	-1	HL	H	-	-	-	24(4+4+4+4+4+4)	(3x5) • 15	-	-	-	19(8+2(x5))	Tatsumaki Senpuu Kyaku (EX)	40
+Comments here	Air Tatsumaki Senpuu Kyaku (EX)	(Air) QCB+KK	240(80(x10))(52 life points)	15(5(x10))	-	-	No	6・9・12・15・18・21・24・27・30・33・36・39・42	1x13	12	-	Down	Down	HL	H	-	-	-	20(4+4+4+4+4)	1x10	-	-	-	5(5(x10))	Air Tatsumaki Senpuu Kyaku (EX)	40

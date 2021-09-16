@@ -1,8 +1,8 @@
 {
   "private": true,
-  "main": "src/index.ts",
+  "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node ./src/main.ts"
   },
   "author": "Clay Dunston <dunstontc@gmail.com>",
   "dependencies": {

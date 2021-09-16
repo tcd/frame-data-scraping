@@ -1,0 +1,50 @@
+description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Throw Range	Kara-Throw	Kara-Throw Range	Throw Range (Front)	Throw Range (Up & Down)	Blocked Damage	gagueData_Move	gagueData_Super Art	gagueData_Super Art Name	gagueData_Super Art Stock	gagueData_Motion	gagueData_Damage	gagueData_Blocked Damage	gagueData_Stun Damage	gagueData_Throw Range	gagueData_Damage/Gauge
+Comments here	Far Jab	LP	30(5 life points)	3	No	Yes	Yes	4	1	10	0	0	0	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Far Strong	MP	80(14 life points)	11	No	No	No	8	4	12	-2	-1	0	HL	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Fierce	HP	140(60+80)(22 life points)	14(7+7)	No	No	No	17	1	19	-5	-3	-1	H	H	2	6(1+4+1)	17	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Close Jab	(Close to opponent) LP	35(6 life points)	3	No	Yes	Yes	2	1	5	+5	+5	+5	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Close Strong	(Close to opponent) MP	70(40+30)(14 life points)	8(4+4)	Yes	Yes/Yes	Yes/Yes	5	2	16	-4	0	0	HL	H	1	6(5+1)	11	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Far Short	LK	35(6 life points)	3	No	Yes	Yes	3	1	8	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Far Forward	MK	100(17 life points)	13	No	No	No	8	6	12	-5	-4	-3	HL	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Roundhouse	HK	120(21 life points)	19	No	No	No	7	4	17	-5	-3	-1	HL	H	2	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Close Short	(Close to opponent) LK	40(7 life points)	3	No	Yes	Yes	2	2	4	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Close Forward	(Close to opponent) MK	110(19 life points)	11	No	Yes	Yes	4	3	15	-5	-4	-3	HL	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Jab	(Air) LP	60(10 life points)	7	No	No	No	7	17	-	-	-	-	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Neutral Jump Jab	(Air) LP	60(10 life points)	5	No	No	No	3	12	-	-	-	-	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Strong	(Air) MP	100(17 life points)	11	No	No	No	10	8	-	-	-	-	H	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Neutral Jump Strong	(Air) MP	110(19 life points)	9	No	No	No	5	6	-	-	-	-	H	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Fierce	(Air) HP	140(100+40)(23 life points)	18(9+9)	No	No	No	9	2	-	-	-	-	H	H	2	8	17	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Neutral Jump Fierce	(Air) HP	140(24 life points)	13	No	No	No	7	4	-	-	-	-	H	H	2	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Short	(Air) LK	60(10 life points)	5	No	No	No	3	13	-	-	-	-	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Neutral Jump Short	(Air) LK	60(10 life points)	7	No	No	No	2	10	-	-	-	-	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Forward	(Air) MK	100(17 life points)	9	No	No	No	3	6	-	-	-	-	H	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Neutral Jump Forward	(Air) MK	110(19 life points)	11	No	No	No	4	8	-	-	-	-	H	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Jump Roundhouse	(Air) HK	120(21 life points)	13	No	No	No	5	3	-	-	-	-	H	H	2	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Neutral Jump Roundhouse	(Air) HK	140(24 life points)	15	No	No	No	5	5	-	-	-	-	H	H	2	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Tobi Hiza	MP+MK	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Kubi-jime Kataguruma	LP+LK or F+LP+LK	115(6x30)(19 life points)	20(6x5)	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	12	-	25	Far S.MK/S.HK/Close S.MP/Close S.MK	53/39/35/35	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Tomoe Nage	B+LP+LK	120(21 life points)	15	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	7	-	25	Far S.MK/S.HK/Close S.MP/Close S.MK	53/39/35/35	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Kuuchuu Jigoku Guruma	(Air) LP+LK	180(32 life points)	15	-	-	-	6	1	-	-	-	-	LP+LK	-	0	-	7	-	-	-	-	19	62~91	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Mawashi Hiji	F+MP	90(16 life points)	13	No	Yes	Yes	8	2	18	-5	-4	-3	HL	H	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Jab	D+LP	30(5 life points)	3	Yes	Yes	Yes	4	2	9	+1	+1	+1	HL	HL	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Strong	D+MP	65(11 life points)	3	No	Yes	Yes	7	6	12	-5	-4	-3	HL	HL	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Fierce	D+HP	120(21 life points)	11	No	No	Yes	6	4	18	-2	0	0	HL	HL	2	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Short	D+LK	20(3 life points)	3	No	Yes	Yes	4	2	9	+1	+1	+1	L	L	0	1	2	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Forward	D+MK	80(14 life points)	3	No	Yes	Yes	6	4	11	0	+1	+2	L	L	1	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Crouch Roundhouse	D+HK	100(17 life points)	3	No	No	No	10	2	20	-6	Down	Down	L	L	2	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Comments here	Target Combo	Close LK -> MK	40+50	3+5	No/No	Yes/No	Yes/No	2	-	-	-5	-4	-3	HL	HL/H	0+?	1+1	2+1	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Sun Disk Palm (Jab)	Charge B,F+LP	50(8 life points)	7	-	-	Yes	14	1	27	-6	-5	-4	HL	H	0	1	2	4	-	-	-	-	-	3	Sun Disk Palm (Jab)	-	-	-	-	-	-	-	-	-
+-	Sun Disk Palm (Strong)	Charge B,F+MP	50(8 life points)	7	-	-	Yes	12	1	25	-4	-3	-2	HL	H	0	1	2	4	-	-	-	-	-	3	Sun Disk Palm (Strong)	-	-	-	-	-	-	-	-	-
+-	Sun Disk Palm (Strong)	Charge B,F+HP	60(10 life points)	11	-	-	Yes	12	1	25	-4	-3	-2	HL	H	0	1	2	4	-	-	-	-	-	4	Sun Disk Palm (Fierce)	-	-	-	-	-	-	-	-	-
+-	Oniyama (Jab)	Charge D,U+LP	140(80(40))(24 life points)	15	-	-	Yes	6	10	29	-22	Down	Down	HL	HL	3	15	21	4	-	-	-	-	-	9	Oniyama (Jab)	-	-	-	-	-	-	-	-	-
+-	Oniyama (Strong)	Charge D,U+MP	160(100(40))(28 life points)	15	-	-	Yes	6	17	30	-30	Down	Down	HL/HL	HL/HL	3	15	21	4	-	-	-	-	-	10	Oniyama (Strong)	-	-	-	-	-	-	-	-	-
+-	Oniyama (Strong)	Charge D,U+HP	180(2 hits)(120+60+60+40)(31 life points)	20(19+3+3+3)	-	-	Yes/Yes	6	17	30	-30	Down	Down	HL/HL	HL/HL	3	17	22	16(4x4)	-	-	-	-	-	11(5+2+2)	Oniyama (Fierce)	-	-	-	-	-	-	-	-	-
+-	Jinchu Nobori (Short)	QCF+LK	100(50+50)(16 life points)	10(5+5)	-	-	No/No	27・35	3・3	13	-40～-35	Down	Down	H/H	H/H	3	16(15+1)	22(21+1)	8(4+4)	-	-	-	-	-	6(3+3)	Jinchu Nobori (Short)	-	-	-	-	-	-	-	-	-
+-	Jinchu Nobori (Forward)	QCF+MK	115(60+60)(20 life points)	10(5+5)	-	-	No/No	31・39	3・3	13	-40～-35	Down	Down	H/H	H/H	3	16(15+1)	22(21+1)	8(4+4)	-	-	-	-	-	8(4+4)	Jinchu Nobori (Forward)	-	-	-	-	-	-	-	-	-
+-	Jinchu Nobori (Forward)	QCF+HK	130(70+60)(22 life points)	10(5+5)	-	-	No/No	31・39	3・3	13	-40～-35	Down	Down	H/H	H/H	3	16(15+1)	22(21+1)	8(4+4)	-	-	-	-	-	9(5+4)	Jinchu Nobori (Roundhouse)	-	-	-	-	-	-	-	-	-
+-	Air Jinchu Nobori (Short)	(Air) QCF+LK	160(8 hits)(40+40+20×6)(19 life points)	10(8 hits)(5+5+0×6)	-	-	No/No	8	3	13	-40～+5	Down	Down	H/H	H/H	6(3+3)	10(5+5)	31(13+12+[1×6])	32(4x8)	-	-	-	-	-	6	Air Jinchu Nobori (Short)	-	-	-	-	-	-	-	-	-
+-	Air Jinchu Nobori (Forward)	(Air) QCF+MK	160(8 hits)(40+40+20×6)(19 life points)	10(8 hits)(5+5+0×6)	-	-	No/No	8	3	13	-40～+5	Down	Down	H/H	H/H	6(3+3)	10(5+5)	31(13+12+[1×6])	32(4x8)	-	-	-	-	-	6	Air Jinchu Nobori (Forward)	-	-	-	-	-	-	-	-	-
+-	Air Jinchu Nobori (Forward)	(Air) QCF+HK	160(8 hits)(40+40+20×6)(19 life points)	10(8 hits)(5+5+0×6)	-	-	No/No	8	3	13	-40～+5	Down	Down	H/H	H/H	6(3+3)	10(5+5)	31(13+12+[1×6])	32(4x8)	-	-	-	-	-	6	Air Jinchu Nobori (Roundhouse)	-	-	-	-	-	-	-	-	-
+-	Air Jinchu Nobori (EX)	HCB+LP	150(24 life points)	11	-	-	No	8	3	13	-	Down	Down	HL	H	-	-	-	-	79	-	-	-	-	-	-	I	Kishin Riki (Activation)	1 bar (104)	QCF QCF+P	-	-	-	-	-
+-	Human Pillar Driver (Strong)	HCB+MP	170(27 life points)	11	-	-	No	-	-	-	-	-	-	-	-	-	-	-	-	79	-	-	-	-	-	-	-	Kishin Riki (Ground)	-	(After activation) P	345(58 life points)	44	25	-	3,31
+-	Human Pillar Driver (Fierce)	HCB+HP	190(30 life points)	11	-	-	No	-	-	-	-	-	-	-	-	-	-	-	-	79	-	-	-	-	-	-	-	Kishin Riki (Air Grab)	-	(After activation) Air P	310(52 life points)	-	18	56	2,98

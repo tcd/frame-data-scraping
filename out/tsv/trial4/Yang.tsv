@@ -1,0 +1,129 @@
+description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Juggle Value	Reset or Juggle	Throw Range	Kara-Throw	Kara-Throw Range	Blocked Damage	gagueData_Move	Gauge Needed
+"Adds some damage onto your next combo. Only used after stuns (which Yang can get quite
+									easily) or after a hard knockdown from Super 2."	Taunt	HP+HK	5	0	No	No	No	21	10	27	?	?	?	HL	HL	4(6)	?	?	4	-	-	-	-	-	-	-	-
+"Used as a tick into a throw or command grab or as a low-commitment anti-air. Since it
+									chains into itself, Yang can keep pressing Jab as an anti-air to force the opponent
+									to parry endlessly until they fail. This has a high success rate, but is weak.
+									Generally outclassed by crouch Jab since it can be crouched by most characters."	Far Jab	LP	20(3 life points)	3	Yes	Yes	Yes	3	2	6	+4	+4	+4	HL	HL	0	1	2	4	15	Reset	-	-	-	-	-	-
+"A lackluster poke. His strong -> fierce -> b+fierce TC is a good conversion, but will
+									fall out if the MP connects from too far out. Yang has better pokes than this, so it
+									doesn't see much use."	Far Strong	MP	50(8 life points)	5	No	No	No	5	4	12	-2	-1	0	HL	H	2	5	10	4	15	Reset	-	-	-	-	-	-
+"A poke with nice range. It also serves as a clean, if predictable, anti-air. Be
+									careful with it as parries make it very punishable."	Far Fierce	HP	120(16 life points)	15	No	No	No	9	6	12	-5	-3	-1	HL	H	3	9	18	4	7	Reset	-	-	-	-	-	-
+"A good confirming tool with great frame advantage. Also Yang's max damage cancel,
+									meaning it's his go-to punish for close-range punishes. This is Yang's reason to
+									make the opponent think about high parries on wakeup."	Close Strong	(Close to opponent) MP	55(9 life points)	5	No	Yes	Yes	4	3	7	+6	+7	+8	HL	H	2	5	10	4	15	Reset	-	-	-	-	-	-
+"Hits twice. The first hit cancels, and builds more meter than close Strong, so it's
+									used in meter build combos. It does less damage, however, so use close MP for
+									everything else. It can also be used as an anti-air or in pressure to punish
+									opponents for only attempting one parry."	Close Fierce	(Close to opponent) HP	100(21 life points)	14	No	Yes	No	5	3	13	-2	-1	0	HL	H	3	8	17	4	15/3	Reset/Reset	-	-	-	-	-	-
+"Goes very far very fast, which makes it ideal for punishes and after jump-ins as a
+									cancel to EX rekkas. Unfortunately Yang doesn't have much better to go for after
+									jump-ins since his low cancels are either too slow or stubby and his high cancels
+									are all close normals."	Short	LK	30(5 life points)	3	No	Yes	Yes	3	3	6	+2	+2	+2	HL	HL	0	1	2	4	15	Reset	-	-	-	-	-	-
+Great poke and OK anti-air. This is Yang's main way of poking.	Forward	MK	80(14 life points)	9	No	No	No	9	3	15	-4	-3	-2	HL	H	2	5	10	4	3	Reset	-	-	-	-	-	-
+Slow startup and redundancy with Fierce make this move pretty bad.	Roundhouse	HK	100(17 life points)	11	No	No	No	14	3	22	-8	-6	-4	HL	H	3	9	18	4	3	Reset	-	-	-	-	-	-
+"Yang's launcher. You can super jump cancel it for a reset into a mixup opportunity, or
+									you can combo a MK roll afterwards for more damage and a knockdown. After the MK
+									roll in the corner you can juggle an SA2, which is a tight juggle (1-2 frame window)
+									and rarely worth it. Also in the corner, you can juggle a hard rekka series for big
+									damage. Since it's safe on block and covers such a high angle, it makes for a very
+									nasty tool in the corner - if they jump, they get caught, and if they sit on the
+									ground, they have to parry or respect it."	Close Forward	(Close to opponent) MK	80(14 life points)	9	No	Yes	Yes	7	3	15	-2	Down	Down	HL	H	2	5	10	4	3	Juggle	-	-	-	-	-	-
+Yang has no need for this normal. Divekick does everything it does and way more.	Jump Jab	(Air) LP	40(7 life points)	7	No	No	No	2	Until landing	-	-4～+7	-4～+7	+2～+7	H	H	0	1	2	4	3	Reset	-	-	-	-	-	-
+Insert jumping Jab here.	Jump Strong	(Air) MP	80(14 life points)	9(11 if neutral jump)	No	No	No	3	6(7 if neutral jump)	-	-2～+10	+5/+6～+10	+5/+6～+10	H	H	2	5	10	4	3	Reset	-	-	-	-	-	-
+"Does less damage than jump roundhouse, so use that. It has a more conventional attack
+									angle, so it might be more consistent on crouching characters."	Jump Fierce	(Air) HP	100(17 life points)	13	No	No	No	5	4	-	-2～+10	-2～+10	+5～+10	H	H	3	9	18	4	3	Reset	-	-	-	-	-	-
+"Does the most damage out of all of Yang's aerial normals. It has more pushback than
+									roundhouse, unfortunately, so it is less common. You can combo into close MK for
+									bigger damage, but this is a difficult link."	Neutral Jump Fierce	(Air) HP	120(21 life points)	15	No	No	No	8	5	-	+4～+10	+4～+10	+9～+10	H	H	3	9	18	4	3	Reset	-	-	-	-	-	-
+Insert jumping Jab here.	Jump Short	(Air) LK	40(7 life points)	5	No	No	No	3(4 if neutral jump)	12	+1～+7	+1～+7	+6～+7/+7	-	H	H	0	1	2	4	3	Reset	-	-	-	-	-	-
+"Goes the farthest of the jump attacks, but has a bit less hitstun than his heavies. It
+									does a decent job for air-to-airs. His target combo from it can dissuade anti-air
+									parries."	Jump Forward	(Air) MK	70(12 life points)	9	No	No	No	6	7	-	-3～+10	-3～+10	+5～+10	H	H	2	5	10	4	3	Reset	-	-	-	-	-	-
+Functionally identical to his diagonal jump MK.	Neutral Jump Forward	(Air) MK	70(12 life points)	9	No	No	No	6	7	-	-3～+10	-3～+10	+5～+10	H	H	2	5	10	4	3	Reset	-	-	-	-	-	-
+"Great air-to-air hitbox and does the most damage from a diagonal jump, but its high
+									hitbox means it is a bit finicky on grounded opponents (especially if they crouch).
+									Still useful as Yang's general purpose jump-in normal."	Jump Roundhouse	(Air) HK	110(19 life points)	13	No	No	No	5	5	-	0～+10	0～+10	+5～+10	H	H	3	9	18	4	3	Reset	-	-	-	-	-	-
+Identical to his diagonal jump HK.	Neutral Jump Roundhouse	(Air) HK	110(19 life points)	13	No	No	No	5	5	-	-1～+10	-1～+10	+4～+10	H	H	3	9	18	4	3	Reset	-	-	-	-	-	-
+"Yang can get some decent mileage out of his UOH, since meaty or spaced ones can combo
+									to stand Short and then to EX rekkas. However, meaty or spaced UOHs are somewhat
+									reactable and weak to parries, and Yang has another overhead he can throw into the
+									mix, so use it wisely. It folds in nicely with his other wakeup options."	Universal Overhead	MP+MK	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	1	Reset	-	-	-	-	-	-
+Comments here	Hiza Geri	LP+LK	160(40x6)(27 life points)	18(3x6)	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	12(6x2)	-	-	-	18	S.HK / S.LK / F.MK / Far S.HP / Close F.HP	31 / 28 / 26 / 22 / 22	-	-	-
+Comments here	Youhon Shiun	F+LP+LK	120(21 life points)	11	-	-	-	2	1	21	-	-	-	F+LP+LK	-	0	7 (for the player who blocked)	7	-	-	-	18	S.HK / S.LK / F.MK / Far S.HP / Close F.HP	31 / 28 / 26 / 22 / 22	-	-	-
+Comments here	Monkey Flip	B+LP+LK	120(21 life points)	11	-	-	-	2	1	21	-	-	-	B+LP+LK	-	0	7 (for the player who blocked)	7	-	-	-	18	S.HK / S.LK / F.MK / Far S.HP / Close F.HP	31 / 28 / 26 / 22 / 22	-	-	-
+"Quick, but can be parried in both directions, and in most situations where you would
+									use a quick move (moderately high divekicks, ticks, etc.) Yang usually has something
+									better to use. This move is overshadowed by his low Short as a confirm as well."	Crouch Jab	D+LP	20(3 life points)	3	Yes	Yes	Yes	3	2	6	+4	+4	+4	HL	HL	0	1	2	4	15	Reset	-	-	-	-	-	-
+"This is a weird move. Unlike most crouching punches in SF3, it must be parried and
+									blocked low and does not cancel. Besides occasional use as a tick into Zenpou
+									Tenshin, you would think this move has very little utility, if not for a specific
+									setup with Sei-ei Enbu, which is covered later."	Crouch Strong	D+MP	70(12 life points)	5	No	No	No	5	2	11	+2	+3	+4	HL	HL	2	5	10	4	1	Reset	-	-	-	-	-	-
+Very good anti-air. Hits twice and has very little hurtbox.	Crouch Fierce	D+HP	110(17 life points)	8(2 hits)	No	No	No	8	7	12	0	+1	+2	HL	HL	3	8	17	8(4+4)	15/15	Reset/Reset	-	-	-	-	-	-
+"Yang uses this move as a low confirm. low Short -> low Short -> EX rekkas is a
+									valuable tool in Yang's kit to make the opponent block their toes. On some
+									characters like Makoto you can do 3 low shorts if you are point blank."	Crouch Short	D+LK	30(5 life points)	3	Yes	Yes	Yes	4	1	8	+2	+2	+2	L	L	0	1	2	4	15	Reset	-	-	-	-	-	-
+"Yang's farthest range cancel, meaning it's your general punish tool after grounded
+									parries and Zenpou Tenshin."	Crouch Forward	D+MK	50(8 life points)	3	No	Yes	Yes	7	2	13	-1	0	+1	L	L	2	5	10	4	1	Reset	-	-	-	-	-	-
+"As far as sweeps go, Yang's sweep is only moderately unsafe with a good amount of
+									pushback, making it surprisingly hard to punish. Makes for a more threatening low
+									poke that has the potential for a knockdown and okizeme."	Crouch Roundhouse	D+HK	90(16 life points)	3	No	No	No	10	3	20	-7	Down	Down	L	L	3	9	18	4	1	Juggle	-	-	-	-	-	-
+"A safe overhead with no comboability whatsoever. Very nice as a high poke and counter
+									poke that hops over lows."	Senpuu Kyaku	F+MK	80(14 life points)	11	No	No	No	19	6	8	-1	0	+1	HL	H	2	3	7	4	15	Reset	-	-	-	-	-	-
+"Divekicks are nice to have in SF3, and Yang's is no exception. The ability to
+									reposition and mix up attack timings or utilize the threat of divekick to land and
+									throw is a huge plus, and a core part of Yang's offense. The higher button strength
+									used, the more forward movement the divekick will have. Be careful! High connect
+									divekicks are unsafe on hit and block, so you must aim for their toes to be
+									effective, or just aim outside them if you are looking to whiff."	Raigeki Shuu	Air D+MK	70(12 life points)	7	No	No	No	6/6/8	Until Landing	-	+1	+2	+3	HL	H	2	3	7	4	15	Reset	-	-	-	-	-	-
+"Identical to his far Fierce, but you would never want this up close over close
+									Strong."	Koushu	F+HP	120(21 life points)	15	No	No	No	9	6	12	-5	-3	-1	HL	H	3	5	13	4	7	Reset	-	-	-	-	-	-
+"As discussed earlier, this TC punishes the opponent for going for only 1 anti-air
+									parry. The divekick is identical in trajectory to MK divekick, and only travels on
+									said path if it whiffs (such as after an air reset)."	Target Combo 1	Jump MK -> Jump DF+MK	70+30	9+3	No/No	No/No	No/No	-	-	-	-	-	-	HL/HL	H/H	2+?	5+1	10+1	8(4+4)	15/3	Reset/Reset	-	-	-	-	-	-
+"Completely useless outside of Sei-ei Enbu because Yang could just use EX rekkas
+									instead for vastly more damage, stun, corner carry, and okizeme."	Target Combo 2	Close LK -> Close MK -> Close HK	30+50+60	3+5+9	No/No/No	Yes/No/No	Yes/No/No	3	-	-	-4/0	-3/+1	-2/+2	HL/HL/HL	HL/H/H	0+?	1+1	2+1	12(4+4+4)	15/1/1	Reset/Reset/Reset	-	-	-	-	-	-
+"Useful because it confirms to SA2 and a safe activation of SA3. Outside that, the
+									range is a bit too inconsistent to be reliable as a combo."	Target Combo 3	MP -> HP -> B+HP	55(50 Far)+50+60	5+5+7	No/No/No	Yes/No/No(Close) No/No/No(Far)	Yes/No/Yes(Close) No/No/Yes(Far)	4	-	-	-5/-2	-3/Down	-1/Down	HL/HL/HL	H/H/H	2+?	5+1	10+1	8(4+4)	15/1/1	Reset/Reset/Juggle	-	-	-	-	-	-
+"The slow startup is unfortunate, but it pulls back before the attack connects and is
+									active for a long time, making it a good counter poke or to potentially bait
+									parries. Since it can be parried somewhat consistently it's not used very often, but
+									in the corner you can juggle into rekkas making it good after stuns to maximize
+									damage."	Byakko-Soushouda	QCB+P	150(100)(26 life points)	21(15)	-	-	Yes	21	13	10	-17	Down	Down	HL	HL	3	7	15	4	1	Juggle	-	-	-	19(14)	Byakko-Soushouda	-
+-	Tourou-Zan (Jab)	QCF+LP x 3	30+35+90(150 if hits)(5 life points)	5+5+7(13 if hits)	-	-	No	8/6/7	5/5/4	22/25/29	-1/-4/-7	+1/-2/Down	+3/0/Down	HLx3	Hx3	3/0/0	11/1/1	17/1/1	12(4+4+4)	1/1/1	Juggle/Juggle/Juggle	-	-	-	2+2+6	Tourou-Zan (Jab)	-
+-	Tourou-Zan (Strong)	QCF+MP x 3	35+40+95(170 if hits)(6 life points)	5+5+7(13 if hits)	-	-	No	8/7/7	5/5/5	26/29/32	-5/-8/-11	-3/-6/Down	+1/-4/Down	HLx3	Hx3	3/0/0	7/1/1	12/2/2	12(4+4+4)	1/1/1	Juggle/Juggle/Juggle	-	-	-	2+3+6	Tourou-Zan (Strong)	-
+-	Tourou-Zan (Strong)	QCF+HP x 3	40+45+100(180 if hits)(7 life points)	5+5+7(13 if hits)	-	-	No	8/7/7	5/5/5	26/29/32	-5/-8/-11	-3/-6/Down	+1/-4/Down	HLx3	Hx3	3/0/0	7/1/1	12/2/2	12(4+4+4)	1/1/1	Juggle/Juggle/Juggle	-	-	-	3+3+6	Tourou-Zan (Fierce)	-
+-	Kaibou (Short)	F, D ,DF+LK	-	-	-	-	No	8	29	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Kaibou (Short)	-
+-	Kaibou (Forward)	F, D ,DF+MK	-	-	-	-	No	10	34	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Kaibou (Forward)	-
+-	Kaibou (Forward)	F, D ,DF+HK	-	-	-	-	No	10	34	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	Kaibou (Roundhouse)	-
+"A side-switching command grab that allows combos afterwards. It has more range and
+									startup than his throws. The universal combos afterwards are cr MK. canceled into HP
+									rekka, EX rekkas, SA1, or SA2. On characters with a particularly close reeling
+									animation, you can combo a close MK launcher. This allows Yang to keep offensive
+									momentum while punishing blocks and parries, which is essential to Yang's kit.
+									Obviously since it sideswitches it's worse in corners, but EX rekkas will carry the
+									opponent half screen afterwards, which is worth the downside."	Zenpou-Tenshin	HCB+K	-	-	-	-	No	7	2	26	-	+15	+15	Impossible	Impossible	0	-	0	-	-	-	31	-	-	-	Zenpou-Tenshin	-
+-	Senkyuutai (Short)	QCF+LK	130(80+50(45))(22 life points)	12(7+5(5))	-	-	No	8・12	4・4	34	-25	Down	Down	HL/HL	HL/HL	3	14(13+1)	20(19+1)	8(4+4)	1+1	Juggle	-	-	-	16(10+6(6))	Senkyuutai (Short)	-
+-	Senkyuutai (Forward)	QCF+MK	140(80+60(55))(24 life points)	20(9+11(9))	-	-	No	4～16・8～20	4・4	28	-19	Down	Down	HL/HL	HL/HL	3	14(13+1)	20(19+1)	8(4+4)	1+1	Juggle	-	-	-	18(10+8(7))	Senkyuutai (Forward)	-
+-	Senkyuutai (Forward)	QCF+HK	150(80+70(65))(25 life points)	16(11+5(3))	-	-	No	4～16・8～20	4・4	28	-19	Down	Down	HL/HL	HL/HL	3	14(13+1)	20(19+1)	8(4+4)	1+1	Juggle	-	-	-	19(10+9(8))	Senkyuutai (Roundhouse)	-
+"EX Rekkas are Yang's best feature, with great stun, damage, corner carry, and okizeme.
+									In just about every way that a special move could be considered good, Yang's EX
+									Tourou Zan is good. They combo from lights, they have great range and thus combo
+									consistency, they can be used after most grounded parries, they are a nice chip KO
+									tool, they can be spaced to be relatively safe, and they even extend a few of Yang's
+									juggles in corners. The only down sides is that it doesn't do too much against
+									aerial opponents, it costs meter, and while it can be spaced to be safe it is still
+									punishable on block by things like Ken SA3 or Chun Li SA2. This means that you want
+									to confirm your EX slashes whenever you can so you don't waste meter and potentially
+									get smacked. Yang can very easily go into EX Rekkas from most of his most common
+									okizeme options, like cr. LK -> cr.LK, close MP -> LK, and Zenpou Tenshin, and since
+									they give you okizeme to work with he can just as easily set up for another one.
+									This gives Yang a remarkable ability to keep momentum going. All you need is a few
+									EX slashes in a row to stun the opponent and eat off chunks of their life. This move
+									alone affects Yang's super art choice so much that most Yang players pick SA2 purely
+									because it stocks the most opportunities for EX Rekkas."	Tourou Zan (EX)	QCF+PP x5	40++50x4(220 if hits)(7 life points)	9+5x4	-	-	Yes	7/7/5/5/4	2/2/2/2/4	26/28/30/33/25	-4/-6/-7/-11/-9	-2/-4-/-6/-9/Dowm	0/-2/-4/-7/Down	HL	H	-	-	-	4	1/1/1/1/1	All hits juggle.	-	-	-	10+13x4	Tourou Zan (EX)	40
+"EX roll is about as useful as the normal versions. It travels fullscreen and does so
+									faster than HK roll, and all the juggles available after HK roll are available after
+									EX roll as well. The problem is that it doesn't accomplish anything new and Yang has
+									1 other EX move that's always preferred 99.99999999999999999999% of the time."	Senkyuutai (EX)	QCF+KK	200(90+20+90)(33 life points)	19(11+5+3)	-	-	No	3～29・5～31・7～33	2・2・4	25	-16	Down	Down	HLx3	HLx3	-	-	-	12(4x3)	1+1+1	Juggle	-	-	-	25(11+3+11)	Senkyuutai (EX)	40

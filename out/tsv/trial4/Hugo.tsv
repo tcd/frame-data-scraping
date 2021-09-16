@@ -1,0 +1,51 @@
+description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	gagueData_Move	gagueData_Motion	gagueData_Damage	gagueData_Stun Damage	gagueData_Throw Range	Throw Range	Kara-Throw	Kara-Throw Range	gagueData_Chains into itself	gagueData_Special Cancel	gagueData_Super Cancel	Blocked Damage	Throw Range (Front)	Throw Range (Up & Down)
+-	Jab	LP	35(6 life points)	5	Yes	No	No	4	4	8	-1	-1	-1	HL	HL	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Strong	MP	120(21 life points)	13	No	No	No	10	7	12	-5	0	+1	HL	H	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Fierce	HP	170(30 life points)	21	No	No	No	16	7	15	-3	-1	+1	HL	HL	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Short	LK	50(8 life points)	3	No	Yes	Yes	5	4	9	+1	+1	+1	HL	HL	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Forward	MK	115(70+50)(19 life points)	13(9+5)	No	No	No	9/14	2/4	23	-4	+1	+3	HL/H	H/H	7	5	11	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+"Overhead move again, but whiffed close to the opponent, means you will be punished. It
+								have too much recovery"	Roundhouse	HK	150(26 life points)	19	No	No	No	21	8	28	-13	+3	+3	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Jump Jab	(Air) LP	40(7 life points)	9	No	No	No	3	11	-	-3～+7/-2～+7	-3～+7/-2～+7	+5～+7/+6～+7	H	H	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Jump Strong	(Air) MP	100(17 life points)	13	No	No	No	6	8	-	0～+10/+2～+10	0～+10/+2～+10	+8～+10/+10	H	H	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Jump Fierce	(Air) HP	150(26 life points)	17	No	No	No	11	5	-	+4～+13/+6～+13	+4～+13/+6～+13	+12～+13	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Jump Short	(Air) LK	60(10 life points)	7	No	No	No	3	16	-	-9～+7/-8～+7	-9～+7/-8～+7	+1～+7/+2～+7	H	H	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Jump Forward	(Air) MK	100(17 life points)	11	No	No	No	5	7	-	-4～+10/-5～+10	-4～+10/-5～+10	+2～+10/+3～+10	H	H	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Jump Roundhouse	(Air) HK	130(26 life points)	15	No	No	No	11	7	-	-1～+13/-2～+13	-1～+13/-2～+13	+7～+13/+9～+13	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Frame Data	Universal Overhead	MP+MK	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	-	-	-	-	Neck Hanging Three	LP+LK	130(30x8)(21 life points)	24(5x8)	32	-	-	-	-	-	-	-	-	-
+Comments here	Body Slam	F+LP+LK or B+LP+LK	160(28 life points)	13	-	-	-	2	1	21	-	-	-	LP+LK	-	0	7 (for the player who blocked)	7	-	-	-	-	-	-	32	MK/HP	??/??	-	-	-	-	-	-
+-	Crouch Jab	C+LP	30(7 life points)	3	Yes	Yes	Yes	4	3	8	-1	-1	-1	HL	HL	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Crouch Strong	C+MP	120(17 life points)	13	No	No	No	7	5	12	-2	-1	0	HL	HL	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Crouch Fierce	C+HP	110(26 life points)	13	No	No	No	13	10	37	-29	Down	Down	HL	HL	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Crouch Short	C+LK	40(7 life points)	3	No	Yes	Yes	3	3	7	+2	+2	+2	L	L	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Crouch Forward	C+MK	100(17 life points)	3	No	No	No	8	5	17	-5	Down	Down	L	L	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+Frame Data	Crouch Roundhouse	C+HK	170(30 life points)	13	No	No	No	11	23	24~38	-43	Down	Down	H(far) or L(close)	H(far) or L(close)	-	-	-	-	Hammer Hook	F+HP	160(28 life points)	21	-	-	-	-	No	No	No	-	-	-
+-	Drop Kick	F+HK or B+HK	150(26 life points)	19	No	No	No	21	8	27	-12	+4	+4	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+"Nice for cross-ups, but rarely you will have the chance to do it. If you throw the
+								opponent (Body Slam) and he doesnt do a tech wakeup, go for the cross-up with Body
+								Press, also after a succesful Moonsault Press, if enemy doesnt do a tech wakeup,
+								superjump to the opponent when you touch the ground (will not work on characters that
+								have quick wakeup, such as Dudley, Remy, etc).
+								Remember also, even if the Body Press gets blocked (cross-up or not) a nice thing to do
+								after it is a standing HP, or standing LK followed by Giant Palm Bomber (LP), and even a
+								LK Meat Squasher to put the opponent into the corner.
+								You'll want to practice using the body splash as late as possible. This makes it very
+								difficult for an opponent to jump back safely, to avoid an upcoming SPD."	Body Press	JF, D+HP	100(17 life points)	17	No	No	No	9	Until landing	-	-	-	-	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+-	Giant Palm Bomber (Jab)	QCB+LP	110(19 life points)	15	-	-	Yes	17	2	9	+11	+13	+15	HL	H	3	8	16	4	Giant Palm Bomber (Jab)	-	-	-	-	-	-	-	-	-	-	14	-	-
+-	Giant Palm Bomber (Strong)	QCB+MP	125(22 life points)	17	-	-	Yes	19	2	7	+16	+18	+20	HL	H	3	8	16	4	Giant Palm Bomber (Strong)	-	-	-	-	-	-	-	-	-	-	16	-	-
+-	Giant Palm Bomber (Strong)	QCB+HP	140(29 life points)	19	-	-	Yes	19	2	7	+16	+18	+20	HL	H	3	8	16	4	Giant Palm Bomber (Fierce)	-	-	-	-	-	-	-	-	-	-	18	-	-
+-	Moonsault Press (Jab)	360+LP	240(42 life points)	19	-	-	No	2	2	36	-	Down	Down	Impossible	Impossible	5	-	31	-	Moonsault Press (Jab)	-	-	-	-	59	-	-	-	-	-	-	-	-
+-	Moonsault Press (Strong)	360+MP	255(45 life points)	19	-	-	No	2	2	36	-	Down	Down	Impossible	Impossible	5	-	31	-	Moonsault Press (Strong)	-	-	-	-	53	-	-	-	-	-	-	-	-
+-	Moonsault Press (Strong)	360+HP	280(49 life points)	19	-	-	No	2	2	36	-	Down	Down	Impossible	Impossible	5	-	31	-	Moonsault Press (Fierce)	-	-	-	-	47	-	-	-	-	-	-	-	-
+-	Monster Lariat (Short)	QCF+LK	150(26 life points)	11	-	-	No	11	5	21~25	-8	Down	Down	HL	H	3	8	13	4	Monster Lariat (Short)	-	-	-	-	-	-	-	-	-	-	19	-	-
+-	Monster Lariat (Forward)	QCF+MK	160(28 life points)	13	-	-	No	15	5	23~27	-10	Down	Down	HL	H	3	8	13	4	Monster Lariat (Forward)	-	-	-	-	-	-	-	-	-	-	20	-	-
+-	Monster Lariat (Forward)	QCF+HK	170(30 life points)	15	-	-	No	15	5	23~27	-10	Down	Down	HL	H	3	8	13	4	Monster Lariat (Roundhouse)	-	-	-	-	-	-	-	-	-	-	21	-	-
+-	Shootdown Backbreaker (Short)	F, D, DF+LK	180(32 life points)	15	-	-	No	5	9	30	-	Down	Down	Impossible	Impossible	5	-	31	-	Shootdown Backbreaker (Short)	-	-	-	-	-	-	-	-	-	-	-	21	71~122
+-	Shootdown Backbreaker (Forward)	F, D, DF+MK	200(32 life points)	15	-	-	No	17	10	25	-	Down	Down	Impossible	Impossible	5	-	31	-	Shootdown Backbreaker (Forward)	-	-	-	-	-	-	-	-	-	-	-	38	75~110
+-	Shootdown Backbreaker (Forward)	F, D, DF+HK	220(32 life points)	15	-	-	No	17	10	25	-	Down	Down	Impossible	Impossible	5	-	31	-	Shootdown Backbreaker (Roundhouse)	-	-	-	-	-	-	-	-	-	-	-	29	76~117
+-	Meat Squasher (Short)	360+LK	160(28 life points)	13	-	-	No	20~24	2	30	-	Down	Down	Impossible	Impossible	3	-	22	-	Meat Squasher (Short)	-	-	-	-	34	-	-	-	-	-	-	-	-
+-	Meat Squasher (Forward)	360+MK	160(28 life points)	13	-	-	No	30~52	2	33	-	Down	Down	Impossible	Impossible	3	-	22	-	Meat Squasher (Forward)	-	-	-	-	34	-	-	-	-	-	-	-	-
+-	Meat Squasher (Forward)	360+HK	160(28 life points)	13	-	-	No	30~52	2	33	-	Down	Down	Impossible	Impossible	3	-	22	-	Meat Squasher (Roundhouse)	-	-	-	-	34	-	-	-	-	-	-	-	-
+-	Ultra Throw (Short)	HCB+LK	70(12 life points)	7	-	-	No	7	2	36	-	Down	Down	Impossible	Impossible	5	-	22	-	Ultra Throw (Short)	-	-	-	-	38	-	-	-	-	-	-	-	-
+-	Ultra Throw (Forward)	HCB+MK	70(12 life points)	7	-	-	No	7	2	36	-	Down	Down	Impossible	Impossible	5	-	22	-	Ultra Throw (Forward)	-	-	-	-	38	-	-	-	-	-	-	-	-
+-	Ultra Throw (Forward)	HCB+HK	70(12 life points)	7	-	-	No	7	2	36	-	Down	Down	Impossible	Impossible	5	-	22	-	Ultra Throw (Roundhouse)	-	-	-	-	38	-	-	-	-	-	-	-	-

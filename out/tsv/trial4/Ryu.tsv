@@ -1,0 +1,51 @@
+description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Throw Range	Kara-Throw	Kara-Throw Range	Blocked Damage	gagueData_Move	Gauge Needed
+Comments here	Taunt	+	-	-	No	No	No	-	65	-	?	?	?	HL	HL	4(6)	?	?	8(4+4)	-	-	-	-	-	-
+Comments here	Far Jab	-	30(3 life points)	3	Yes	Yes	Yes	4	3	4	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
+Comments here	Far Strong	-	100(17 life points)	11	No	Yes	Yes	5	4	9	+4	+5	+6	HL	H	2	6	11	4	-	-	-	-	-	-
+Comments here	Far Fierce	-	130(23 life points)	13	No	No	No	11	3	18	-3	-1	+1	HL	H	3	10	19	4	-	-	-	-	-	-
+Comments here	Close Jab	(Close to opponent)	30(5 life points)	3	No	Yes	Yes	3	3	5	+3	+3	+3	HL	HL	0	1	2	4	-	-	-	-	-	-
+Comments here	Close Strong	(Close to opponent)	100(19 life points)	7	No	Yes	Yes	5	4	10	+1	+2	+3	HL	H	2	6	11	4	-	-	-	-	-	-
+Comments here	Close Fierce	(Close to opponent)	130(23 life points)	15	No	Yes	Yes	4	4	17	-4	-2	0	HL	H	3	10	19	4	-	-	-	-	-	-
+Comments here	Short	-	40(7 life points)	3	No	No	No	4	4	7	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-
+Comments here	Forward	-	90(16 life points)	9	No	No	No	6	4	15	-5	-4	-3	HL	H	2	6	11	4	-	-	-	-	-	-
+Comments here	Roundhouse	-	140(24 life points)	13	No	No	No	8	5	18	-5	-3	-1	HL	H	3	10	19	4	-	-	-	-	-	-
+Comments here	Close Forward	(Close to opponent)	110(19 life points)	11	No	Yes	Yes	4	5	11	+2	+4	+6	HL	H	2	6	11	4	-	-	-	-	-	-
+Comments here	Jump Jab	(Air)	50(60 if neutral jump)(8 life points)	7	No	No	No	4	Until landing	-	-5～+7	-5～+7	+4～+7	H	H	0	1	2	4	-	-	-	-	-	-
+Comments here	Jump Strong	(Air)	100(2 hits)(16/17 life points)	14(11 if neutral jump)	No	No	No	4(5 if neutral jump)	2(5 if neutral jump)	-	+4～+10/0～+10	+4～+10/0～+10	+10/+8～+10	H	H	2	5(6 if neutral jump)	11	4	-	-	-	-	-	-
+Comments here	Jump Fierce	(Air)	140(24 life points)	15	No	No	No	6	4	-	+3～+13	+3～+13	+10～+13	H	H	3	10	19	4	-	-	-	-	-	-
+Comments here	_Neutral Jump Fierce	(Air)	140(24 life points)	15	No	No	No	6	3	-	+6～+13	+6～+13	+12～+13	H	H	3	10	19	4	-	-	-	-	-	-
+Comments here	Jump Short	(Air)	50(8 life points)	5(7 if neutral jump)	No	No	No	4	19	-	-6～+7	-6～+7	0～+7	H	H	0	1	2	4	-	-	-	-	-	-
+Comments here	Jump Forward	(Air)	90(16 life points)	9	No	No	No	5	6	-	-2～+10	-2～+10	+6～+10	H	H	2	6	11	4	-	-	-	-	-	-
+Comments here	Neutral Jump Forward	(Air)	90(16 life points)	9	No	No	No	5	6	-	-2～+10	-2～+10	+6～+10	H	H	2	6	11	4	-	-	-	-	-	-
+Comments here	Jump Roundhouse	(Air)	120(21 life points)	13	No	No	No	6	4	-	+2～+13	+2～+13	+8～+13	H	H	3	10	19	4	-	-	-	-	-	-
+Comments here	Neutral Jump Roundhouse	(Air)	130(23 life points)	13	No	No	No	6	5	-	+2～+13	+2～+13	+10～+13	H	H	3	10	19	4	-	-	-	-	-	-
+Comments here	Universal Overhead	+	40(7 life points)	3	No	No	No	15	9	6	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	-	-	-	-	-	-
+Comments here	Seoi Nage	+	120(21 life points)	9	-	-	-	2	1	21	-	-	-	(F)+LP+LK	-	0	7 (for the player who blocked)	12(6x2)	-	24	F.MP / C.MK / C.HK	40 / 37 / 37	-	-	-
+Comments here	Tomoe Nage	++	110(19 life points)	15	-	-	-	2	1	21	-	-	-	B+LP+LK	-	0	7 (for the player who blocked)	7	-	24	F.MP / C.MK / C.HK	40 / 37 / 37	-	-	-
+Comments here	Crouch Jab	+	15(3 life points)	3	Yes	Yes	Yes	4	3	5	+3	+3	+3	HL	HL	0	1	2	4	-	-	-	-	-	-
+Comments here	Crouch Strong	+	90(16 life points)	7	No	Yes	Yes	5	4	7	+3	+4	+5	HL	HL	2	6	11	4	-	-	-	-	-	-
+Comments here	Crouch Fierce	+	130(23 life points)	13	No	Yes	Yes	5	5	19	-8	-6	-4	HL	HL	3	6	14	4	-	-	-	-	-	-
+Comments here	Crouch Short	+	20(3 life points)	3	Yes	Yes	Yes	5	3	7	+1	+1	+1	L	L	0	1	2	4	-	-	-	-	-	-
+Comments here	Crouch Forward	+	80(14 life points)	3	No	Yes	Yes	7	5	16	-3	-2	-1	L	L	2	6	11	4	-	-	-	-	-	-
+Comments here	Crouch Roundhouse	+	130(23 life points)	3	No	No	No	7	5	25	-13	Down	Down	L	L	3	10	19	4	-	-	-	-	-	-
+Comments here	Sakotsu Wari	+	100(60+40)(15 life points)	16(9+7)	No	No	No	14	1,11	9	-1	+1	+3	HL	H	2	5	11	8(4+4)	-	-	-	-	-	-
+Comments here	Kyuubi Kudaki	+	150(70+80)(24 life points)	14(7+7)	No	No	No	18	2,4	13	+2	+4	+6	HL	H	4	12	21	8(4+4)	-	-	-	-	-	-
+Comments here	Target Combo	Far standing HP -> HK	130+60	13+3	No/No	No/No	No/No	11	-	-	-9	-7	-5	HL/HL	H/H	3+?	10+1	19+1	8(4+4)	-	-	-	-	-	-
+Comments here	Hadouken	+	60(10 life points)	3	-	-	Yes	9	1	36	-9	-8	-7	HL	H	0	1	1	4	-	-	-	4	-	-
+-	Shoryuken (Jab)	+	140(100)(13 life points)	13(9)	-	-	Yes	3	11	29	-14～-24	Down	Down	HL	HL	3	15	21	4	-	-	-	18(8)	Shoryuken (Jab)	-
+-	Shoryuken (Strong)	+	155(120)(15 life points)	15(9)	-	-	Yes	3	14	34	-20～-32	Down	Down	HL	HL	3	15	21	4	-	-	-	19(8)	Shoryuken (Strong)	-
+-	Shoryuken (Strong)	+	170(130)(17 life points)	17(9)	-	-	Yes	3	14	34	-20～-32	Down	Down	HL	HL	3	15	21	4	-	-	-	8(8)	Shoryuken (Fierce)	-
+-	Tatsumaki Senpuu Kyaku (Short)	+	130(23 life points)	15	-	-	No	10	3	22	-12	Down	Down	HL	H	3	12	18	4	-	-	-	8	Tatsumaki Senpuu Kyaku (Short)	-
+-	Tatsumaki Senpuu Kyaku (Forward)	+	150(26 life points)	15	-	-	No/No/No	11・(17)・23・(29)・35	2x5	-8	Down	Down	-4	HL/HL/HL	H/H/H	6(3+3)	12(4x3)	21(17+2x2)	12(4x3)	-	-	-	9(x3)	Tatsumaki Senpuu Kyaku (Forward)	-
+-	Tatsumaki Senpuu Kyaku (Forward)	+	170(30 life points)	15	-	-	No/No/No	11・(17)・23・(29)・35	2x5	-8	Down	Down	-4	HL/HL/HL	H/H/H	6(3+3)	12(4x3)	21(17+2x2)	12(4x3)	-	-	-	11(x4)	Tatsumaki Senpuu Kyaku (Roundhouse)	-
+-	Air Tatsumaki Senpuu Kyaku (Short)	(Air) +	160*(80x4)(17 life points)	10***(5x4)	-	-	No/No	7・(13)・19・(25)・31・(37)・43・(49)	2	13	-	Down	Down	HL	H	4(2+2)	6(2+4)	10	8(4+4)	-	-	-	5**(5x4)	Air Tatsumaki Senpuu Kyaku (Short)	-
+-	Air Tatsumaki Senpuu Kyaku (Forward)	(Air) +	160*(80x6)(19 life points)	10***(5x6)	-	-	No/No	7・(13)・19・(25)・31・(37)・43・(49)	2	13	-	Down	Down	HL	H	6(2x3)	6(2+4)	12(10+2)	12(4+4+4)	-	-	-	5**(5x6)	Air Tatsumaki Senpuu Kyaku (Forward)	-
+-	Air Tatsumaki Senpuu Kyaku (Forward)	(Air) +	160*(80x8)(21 life points)	10***(5x8)	-	-	No/No	7・(13)・19・(25)・31・(37)・43・(49)	2	13	-	Down	Down	HL	H	8(2x4)	6(2+4)	14(10+2x2)	16(4x4)	-	-	-	5**(5x8)	Air Tatsumaki Senpuu Kyaku (Roundhouse)	-
+-	Joudan Sokutou Geri (Short)	+	120(21 life points)	17	-	-	No	10	3	28	-12	Down	Down	HL/HL	H/H	3	10	19	4	-	-	-	15	Joudan Sokutou Geri (Short)	-
+-	Joudan Sokutou Geri (Forward)	+	140(24 life points)	17	-	-	No	13	3	27	-11	Down	Down	HL/HL/HL/HL	H/H/H/H	3	10	19	4	-	-	-	18	Joudan Sokutou Geri (Forward)	-
+-	Joudan Sokutou Geri (Forward)	+	160(28 life points)	17	-	-	No	13	3	27	-11	Down	Down	HL/HL/HL/HL	H/H/H/H	3	10	19	4	-	-	-	20	Joudan Sokutou Geri (Roundhouse)	-
+Comments here	Hadouken (EX)	+	120(60+60)(20 life points)	6(3+3)	-	-	Yes	8	1	36	0	Down	Down	HL	H	-	-	-	8(4+4)	-	-	-	8(4+4)	Hadouken (EX)	40
+Comments here	Shoryuken (EX)	+	190(110+80)(32 life points)	14(11+3)	-	-	Yes/No	2・4	2・7	38	-30～-37	Down	Down	HLx2	HLx2	-	-	-	16(4+4+4+4)	-	-	-	19(14+5)	Hadouken (EX)	40
+Comments here	Tatsumaki Senpuu Kyaku (EX)	+	210(5 hits)(50+45+50+45+35)(35 life points)	15(3+5+3+5+3)	-	-	No	10・(14)・18・(22)・26・(31)	2x6	"11 | align=""center"" | -4"	Down	Down	"align=""center"" | HL"	H	-	-	-	-	40(4+4)	-	-	-	14(3×4+2)	Tatsumaki Senpuu Kyaku (EX)	40
+Comments here	Air Tatsumaki Senpuu Kyaku (EX)	(Air) +	185(40x6)(31 life points)	15(5+3x3)	-	-	No	6・(9)・12・(15)・18・(21)	1x6	13	-	Down	Down	HL	H	-	-	-	24(4x6)	-	-	-	15(3x6)	Air Tatsumaki Senpuu Kyaku (EX)	40
+Comments here	Joudan Sokutou Geri (EX)	+	120(21 life points)	7	-	-	No	13	4	27	-12	Down	Down	HL	H	-	-	-	4	-	-	-	15	Joudan Sokutou Geri (EX)	40

@@ -11,7 +11,7 @@ for (const character of characters) {
     parseOldSRKFrameData(character, oldFileData)
         .then((data) => {
             // console.log(data)
-            writeJsonToTsv(data, `out/tsv/trial3/${character}.tsv`)
+            writeJsonToTsv(data, `out/tsv/trial4/${character}.tsv`)
         })
         .catch(err => console.log(err))
 }

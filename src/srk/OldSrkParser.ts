@@ -12,6 +12,7 @@ export class OldSrkParser {
     public currentGaugeData?: cheerio.Element
 
     public currentTable?: cheerio.Element
+    public currentDescription?: string
 
     constructor(characterName: string, htmlString: string) {
         this.characterName = characterName
@@ -29,33 +30,36 @@ export class OldSrkParser {
         // We want groups of [8, 8, 4]
         const tables = this.$("table")
         // console.log(tables.length)
+        let just2Rows = false
         tables.each((_index, table) => {
             this.currentTable = table
             const rows = this.$(table).find("tbody > tr")
-            if (rows.length != 2) { 
-                return
-            }
-            const followingParagraph = this.$(table).next("p")
+            const followingParagraph = this.followingParagraphData()
             // console.log(followingParagraph.length)
-            if (followingParagraph.length === 1) {
-                const nextBoldText   = this.$(followingParagraph).find("b").text()
-                const nextItalicText = this.$(followingParagraph).find("i").text()
+            if (followingParagraph.pLengthIsOne) {
                 if (this.haveNone()) {
-                    if (nextBoldText == "Frame Data") { 
-                        this.currentMoveData  = table 
+                    if (followingParagraph.nextBoldText == "Frame Data") { 
+                        this.currentMoveData = table 
                         return
                     }
                 }
                 if (this.haveFirst1()) {
-                    if (nextBoldText == "Gauge Increase") { 
+                    if (followingParagraph.nextBoldText == "Gauge Increase") { 
                         this.currentFrameData = table 
                         return
                     }
                 }
                 if (this.haveFirst2()) {
-                    if (nextItalicText == "Comments here") { 
+                    if (followingParagraph.nextItalicText == "Comments here" || followingParagraph.paragraphText != null) { 
                         this.currentGaugeData = table 
-                        this.parseCurrentData()
+                        if (rows.length == 2) {
+                            this.parseCurrentData(followingParagraph.paragraphText)
+                        } else if (rows.length == 4) {
+                            this.parseCurrentSpecialData(followingParagraph.paragraphText)
+                        } else {
+                            this.setAllNull()
+                            return
+                        }
                     }
                 }
             }
@@ -64,45 +68,110 @@ export class OldSrkParser {
         return true
     }
 
-    private parseCurrentData(): void {
+    private parseCurrentSpecialData(description: string): void {
         let rows
         let headers
         let values
         let frameData = { }
+        let move1 = { }
+        let move2 = { }
+        let move3 = { }
+
+        // =====================================================================
+        // Move Data
+        // =====================================================================
 
         rows = this.$(this.currentMoveData).find("tbody > tr")
-        // if (rows.length != 2) { 
-        //     console.error("uh oh")
-        //     process.exit(1)
-        // }
-        headers = this.$(rows[0]).find("td").map((index, element) => this.$(element).text().trim())
-        values  = this.$(rows[1]).find("td").map((index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) {
-            let key   = headers[i]
-            let value = values[i]
-            frameData[key] = value
+        if (rows.length != 4) { 
+            console.error(`incorrect # of rows, have '${rows.length}', expected 4`)
+            return
         }
+        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
+
+        values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move1[headers[i]] = values[i] }
+
+        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move2[headers[i]] = values[i] }
+
+        values = this.$(rows[3]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move3[headers[i]] = values[i] }
+
+        // =====================================================================
+        // Frame Data
+        // =====================================================================
 
         rows = this.$(this.currentFrameData).find("tbody > tr")
-        // if (rows.length != 2) { 
-        //     console.error("uh oh")
-        //     process.exit(1)
-        // }
-        headers = this.$(rows[0]).find("td").map((index, element) => this.$(element).text().trim())
-        values  = this.$(rows[1]).find("td").map((index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) {
-            let key   = headers[i]
-            let value = values[i]
-            frameData[key] = value
-        }
+        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
+
+        values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move1[headers[i]] = values[i] }
+        
+        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move2[headers[i]] = values[i] }
+
+        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move3[headers[i]] = values[i] }
+
+        // =====================================================================
+        // Gauge Data
+        // =====================================================================
 
         rows = this.$(this.currentGaugeData).find("tbody > tr")
-        // if (rows.length != 2) { 
-        //     console.error("uh oh")
-        //     process.exit(1)
-        // }
-        headers = this.$(rows[0]).find("td").map((index, element) => this.$(element).text().trim())
-        values  = this.$(rows[1]).find("td").map((index, element) => this.$(element).text().trim())
+        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
+
+        values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move1[`gagueData_${headers[i]}`] = values[i] }
+
+        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move2[`gagueData_${headers[i]}`] = values[i] }
+
+        values = this.$(rows[3]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) { move3[`gagueData_${headers[i]}`] = values[i] }
+
+        this.allFrameData.push(move1, move2, move3)
+        this.setAllNull()
+    }
+
+    private parseCurrentData(description: string): void {
+        let rows
+        let headers
+        let values
+        let frameData = { description }
+
+        // =====================================================================
+        // Move Data
+        // =====================================================================
+
+        rows = this.$(this.currentMoveData).find("tbody > tr")
+        if (rows.length != 2) { 
+            console.error(`incorrect # of rows, have '${rows.length}', expected 2`)
+            return
+        }
+        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
+        values  = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) {
+            frameData[headers[i]] = values[i]
+        }
+
+        // =====================================================================
+        // Frame Data
+        // =====================================================================
+
+        rows = this.$(this.currentFrameData).find("tbody > tr")
+        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
+        values  = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
+        for (let i = 0; i < values.length; i++) {
+            frameData[headers[i]] = values[i]
+        }
+
+        // =====================================================================
+        // Gauge Data
+        // =====================================================================
+
+        rows = this.$(this.currentGaugeData).find("tbody > tr")
+        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
+        values  = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
         for (let i = 0; i < values.length; i++) {
             let key   = headers[i]
             let value = values[i]
@@ -113,9 +182,16 @@ export class OldSrkParser {
         this.setAllNull()
     }
 
-    private followingParagraph(): cheerio.Cheerio {
+    private followingParagraphData(): NextParagraphData {
         const p = this.$(this.currentTable).next("p")
-        return p
+        const nextBoldText   = this.$(p).find("b").text()
+        const nextItalicText = this.$(p).find("i").text()
+        return new NextParagraphData({
+            paragraphText: p.text()?.trim(),
+            nextBoldText,
+            nextItalicText,
+            pLengthIsOne: (p.length === 1),
+        })
     }
 
     private haveFirst1(): boolean {
@@ -146,10 +222,25 @@ export class OldSrkParser {
     }
 }
 
+export interface NextParagraphDataOptions {
+    paragraphText: string
+    nextBoldText: string
+    nextItalicText: string
+    pLengthIsOne: boolean
+}
+
 export class NextParagraphData {
     public paragraphText?: string
     public nextBoldText?: string
     public nextItalicText?: string
+    public pLengthIsOne?: boolean
+
+    constructor(options: NextParagraphDataOptions) {
+        this.paragraphText  = options.paragraphText
+        this.nextBoldText   = options.nextBoldText
+        this.nextItalicText = options.nextItalicText
+        this.pLengthIsOne   = options.pLengthIsOne
+    }
 
     public boldOrItalic(): boolean {
         return this.nextBoldText  == null && this.nextItalicText == null
