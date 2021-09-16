@@ -1,0 +1,41 @@
+Name	startup_frames	active_frames	whiff_recovery_frames	hit_frame_advantage	crouching_hit_frame_advantage	damage	stun_damage	guard_type	parry	block_frame_advantage
+Stand LP	3	2	6	4	4	3	3	-	A	4
+Close MP	4	3	7	7	8	9	5	-	H	6
+Far MP	5	4	12	-1	-	8	5	-	H	-2
+Close HP	5	6	13	-1	-	16	13	-	H	-2
+Far HP	9	6	21	-3	-1	21	15	-	H	-5
+Stand LK	3	3	6	2	2	5	3	-	A	2
+Close MK	7	5	15	D	D	14	9	-	H	-2
+Far MK	9	3	15	-3	-2	14	9	-	H	-4
+Stand HK	14	3	22	-6	-4	17	11	-	H	-8
+Senpuukyaku	19	6	8	-	1	14	11	-	H	-1
+Crouch LP	3	2	6	4	4	3	3	-	A	4
+Crouch MP	5	2	11	3	4	12	5	-	L	2
+Crouch HP	8	10	12	1	2	17	7	-	A	-
+Crouch LK	4	1	8	2	2	5	3	-	L	2
+Crouch MK	7	2	13	-	1	8	3	-	L	-1
+Crouch HK	10	3	20	D	D	16	3	-	L	-7
+Jump LP	2	-	-	-	-	7	7	-	H	-
+Jump MP (Neutral)	3	7	-	-	-	14	11	-	H	-
+Jump MP	3	6	-	-	-	14	9	-	H	-
+Jump HP (Neutral)	8	5	-	-	-	21	15	-	H	-
+Jump HP	5	4	-	-	-	17	13	-	H	-
+Jump LK	4	12	-	-	-	7	5	-	H	-
+Jump MK (Neutral)	6	7	27	-2	-	12	9	-	H	-2
+Jump MK	6	7	-	-	-	12	9	-	H	-
+Jump HK	5	5	-	-	-	19	13	-	H	-
+Raigeki Shuu	6	-	-	-	-	12	7	-	H	-
+Hizageri	2	1	21	D	D	27	17	-	-	-
+Monkey Flip	2	1	21	D	D	21	8	-	-	-
+Youhon Shiun	2	1	21	D	D	21	10	-	-	-
+Toukuu Koushu	15	10	5	-	-	7	3	-	H	-
+Kami Kakiage	21	10	27	-15	-	1	-	-	A	-16
+Tourou Zan	8	5	22	-	-	5	5	-	H	-1
+Senkyuutai	8	8	34	-	-	22	11	-	A	-35
+Byakko Soushouda	21	13	10	-	-	26	21	-	H	-3
+Byakko Soushouda (Fake)	-	-	-	-	-	-	-	-	-	-
+Kaihou	11	5	13	-	-	-	-	-	-	-
+Zenpou Tenshin	7	2	26	-	-	-	-	-	-	-
+Raishin Mahhaken	7	4	36	-	-	74	-	-	H	1
+Tenshin Senkyuutai	1	59	57	-	-	53	12	-	A	-69
+Sei-ei Enbu	16	-	-	-	-	-	-	-	-	-

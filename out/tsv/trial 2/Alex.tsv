@@ -1,0 +1,42 @@
+Name	startup_frames	active_frames	whiff_recovery_frames	hit_frame_advantage	crouching_hit_frame_advantage	damage	stun_damage	guard_type	parry	block_frame_advantage
+Close LP	4	2	9	1	1	5	5	-	H+L	1
+Far LP	4	2	8	1	1	5	5	-	H+L	1
+Stand MP	4	3	12	-	1	17	11	-	H	-1
+Stand HP	14	4	16	1	3	25	19	-	H	-1
+Stand LK	5	3	10	-	-	7	3	-	H+L	-
+Close MK	5	3	12	1	2	18	9	-	H	-
+Far MK	11	3	14	-	1	17	9	-	H	-1
+Stand HK	16	5	29	-	2	26	21	-	H	-13
+High Chop	7	5	10	-	-	19	9	-	H	-2
+Lariat	9	4	17	-	-	24	15	-	H	-1
+Headbutt	8	4	23	-	-	32	23	-	H	-11
+Sleeper Hold	8	4	23	4	-	40	24	-	-	-11
+Crouch LP	4	2	9	1	1	5	5	-	H+L	1
+Crouch MP	7	2	13	1	2	16	7	-	H+L	-
+Crouch HP	13	5	22	D	D	23	7	-	H+L	-9
+Crouch LK	5	2	8	2	2	5	3	-	L	2
+Crouch MK	8	3	12	-	1	12	3	-	L	-1
+Crouch HK	11	2	29	D	D	23	3	-	L	-15
+Jump LP	4	12	-	-	-	7	5	-	H	-
+Jump MP	5	3	-	-	-	14	13	-	H	-
+Jump HP	8	3	-	-	-	24	15	-	H	-
+Jump LK	4	-	-	-	-	10	7	-	H	-
+Jump MK	9	3	-	-	-	16	11	-	H	-
+Jump HK	8	4	-	-	-	21	15	-	H	-
+Flying Cross Chop	10	11	26	-	-	21	11	-	H	-
+Crouch LK -> Crouch MK (TC)	8	3	12	-	1	12	3	-	L	-1
+Crouch LK -> Crouch HK (TC)	11	2	29	D	D	23	3	-	L	-15
+Body Slam	2	1	21	-	-	24	16	-	-	-
+Flying Knee	15	10	5	0~+8	1~9	7	3	-	H	-5~7
+Arm Spin	64	-	-	-	-	-	-	-	-	-
+Flash Chop	11	2	17	-	-	21	7	-	H	-2
+Power Bomb	6	2	35	-	-	28	18	-	-	-
+Back Drop	6	2	35	-	-	32	20	-	-	-
+Air Knee Smash	6	6	35	-	-	21	14	-	H	-
+Air Stampede	23	2	24	-	-	21	11	-	H	-3
+Slash Elbow	15	1	17	-	-	17	13	-	H	-2
+Spiral D.D.T.	20	3	15	-	-	28	14	-	-	-
+Hyper Bomb	2	2	33	-	-	88	18	-	-	-
+Reverse Hyper Bomb	2	2	33	-	-	99	26	-	-	-
+Boomerang Raid	1	14	41	-	-	59	20	-	H	-
+Stun Gun Headbutt	25	3	17	-	-	31	57	-	-	-

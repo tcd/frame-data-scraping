@@ -1,0 +1,36 @@
+Name	startup_frames	active_frames	whiff_recovery_frames	hit_frame_advantage	crouching_hit_frame_advantage	damage	stun_damage	guard_type	parry	block_frame_advantage
+Stand LP	3	3	7	1	1	5	3	-	A	1
+Close MP	6	4	12	-1	-	12	11	-	H	-2
+Far MP	9	4	13	-1	-	11	9	-	H	-2
+Stand HP	12	4	17	-1	1	19	15	-	H	-3
+Stand LK	3	2	10	-1	-1	7	3	-	A	-1
+Stand MK	6	6	13	-1	-	12	11	-	A	-4
+Stand HK	17	3	25	-1	1	17	13	-	H	-11
+B.M.K.	5	5	14	-1	-	14	11	-	A	-2
+Crouch LP	3	2	5	4	4	5	3	-	A	4
+Crouch MP	5	2	10	4	5	9	7	-	A	-2
+Crouch HP	10	7	18	-1	1	18	9	-	A	-8
+Crouch LK	3	4	8	1	1	7	3	-	L	1
+Crouch MK	8	2	14	-1	-	10	3	-	L	-2
+Crouch HK	13	6	25	D	D	16	3	-	L	-11
+Jump LP (Neutral)	3	13	-	-	-	5	7	-	H	-
+Jump LP	4	14	-	-	-	7	7	-	H	-
+Jump MP	5	11	-	-	-	14	11	-	H	-
+Jump HP	12	2	-	-	-	17	15	-	H	-
+Jump LK	2	20	-	-	-	7	5	-	H	-
+Jump MK	9	4	-	-	-	12	9	-	H	-
+Jump HK	14	6	-	-	-	21	13	-	H	-
+Air Glide	-	-	-	-	-	-	-	-	-	-
+H.U.G.	2	1	21	D	D	15	22	-	-	-
+F.L.G.	2	1	21	D	D	21	10	-	-	-
+T.R.W.	2	1	21	D	D	21	10	-	-	-
+J.S.P.	15	10	5	-	-	7	3	-	H	-
+Transparency	-	-	-	-	-	-	-	-	-	-
+N.D.L.	15	11	14	-	-	10	3	-	A	-5
+A.X.E.	6	11	15	-	-	10	7	-	H	-5
+Air A.X.E.	9	10	-	-	-	13	9	-	H	-
+D.R.A.	14	14	20	-	-	19	5	-	H	-14
+X.N.D.L.	3	76	35	-	-	57	14	-	A	-29
+X.F.L.A.T.	2	12	49	-	-	74	25	-	H	-24
+X.C.O.P.Y.	13	-	-	-	-	-	-	-	-	-
+X.C.O.P.Y. End	73	-	-	-	-	-	-	-	-	-

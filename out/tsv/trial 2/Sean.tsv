@@ -1,0 +1,42 @@
+Name	startup_frames	active_frames	whiff_recovery_frames	hit_frame_advantage	crouching_hit_frame_advantage	damage	stun_damage	guard_type	parry	block_frame_advantage
+Stand LP	3	2	5	5	5	3	3	-	A	5
+Close MP	4	5	10	1	2	16	9	-	H	-
+Far MP	5	4	13	1	2	14	11	-	H	-
+Close HP	5	5	15	-2	-	21	13	-	H	-4
+Far HP	9	4	19	-5	-3	21	10	-	H	-7
+Stand LK	4	4	7	2	2	5	3	-	A	2
+Stand MK	6	4	15	-1	-	16	5	-	A	-2
+Close HK	5	5	10	4	6	25	11	-	H	2
+Far HK	7	4	26	-7	-5	21	11	-	H	-9
+Sean Pachiki	21	7	25	-4	-2	22	13	-	H	-6
+Rolling Sobat	15	5	18	D	D	16	9	-	H	-5
+Crouch LP	4	3	5	3	3	3	3	-	A	3
+Crouch MP	5	4	7	4	5	14	7	-	A	3
+Crouch HP	7	5	17	-7	-5	21	13	-	A	-9
+Crouch LK	5	3	7	1	1	3	3	-	L	1
+Crouch MK	7	5	17	-2	-2	15	3	-	L	-4
+Crouch HK	8	5	26	D	D	21	3	-	L	-16
+Jump LP (Neutral)	5	-	-	-	-	7	7	-	H	-
+Jump LP	4	-	-	-	-	8	7	-	H	-
+Jump MP (Neutral)	6	5	-	-	-	16	11	-	H	-
+Jump MP	5	5	-	-	-	16	9	-	H	-
+Jump HP (Neutral)	7	3	-	-	-	23	15	-	H	-
+Jump HP	6	4	-	-	-	23	13	-	H	-
+Jump LK (Neutral)	5	19	-	-	-	8	7	-	H	-
+Jump LK	4	10	-	-	-	8	5	-	H	-
+Jump MK (Neutral)	5	6	-	-	-	16	9	-	H	-
+Jump MK	5	6	-	-	-	16	9	-	H	-
+Jump HK (Neutral)	7	5	-	-	-	23	13	-	H	-
+Jump HK	6	4	-	-	-	19	13	-	H	-
+Seoi Nage	2	1	21	D	D	21	10	-	-	-
+Tomoe Nage	2	1	21	D	D	24	4	-	-	-
+Straight Hit	15	8	7	-	-	7	3	-	H	-
+Ball Throw	31	-	19	-	-	1	-	-	H	-
+Sean Roll	2	19	7	-	-	-	-	-	-	-
+Ryuubi Kyaku	25	8	15	-	-	21	19	-	H	-3
+Tornado Kick	11	4	21	-	-	16	9	-	H	-7
+Sean Tackle	18	2	28	-	-	30	16	-	L	-14
+Dragon Smash	5	6	36	-	-	23	11	-	A	-24
+Hadou Burst	2	-	61	-	-	39	9	-	H	-29
+Shoryuu Cannon	1	36	36	-	-	38	-	-	A	-43
+Hyper Tornado	2	14	53	-	-	76	14	-	A	-31

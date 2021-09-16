@@ -1,0 +1,33 @@
+Name	startup_frames	active_frames	whiff_recovery_frames	hit_frame_advantage	crouching_hit_frame_advantage	damage	stun_damage	guard_type	parry	block_frame_advantage
+Stand LP	4	2	6	3	3	3	3	-	A	3
+Stand MP	5	5	10	1	2	14	9	-	H	-
+Stand HP	10	4	15	-1	1	23	15	-	H	-3
+Stand LK	5	2	7	2	2	5	3	-	A	2
+Stand MK	8	2	15	-3	-2	14	9	-	H	-4
+Stand HK	17	6	20	-5	-3	16	9	-	H	-7
+Quarrel Upper	9	2	14	-2	-	14	9	-	H	-3
+Terrible Smash	14	1	21	-4	-2	21	3	-	H	-6
+Quarrel Kick	16	3	12	-1	-	16	9	-	H	-2
+Crouch LP	4	2	7	1	1	3	3	-	A	1
+Crouch MP	11	4	15	-1	-	10	3	-	A	-2
+Crouch HP	9	2	25	D	D	18	9	-	A	-10
+Crouch LK	5	1	9	1	1	3	3	-	L	1
+Crouch MK	7	3	11	1	2	12	3	-	L	-
+Crouch HK	12	3	21	D	D	17	3	-	L	-13
+Jump LP	4	-	-	-	-	8	7	-	H	-
+Jump MP	6	4	-	-	-	16	9	-	H	-
+Jump HP	7	3	-	-	-	23	11	-	H	-
+Jump LK	4	10	-	-	-	8	7	-	H	-
+Jump MK	6	4	-	-	-	16	9	-	H	-
+Jump HK	10	3	-	-	-	23	11	-	H	-
+Destroy Claw	2	1	21	D	D	15	22	-	-	-
+Spartan Bomb	2	1	21	D	D	24	8	-	-	-
+Elbow Strike	15	10	5	-	-	7	3	-	H	-
+Ground Pound	21	3	31	-	-	1	-	-	L	-
+Metallic Sphere	14	-	39	-	-	12	3	-	H	-8
+Violence Knee Drop	24	12	7	-	-	19	11	-	H	-16
+Chariot Tackle	7	10	25	-	-	21	7	-	H	-10
+Headbutt	7	2	19	-	-	21	13	-	H	-5
+Tyrant Punish	1	55	23	-	-	69	-	-	-	-18
+Temporal Thunder	1	75	91	-	-	48	33	-	-	-36
+Aegis Reflector	-	-	12	-	-	23	-	-	A	65
