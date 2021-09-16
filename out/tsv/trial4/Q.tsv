@@ -1,151 +1,31 @@
 description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Throw Range	Kara-Throw	Kara-Throw Range	Blocked Damage	gagueData_Move	Gauge Needed
-"This is a decent semi-poke and situational anti-air. It comes out pretty fast and has
-								decent range, but its recovery isn't as good as it could be and it can be ducked by most
-								characters. It's most often used to tick into C&DB, to keep certain opponents from
-								dashing in, and to anti-air empty jumps. It can be parried high and low, even by
-								characters whose down parries make them crouch under the actual jab."	Far Jab	-	30(5 life points)	3	No	No	No	6	4	4	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
-"This move has great range, is safe on block, and actually recovers better if whiffed than
-								you'd think. While it's mainly used in C&DB corner resets and to give Q his second-best
-								kara throwing distance, it can also serve as a poke and anti-air, although it's not too
-								useful as a poke against most characters because it can be ducked by most and stood
-								under by lots. It must be parried high."	Strong	-	90(16 life points)	9	No	No	No	12	5	19	-2	0	+2	HL	H	2	3	7	4	-	-	-	-	-	-
-"This move knocks the opponent down for most of its many active hit frames, but at the
-								very end it works as a reset if the opponent is in the air or as just a regular hit if
-								the opponent is on the ground. It can be used as a poke against tall characters and more
-								rarely as a situational anti-air. It's safe when done from max range, beats most
-								high-level pokes, and has an active hitbox that stays up for a long time, but characters
-								who can duck it can punish it easily. This move can be used to end a C&DB or SAII
-								juggle, although there are better options. It has to be parried high."	Fierce	-	130(120)(23 life points)	15(13)	No	No	No	18	16	23	-23	Down	Down	HL	H	3	5	13	4	-	-	-	-	-	-
-"This comes out and recovers faster than far standing jab and can be canceled into all of
-								Q's command moves, although it only combos into EX Slaps and super. Its main uses are as
-								a tick and as an anti-air against empty jumps and opponents who jump right in front of
-								you. It can be parried high or low."	Close Jab	(Close to opponent)	35(6 life points)	3	No	Yes	Yes	4	4	6	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-
-"This is a nice little poke that comes out and recovers very quickly and is great at
-								keeping the opponent out. It's also used to tick into kara throw or C&DB. It can be
-								parried high or low."	Short	-	40(7 life points)	3	No	No	No	4	4	8	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-
-"This is an excellent poke that should be used often. It beats lots of stuff, has good
-								range, is safe on block, can't be ducked, and is even a decent meaty attack. It must be
-								parried high."	Far Forward	-	110(19 life points)	7	No	No	No	8	5	14	-1	+1	+3	HL	H	2	3	7	4	-	-	-	-	-	-
-"This is safe on block (except against a reversal Chun SA2) and beats just about any
-								non-invincible attack, but if whiffed or parried it's completely unsafe. It can be used
-								for keep-out and spacing, as a meaty attack if you think the opponent will dash back,
-								and in anticipation of a poke from an opponent who can't hurt you much if you miss. That
-								said, however, its main use is as a C&DB combo finisher. It has to be parried high."	Roundhouse	-	150(23 life points)	9	No	No	No	20	5	28	-12	-10	-8	HL	H	3	5	13	4	-	-	-	-	-	-
-"This is also a very important move because it's Q's only (only.) cancelable ground normal
-								that combos into all his comboable specials and supers. It can also be used as a tick
-								into kara throw and an occasional meaty attack; although it can't beat many wakeup
-								attacks, using it to combo into super as the opponent is waking up is an important way
-								to get damage and force the opponent to stay still on wakeup. It can only be parried
-								high."	Close Forward	(Close to opponent)	100(17 life points)	3	No	Yes	Yes	7	2	18	-2	0	+2	HL	H	2	3	7	4	-	-	-	-	-	-
-"The claw! This move comes out quickly, lasts almost the whole jump, and has great
-								priority. It can be used to beat most air and even antiair attacks, to retaliate with
-								after an air-to-air parry when the opponent is in front of or above you, and to fake an
-								empty jump by attacking at the last second. It has to be parried high."	Jump Jab	(Air)	40(7 life points)	7	No	No	No	2	Until landing	-	-8～+7	-8～+7	+2～+7	H	H	0	1	2	4	-	-	-	-	-	-
-"This comes out almost immediately, has great priority, and lasts the whole jump, so it's
-								useful as an air-to-air antiair. It must be parried high."	Neutral Jump Jab	(Air)	40(7 life points)	7	No	No	No	2	Until landing	-	+2～+7	+2～+7	+7	H	H	0	1	2	4	-	-	-	-	-	-
-"This is good against characters that jump higher than you or are tall enough to get hit
-								by it when standing, but it's rarely used because Q's other jumping attacks are usually
-								better options. It has to be parried high."	Jump Strong	(Air)	100(17 life points)	11	No	No	No	7	6	-	+4～+10/+5～+10	+4～+10/+5～+10	+9～+10	H	H	2	3	7	4	-	-	-	-	-	-
-"This is a great air move that should be used often. It's good for starting combos and
-								beating or trading with air attacks and anti-airs, including some moves like Dragon
-								Punches and Headbutts. It can set up a taunt if it knocks the opponent out of the air
-								and can also serve as a tick into C&DB. It must be parried high."	Jump Fierce	(Air)	130(23 life points)	15	No	No	No	10	8	-	0～+13	0～+13	+9～+13	H	H	3	5	13	4	-	-	-	-	-	-
-"This is much like jumping toward jab in that it comes out as fast, lasts as long, and has
-								as good priority, but because its hitbox is lower it's better for attacking an airborne
-								opponent who is lower in the air than you are. It's good at beating air attacks and some
-								anti-airs, faking an empty jump, and ticking into karathrow. It must be parried high."	Jump Short	(Air)	40(7 life points)	7	No	No	No	4	Until landing	-	-7～+7/-8～+7	-7～+7/-8～+7	0～+7	H	H	0	1	2	4	-	-	-	-	-	-
-"This is a great move, one of the air moves you should use the most. It has great range,
-								beats lots of stuff, is a useful defensive poke, and is a good spacer. It must be
-								parried high."	Jump Forward	(Air)	90(16 life points)	9	No	No	No	9	8	-	-3～+10/-5～+10	-3～+10/-5～+10	+6～+10	H	H	2	3	7	4	-	-	-	-	-	-
-"This is another excellent move. It stuffs a lot of things and trades with many of the
-								rest, even some that have invincibility frames because its oddly-shaped hitbox sometimes
-								hits the opponent in an area where he doesn't have invincibility. It's Q's only jumping
-								attack that knocks the opponent down out of the air instead of resetting them and has
-								deceptively good range and hit stun. It can be used to zone the opponent out, whiff a
-								jump-in to throw, and start Q's most damaging combos, and it also makes a useful tick
-								and meaty attack. If you do it so that it hits as late as possible, like around the
-								level of the opponent's feet, it can't be punished if it gets parried. It has to be
-								parried high."	Jump Roundhouse	(Air)	145(130)(25 life points)	13(11)	No	No	No	17	3	-	+3～+13	+3～+13	+7～+13	H	H	3	5	13	4	-	-	-	-	-	-
-"Q's UOH is slower and floatier than that of most characters, but it also has better
-								range. It's a decent poke and can be used to link into super if it's done at max range
-								or as a deep meaty. If you do it as a deep meaty, you can also link into close standing
-								forward, standing short, and crouching jab. You can also use this for tricky ground
-								crossovers when the opponent is waking up. Other than overhead dash punch, this is Q's
-								only overhead attack, so make sure you use it. It has to be parried high."	Universal Overhead	+	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	-	-	-	-	-	-
-"This does less damage than the toward or back throw but also does more stun, so if the
-								opponent is just about to get stunned, use this. It leaves the opponent right next to Q,
-								which is good if you don't need a taunt or want to play close to the opponent. The
-								regular range is longer than many characters' normal throws, but unless you're trying to
-								tech a throw or otherwise need a throw to come out as soon as possible, you should use
-								the kara throw (same thing with the toward/back throws)."	Hokaku Oyobi Shippu o Mochi ta Tsuuda	+	110(19 life points)	17	-	-	-	2	1	21	-	-	-	+	-	0	7 (for the player who blocked)	7	-	24	-	-	-	-	-
-"One version throws the opponent a bit ahead of Q and the other a bit behind, but they
-								both do the same damage and stun and even have the same animation. They do more damage
-								than the neutral throw and leave the opponent farther away, but they also do less stun.
-								Use one of these if you want to do more damage, set up taunts in some situations, or
-								have the opponent some distance away from you. It seems to me that the toward/back throw
-								also has more range than the neutral throw, but unfortunately I can't find any data to
-								make sure."	Hokaku Oyobi Touteki ni yoru Daraku Shougeki	++ or ++	140(24 life points)	13	-	-	-	2	1	21	-	-	-	+	-	0	7 (for the player who blocked)	7	-	24	B+MP/MP	58/49	-	-	-
-"This is a quick little ranged poke that's great for keeping the opponent out and beating
-								slower attacks, so it should be used often. It can be parried both high and low."	Crouch Jab	+	20(3 life points)	3	No	No	No	5	4	4	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
-"This is a decent poke and antiair that's safe on block and can recover in time if parried
-								by a jumping opponent when you're more underneath than in front of him. It can be used
-								up close to tick into karathrow or to preemptively stuff an opponent's wakeup attack or
-								jump. Its main drawback is that it can be parried high and low, which makes it less
-								useful as a meaty attack since the opponent can't guess wrong on a parry."	Crouch Strong	+	90(16 life points)	9	No	No	No	8	5	13	-2	-1	0	HL	HL	2	3	7	4	-	-	-	-	-	-
-"This is a good meaty that is safe on block and stuffs or trades with most non-invincible
-								wakeup attacks, although its startup is a little slow. Its range extends above and
-								beyond Q's fist, so it can also be used to stuff long-range low attacks, but that's
-								kinda risky because of its long startup and recovery if whiffed. It has to be blocked
-								and parried low."	Crouch Fierce	+	120(21 life points)	5	No	No	No	14	1	20	-3	-1	+1	L	L	3	5	13	4	-	-	-	-	-	-
-"This is a decent poke that can also work as a meaty attack and a tick into karathrow. Its
-								startup is a little slower than crouching Jab and it doesn't beat as many things, but it
-								does have slightly longer range so it's better for opponents who are farther out. If
-								done at max range, it can stuff moves like Ibuki's EX Dragon Punch. It must be blocked
-								and parried low."	Crouch Short	+	20(3 life points)	3	No	No	No	6	5	8	-2	-2	-2	L	L	0	1	2	4	-	-	-	-	-	-
-"This is a good poke that does more damage than crouching Short but is a little slower to
-								come out. It has good range, beats lots of attacks, and makes a great tick into
-								karathrow. It's also Q's best meter-building attack. It has to be blocked and parried
-								low."	Crouch Forward	+	80(14 life points)	3	No	No	No	7	3	14	-3	-2	-1	L	L	2	3	7	4	-	-	-	-	-	-
-"This move knocks down on hit, has good range, and is pure active hit frames at Q's feet,
-								but if blocked or parried it can be punished by anything. It's a fairly good poke
-								against some characters, a pretty good situational antiair, and a decent way to
-								capitalize on parries when the opponent is at max range. It's also useful as a meaty
-								because it beats everything except moves with invincible startup frames, like some
-								supers and Dragon Punches. This move has to be blocked and parried low."	Crouch Roundhouse	+	130(23 life points)	3	No	No	No	12	8	33	-25	Down	Down	L	L	3	5	13	4	-	-	-	-	-	-
-"This is very useful as a poke and antiair and gives Q his best kara throw range, so it's
-								used a lot. It makes Q move up a bit, and the punch actually extends over and a little
-								behind Q's head, so you can hit people who are over and a little behind you. It's safe
-								on block and has good range, so it's good for a poke and for making sure the opponent
-								doesn't jump when you have him cornered. Plus, if you use it as an antiair and time it
-								just right, you can recover in time before you can be hit or thrown. This move also
-								gives Q his best distance for kara throwing, although it throws the opponent behind you
-								unless you have crazy enough timing to only press back for the punch and not for the
-								throw. It must be parried high, although it can be difficult to parry for an opponent
-								jumping right over you because the opponent sometimes has to parry what looks like
-								behind himself."	Toubu ni yaru Jouhou Kougeki (Kari)	+	100(17 life points)	13	No	No	No	8	4	18	-2	0	0	HL	H	2	3	7	4	-	-	-	-	-	-
-"This is a good poke and antiair that's best against opponents who are either tall enough
-								to get hit by it when crouching, like Dudley, Urien, Hugo, Alex, and Q, or whose air
-								attacks are susceptible to this move's weird hitbox, like Twelve, Urien, Makoto, and
-								Dudley, but it's good against anyone if the opponent is using a high poke or standing
-								up. It's safe on block, beats out lots of attacks, and is usually even safe if parried
-								by a jumping opponent if it moves Q under the opponent and past his attacks. It's also
-								very important as a reset in C&DB corner juggles. It has to be parried high."	Ryouude ni yaru Zenshin Tsuugeki (Kari)	+	120(100)(21 life points)	15(13)	No	No	No	13	11	15	-1	+1	+3	HL	H	3	5	13	4	-	-	-	-	-	-
-"This move is almost great, but just a little too risky. If it touches the opponent early,
-								it has great range and priority, must be blocked low, knocks down on hit, and can be
-								canceled but not comboed into all of Q's command moves; if it touches the opponent later
-								in its animation, it can be blocked high, doesn't knock down, and can't be canceled.
-								There are three uses for this thing. The main use is as a meaty attack; if you do close
-								back + roundhouse xx slaps or dash punch and the opponent doesn't parry, he'll either
-								get knocked down by back + roundhouse or take some block damage from the specials. It
-								can also be used to beat low pokes, since the early part of its animation eats up every
-								low move in the game. The third use is as a preemptive antiair, for when you think the
-								opponent might jump back on wakeup and you're a little distance away. One problem, apart
-								from the fact that it doesn't combo, is that this move cancels into other moves fairly
-								slowly, meaning that if you do it too close when the opponent is waking up and try to
-								cancel into slaps, you could get thrown; the solution is to take advantage of the move's
-								range and do it from further away. It also has huge recovery time if uncanceled or
-								whiffed, so make sure that that only happens when it's successfully used as a preemptive
-								antiair. It can be parried both high and low at any stage of its animation."	Ryouude ni yaru Zenshin Tsuugeki (Kari)	+	140(130)(24 life points)	3(15)	No	Yes	Yes	11	7	35	-26	Down	Down	HL	HL	3	5	13	4	-	-	-	-	-	-
+"This is a decent semi-poke and situational anti-air. It comes out pretty fast and has decent range, but its recovery isn't as good as it could be and it can be ducked by most characters. It's most often used to tick into C&DB, to keep certain opponents from dashing in, and to anti-air empty jumps. It can be parried high and low, even by characters whose down parries make them crouch under the actual jab."	Far Jab	-	30(5 life points)	3	No	No	No	6	4	4	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
+"This move has great range, is safe on block, and actually recovers better if whiffed than you'd think. While it's mainly used in C&DB corner resets and to give Q his second-best kara throwing distance, it can also serve as a poke and anti-air, although it's not too useful as a poke against most characters because it can be ducked by most and stood under by lots. It must be parried high."	Strong	-	90(16 life points)	9	No	No	No	12	5	19	-2	0	+2	HL	H	2	3	7	4	-	-	-	-	-	-
+"This move knocks the opponent down for most of its many active hit frames, but at the very end it works as a reset if the opponent is in the air or as just a regular hit if the opponent is on the ground. It can be used as a poke against tall characters and more rarely as a situational anti-air. It's safe when done from max range, beats most high-level pokes, and has an active hitbox that stays up for a long time, but characters who can duck it can punish it easily. This move can be used to end a C&DB or SAII juggle, although there are better options. It has to be parried high."	Fierce	-	130(120)(23 life points)	15(13)	No	No	No	18	16	23	-23	Down	Down	HL	H	3	5	13	4	-	-	-	-	-	-
+"This comes out and recovers faster than far standing jab and can be canceled into all of Q's command moves, although it only combos into EX Slaps and super. Its main uses are as a tick and as an anti-air against empty jumps and opponents who jump right in front of you. It can be parried high or low."	Close Jab	(Close to opponent)	35(6 life points)	3	No	Yes	Yes	4	4	6	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-
+"This is a nice little poke that comes out and recovers very quickly and is great at keeping the opponent out. It's also used to tick into kara throw or C&DB. It can be parried high or low."	Short	-	40(7 life points)	3	No	No	No	4	4	8	+2	+2	+2	HL	HL	0	1	2	4	-	-	-	-	-	-
+"This is an excellent poke that should be used often. It beats lots of stuff, has good range, is safe on block, can't be ducked, and is even a decent meaty attack. It must be parried high."	Far Forward	-	110(19 life points)	7	No	No	No	8	5	14	-1	+1	+3	HL	H	2	3	7	4	-	-	-	-	-	-
+"This is safe on block (except against a reversal Chun SA2) and beats just about any non-invincible attack, but if whiffed or parried it's completely unsafe. It can be used for keep-out and spacing, as a meaty attack if you think the opponent will dash back, and in anticipation of a poke from an opponent who can't hurt you much if you miss. That said, however, its main use is as a C&DB combo finisher. It has to be parried high."	Roundhouse	-	150(23 life points)	9	No	No	No	20	5	28	-12	-10	-8	HL	H	3	5	13	4	-	-	-	-	-	-
+"This is also a very important move because it's Q's only (only.) cancelable ground normal that combos into all his comboable specials and supers. It can also be used as a tick into kara throw and an occasional meaty attack; although it can't beat many wakeup attacks, using it to combo into super as the opponent is waking up is an important way to get damage and force the opponent to stay still on wakeup. It can only be parried high."	Close Forward	(Close to opponent)	100(17 life points)	3	No	Yes	Yes	7	2	18	-2	0	+2	HL	H	2	3	7	4	-	-	-	-	-	-
+"The claw! This move comes out quickly, lasts almost the whole jump, and has great priority. It can be used to beat most air and even antiair attacks, to retaliate with after an air-to-air parry when the opponent is in front of or above you, and to fake an empty jump by attacking at the last second. It has to be parried high."	Jump Jab	(Air)	40(7 life points)	7	No	No	No	2	Until landing	-	-8～+7	-8～+7	+2～+7	H	H	0	1	2	4	-	-	-	-	-	-
+"This comes out almost immediately, has great priority, and lasts the whole jump, so it's useful as an air-to-air antiair. It must be parried high."	Neutral Jump Jab	(Air)	40(7 life points)	7	No	No	No	2	Until landing	-	+2～+7	+2～+7	+7	H	H	0	1	2	4	-	-	-	-	-	-
+"This is good against characters that jump higher than you or are tall enough to get hit by it when standing, but it's rarely used because Q's other jumping attacks are usually better options. It has to be parried high."	Jump Strong	(Air)	100(17 life points)	11	No	No	No	7	6	-	+4～+10/+5～+10	+4～+10/+5～+10	+9～+10	H	H	2	3	7	4	-	-	-	-	-	-
+"This is a great air move that should be used often. It's good for starting combos and beating or trading with air attacks and anti-airs, including some moves like Dragon Punches and Headbutts. It can set up a taunt if it knocks the opponent out of the air and can also serve as a tick into C&DB. It must be parried high."	Jump Fierce	(Air)	130(23 life points)	15	No	No	No	10	8	-	0～+13	0～+13	+9～+13	H	H	3	5	13	4	-	-	-	-	-	-
+"This is much like jumping toward jab in that it comes out as fast, lasts as long, and has as good priority, but because its hitbox is lower it's better for attacking an airborne opponent who is lower in the air than you are. It's good at beating air attacks and some anti-airs, faking an empty jump, and ticking into karathrow. It must be parried high."	Jump Short	(Air)	40(7 life points)	7	No	No	No	4	Until landing	-	-7～+7/-8～+7	-7～+7/-8～+7	0～+7	H	H	0	1	2	4	-	-	-	-	-	-
+"This is a great move, one of the air moves you should use the most. It has great range, beats lots of stuff, is a useful defensive poke, and is a good spacer. It must be parried high."	Jump Forward	(Air)	90(16 life points)	9	No	No	No	9	8	-	-3～+10/-5～+10	-3～+10/-5～+10	+6～+10	H	H	2	3	7	4	-	-	-	-	-	-
+"This is another excellent move. It stuffs a lot of things and trades with many of the rest, even some that have invincibility frames because its oddly-shaped hitbox sometimes hits the opponent in an area where he doesn't have invincibility. It's Q's only jumping attack that knocks the opponent down out of the air instead of resetting them and has deceptively good range and hit stun. It can be used to zone the opponent out, whiff a jump-in to throw, and start Q's most damaging combos, and it also makes a useful tick and meaty attack. If you do it so that it hits as late as possible, like around the level of the opponent's feet, it can't be punished if it gets parried. It has to be parried high."	Jump Roundhouse	(Air)	145(130)(25 life points)	13(11)	No	No	No	17	3	-	+3～+13	+3～+13	+7～+13	H	H	3	5	13	4	-	-	-	-	-	-
+"Q's UOH is slower and floatier than that of most characters, but it also has better range. It's a decent poke and can be used to link into super if it's done at max range or as a deep meaty. If you do it as a deep meaty, you can also link into close standing forward, standing short, and crouching jab. You can also use this for tricky ground crossovers when the opponent is waking up. Other than overhead dash punch, this is Q's only overhead attack, so make sure you use it. It has to be parried high."	Universal Overhead	+	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	-	-	-	-	-	-
+"This does less damage than the toward or back throw but also does more stun, so if the opponent is just about to get stunned, use this. It leaves the opponent right next to Q, which is good if you don't need a taunt or want to play close to the opponent. The regular range is longer than many characters' normal throws, but unless you're trying to tech a throw or otherwise need a throw to come out as soon as possible, you should use the kara throw (same thing with the toward/back throws)."	Hokaku Oyobi Shippu o Mochi ta Tsuuda	+	110(19 life points)	17	-	-	-	2	1	21	-	-	-	+	-	0	7 (for the player who blocked)	7	-	24	-	-	-	-	-
+"One version throws the opponent a bit ahead of Q and the other a bit behind, but they both do the same damage and stun and even have the same animation. They do more damage than the neutral throw and leave the opponent farther away, but they also do less stun. Use one of these if you want to do more damage, set up taunts in some situations, or have the opponent some distance away from you. It seems to me that the toward/back throw also has more range than the neutral throw, but unfortunately I can't find any data to make sure."	Hokaku Oyobi Touteki ni yoru Daraku Shougeki	++ or ++	140(24 life points)	13	-	-	-	2	1	21	-	-	-	+	-	0	7 (for the player who blocked)	7	-	24	B+MP/MP	58/49	-	-	-
+"This is a quick little ranged poke that's great for keeping the opponent out and beating slower attacks, so it should be used often. It can be parried both high and low."	Crouch Jab	+	20(3 life points)	3	No	No	No	5	4	4	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
+"This is a decent poke and antiair that's safe on block and can recover in time if parried by a jumping opponent when you're more underneath than in front of him. It can be used up close to tick into karathrow or to preemptively stuff an opponent's wakeup attack or jump. Its main drawback is that it can be parried high and low, which makes it less useful as a meaty attack since the opponent can't guess wrong on a parry."	Crouch Strong	+	90(16 life points)	9	No	No	No	8	5	13	-2	-1	0	HL	HL	2	3	7	4	-	-	-	-	-	-
+"This is a good meaty that is safe on block and stuffs or trades with most non-invincible wakeup attacks, although its startup is a little slow. Its range extends above and beyond Q's fist, so it can also be used to stuff long-range low attacks, but that's kinda risky because of its long startup and recovery if whiffed. It has to be blocked and parried low."	Crouch Fierce	+	120(21 life points)	5	No	No	No	14	1	20	-3	-1	+1	L	L	3	5	13	4	-	-	-	-	-	-
+"This is a decent poke that can also work as a meaty attack and a tick into karathrow. Its startup is a little slower than crouching Jab and it doesn't beat as many things, but it does have slightly longer range so it's better for opponents who are farther out. If done at max range, it can stuff moves like Ibuki's EX Dragon Punch. It must be blocked and parried low."	Crouch Short	+	20(3 life points)	3	No	No	No	6	5	8	-2	-2	-2	L	L	0	1	2	4	-	-	-	-	-	-
+"This is a good poke that does more damage than crouching Short but is a little slower to come out. It has good range, beats lots of attacks, and makes a great tick into karathrow. It's also Q's best meter-building attack. It has to be blocked and parried low."	Crouch Forward	+	80(14 life points)	3	No	No	No	7	3	14	-3	-2	-1	L	L	2	3	7	4	-	-	-	-	-	-
+"This move knocks down on hit, has good range, and is pure active hit frames at Q's feet, but if blocked or parried it can be punished by anything. It's a fairly good poke against some characters, a pretty good situational antiair, and a decent way to capitalize on parries when the opponent is at max range. It's also useful as a meaty because it beats everything except moves with invincible startup frames, like some supers and Dragon Punches. This move has to be blocked and parried low."	Crouch Roundhouse	+	130(23 life points)	3	No	No	No	12	8	33	-25	Down	Down	L	L	3	5	13	4	-	-	-	-	-	-
+"This is very useful as a poke and antiair and gives Q his best kara throw range, so it's used a lot. It makes Q move up a bit, and the punch actually extends over and a little behind Q's head, so you can hit people who are over and a little behind you. It's safe on block and has good range, so it's good for a poke and for making sure the opponent doesn't jump when you have him cornered. Plus, if you use it as an antiair and time it just right, you can recover in time before you can be hit or thrown. This move also gives Q his best distance for kara throwing, although it throws the opponent behind you unless you have crazy enough timing to only press back for the punch and not for the throw. It must be parried high, although it can be difficult to parry for an opponent jumping right over you because the opponent sometimes has to parry what looks like behind himself."	Toubu ni yaru Jouhou Kougeki (Kari)	+	100(17 life points)	13	No	No	No	8	4	18	-2	0	0	HL	H	2	3	7	4	-	-	-	-	-	-
+"This is a good poke and antiair that's best against opponents who are either tall enough to get hit by it when crouching, like Dudley, Urien, Hugo, Alex, and Q, or whose air attacks are susceptible to this move's weird hitbox, like Twelve, Urien, Makoto, and Dudley, but it's good against anyone if the opponent is using a high poke or standing up. It's safe on block, beats out lots of attacks, and is usually even safe if parried by a jumping opponent if it moves Q under the opponent and past his attacks. It's also very important as a reset in C&DB corner juggles. It has to be parried high."	Ryouude ni yaru Zenshin Tsuugeki (Kari)	+	120(100)(21 life points)	15(13)	No	No	No	13	11	15	-1	+1	+3	HL	H	3	5	13	4	-	-	-	-	-	-
+"This move is almost great, but just a little too risky. If it touches the opponent early, it has great range and priority, must be blocked low, knocks down on hit, and can be canceled but not comboed into all of Q's command moves; if it touches the opponent later in its animation, it can be blocked high, doesn't knock down, and can't be canceled. There are three uses for this thing. The main use is as a meaty attack; if you do close back + roundhouse xx slaps or dash punch and the opponent doesn't parry, he'll either get knocked down by back + roundhouse or take some block damage from the specials. It can also be used to beat low pokes, since the early part of its animation eats up every low move in the game. The third use is as a preemptive antiair, for when you think the opponent might jump back on wakeup and you're a little distance away. One problem, apart from the fact that it doesn't combo, is that this move cancels into other moves fairly slowly, meaning that if you do it too close when the opponent is waking up and try to cancel into slaps, you could get thrown; the solution is to take advantage of the move's range and do it from further away. It also has huge recovery time if uncanceled or whiffed, so make sure that that only happens when it's successfully used as a preemptive antiair. It can be parried both high and low at any stage of its animation."	Ryouude ni yaru Zenshin Tsuugeki (Kari)	+	140(130)(24 life points)	3(15)	No	Yes	Yes	11	7	35	-26	Down	Down	HL	HL	3	5	13	4	-	-	-	-	-	-
 Comments here	Tentou kara no Kyakubu Tsuugeki (Kari)	+ or +	130(23 life points)	3	No	No	No	12	8	33	-25	Down	Down	L	L	3	5	13	4	-	-	-	-	-	-
 -	High Speed Barrage (Jab)	+	150(50x3)(24 life points)	9(3+3+3)	-	-	No	9・19・29	1・1・1	26	-6	+1	+3	HL/HL/HL	H/H/H	3	10	17	12(4+4+4)	-	-	-	9	High Speed Barrage (Jab)	-
 -	High Speed Barrage (Strong)	+	150(50x3)(24 life points)	13(5+3+5)	-	-	No	8・18・28	1・1・2	28	-9	0	+2	HL/HL/HL	H/H/H	3	10	17	12(4+4+4)	-	-	-	9	High Speed Barrage (Strong)	-
@@ -163,7 +43,5 @@ Comments here	Tentou kara no Kyakubu Tsuugeki (Kari)	+ or +	130(23 life points)	
 -	Capture and Deadly Blow (Forward)	+	120(21 life points)	11	-	-	No	13	2	44	-	Down	Down	Impossible	Impossible	5	-	21	-	87	-	-	-	Capture and Deadly Blow (Forward)	-
 -	Capture and Deadly Blow (Forward)	+	130(23 life points)	11	-	-	No	13	2	44	-	Down	Down	Impossible	Impossible	5	-	22	-	89	-	-	-	Capture and Deadly Blow (Roundhouse)	-
 Comments here	High Speed Barrage (EX)	+	230*(for 7 hits)(30×2+40×4+50)(40 life points)	25*(for 7 hits)(3+5×6)	-	-	No	6・14・24・33・41・42・43	1・1・1・1・3・1・3	36	-23	Down	Down	HLx7	Hx7	-	-	-	25(4x7)	-	-	-	19(2+2+3×5)	High Speed Barrage (EX)	40
-"Causes a wallbounce, leading to high damage combos and taunt setups, but is very unsafe
-								on block, making its most common application in C&DB juggles."	Dashing Head Attack (EX)	Hold ,+	160(28 life points)	9	-	-	Yes	14	3	36	-21	Down	Down	HL	H	-	-	-	4	-	-	-	10	Dashing Head Attack (EX)	40
-"Combos into SAI, but the damage reduction is huge and it's easier for the opponent to see
-								coming because its startup is slower. it's mainly used as a chip kill."	Dashing Leg Attack (EX)	Hold ,+	170(90+80)(29 life points)	8(3+5)	-	-	Yes/No	26	2	34	-18	Down	Down	L	L/H	-	-	-	8(4+4)	-	-	-	11	Dashing Leg Attack (EX)	40
+"Causes a wallbounce, leading to high damage combos and taunt setups, but is very unsafe on block, making its most common application in C&DB juggles."	Dashing Head Attack (EX)	Hold ,+	160(28 life points)	9	-	-	Yes	14	3	36	-21	Down	Down	HL	H	-	-	-	4	-	-	-	10	Dashing Head Attack (EX)	40
+"Combos into SAI, but the damage reduction is huge and it's easier for the opponent to see coming because its startup is slower. it's mainly used as a chip kill."	Dashing Leg Attack (EX)	Hold ,+	170(90+80)(29 life points)	8(3+5)	-	-	Yes/No	26	2	34	-18	Down	Down	L	L/H	-	-	-	8(4+4)	-	-	-	11	Dashing Leg Attack (EX)	40

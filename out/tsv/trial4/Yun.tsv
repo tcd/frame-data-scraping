@@ -25,8 +25,7 @@ Comments here	Monkey Flip	B/F+LP+LK	120(21 life points)	9	-	-	-	2	1	21	-	-	-	B/F
 Comments here	Crouch Jab	D+LP	20(3 life points)	3	Yes	Yes	Yes	2	2	1	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
 Comments here	Crouch Strong	D+MP	40(12 life points)	5	No	Yes	Yes	3	2	1	+5	+6	+7	HL	HL	2	5	10	4	-	-	-	-	-	-
 Comments here	Crouch Fierce	D+HP	90(50+40)(17 life points)	8(3+5)	No	No	No	3・10	1・2	1	+1	+3	+5	HL	HL	3	8	17	8	-	-	-	-	-	-
-"Can recovery cancel on frames 14~15 with another cr.lk, will combo despite frame data
-								suggesting otherwise"	Crouch Short	D+LK	20(5 life points)	3	No	Yes	Yes	4	2	1	+2	+2	+2	L	L	0	1	2	4	-	-	-	-	-	-
+"Can recovery cancel on frames 14~15 with another cr.lk, will combo despite frame data suggesting otherwise"	Crouch Short	D+LK	20(5 life points)	3	No	Yes	Yes	4	2	1	+2	+2	+2	L	L	0	1	2	4	-	-	-	-	-	-
 Comments here	Crouch Forward	D+MK	30(8 life points)	3	No	Yes	Yes	7	3	12	-1	0	+1	L	L	2	5	10	4	-	-	-	-	-	-
 Comments here	Crouch Roundhouse	D+HK	50(16 life points)	3	No	No	No	15	2	19	-5	Down	Down	L	L	3	9	18	4	-	-	-	-	-	-
 Comments here	Senpuu Kyaku	F+MK	80(14 life points)	11	No	No	No	19	6	18	-1	0	+1	H	H	2	5	10	4	-	-	-	-	-	-

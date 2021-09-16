@@ -4,8 +4,7 @@ description	Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Sup
 -	Fierce	HP	170(30 life points)	21	No	No	No	16	7	15	-3	-1	+1	HL	HL	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 -	Short	LK	50(8 life points)	3	No	Yes	Yes	5	4	9	+1	+1	+1	HL	HL	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 -	Forward	MK	115(70+50)(19 life points)	13(9+5)	No	No	No	9/14	2/4	23	-4	+1	+3	HL/H	H/H	7	5	11	8(4+4)	-	-	-	-	-	-	-	-	-	-	-	-	-	-
-"Overhead move again, but whiffed close to the opponent, means you will be punished. It
-								have too much recovery"	Roundhouse	HK	150(26 life points)	19	No	No	No	21	8	28	-13	+3	+3	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+"Overhead move again, but whiffed close to the opponent, means you will be punished. It have too much recovery"	Roundhouse	HK	150(26 life points)	19	No	No	No	21	8	28	-13	+3	+3	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 -	Jump Jab	(Air) LP	40(7 life points)	9	No	No	No	3	11	-	-3～+7/-2～+7	-3～+7/-2～+7	+5～+7/+6～+7	H	H	0	2	3	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 -	Jump Strong	(Air) MP	100(17 life points)	13	No	No	No	6	8	-	0～+10/+2～+10	0～+10/+2～+10	+8～+10/+10	H	H	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 -	Jump Fierce	(Air) HP	150(26 life points)	17	No	No	No	11	5	-	+4～+13/+6～+13	+4～+13/+6～+13	+12～+13	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
@@ -21,16 +20,7 @@ Comments here	Body Slam	F+LP+LK or B+LP+LK	160(28 life points)	13	-	-	-	2	1	21	-
 -	Crouch Forward	C+MK	100(17 life points)	3	No	No	No	8	5	17	-5	Down	Down	L	L	2	5	9	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 Frame Data	Crouch Roundhouse	C+HK	170(30 life points)	13	No	No	No	11	23	24~38	-43	Down	Down	H(far) or L(close)	H(far) or L(close)	-	-	-	-	Hammer Hook	F+HP	160(28 life points)	21	-	-	-	-	No	No	No	-	-	-
 -	Drop Kick	F+HK or B+HK	150(26 life points)	19	No	No	No	21	8	27	-12	+4	+4	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
-"Nice for cross-ups, but rarely you will have the chance to do it. If you throw the
-								opponent (Body Slam) and he doesnt do a tech wakeup, go for the cross-up with Body
-								Press, also after a succesful Moonsault Press, if enemy doesnt do a tech wakeup,
-								superjump to the opponent when you touch the ground (will not work on characters that
-								have quick wakeup, such as Dudley, Remy, etc).
-								Remember also, even if the Body Press gets blocked (cross-up or not) a nice thing to do
-								after it is a standing HP, or standing LK followed by Giant Palm Bomber (LP), and even a
-								LK Meat Squasher to put the opponent into the corner.
-								You'll want to practice using the body splash as late as possible. This makes it very
-								difficult for an opponent to jump back safely, to avoid an upcoming SPD."	Body Press	JF, D+HP	100(17 life points)	17	No	No	No	9	Until landing	-	-	-	-	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+"Nice for cross-ups, but rarely you will have the chance to do it. If you throw the opponent (Body Slam) and he doesnt do a tech wakeup, go for the cross-up with Body Press, also after a succesful Moonsault Press, if enemy doesnt do a tech wakeup, superjump to the opponent when you touch the ground (will not work on characters that have quick wakeup, such as Dudley, Remy, etc). Remember also, even if the Body Press gets blocked (cross-up or not) a nice thing to do after it is a standing HP, or standing LK followed by Giant Palm Bomber (LP), and even a LK Meat Squasher to put the opponent into the corner. You'll want to practice using the body splash as late as possible. This makes it very difficult for an opponent to jump back safely, to avoid an upcoming SPD."	Body Press	JF, D+HP	100(17 life points)	17	No	No	No	9	Until landing	-	-	-	-	H	H	3	7	15	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 -	Giant Palm Bomber (Jab)	QCB+LP	110(19 life points)	15	-	-	Yes	17	2	9	+11	+13	+15	HL	H	3	8	16	4	Giant Palm Bomber (Jab)	-	-	-	-	-	-	-	-	-	-	14	-	-
 -	Giant Palm Bomber (Strong)	QCB+MP	125(22 life points)	17	-	-	Yes	19	2	7	+16	+18	+20	HL	H	3	8	16	4	Giant Palm Bomber (Strong)	-	-	-	-	-	-	-	-	-	-	16	-	-
 -	Giant Palm Bomber (Strong)	QCB+HP	140(29 life points)	19	-	-	Yes	19	2	7	+16	+18	+20	HL	H	3	8	16	4	Giant Palm Bomber (Fierce)	-	-	-	-	-	-	-	-	-	-	18	-	-
