@@ -1,11 +1,8 @@
-const fs = require("fs")
-const axios = require("axios")
-const cheerio = require("cheerio")
-const converter = require("json-2-csv")
+import * as fs from "fs"
+import axios from "axios"
+import cheerio from "cheerio"
 
-const { characters } = require("./characters")
-
-const getNewSRKFrameDataHTML = async (character, newPage = false) => {
+export const getNewSRKFrameDataHTML = async (character: string, newPage: boolean = false): Promise<boolean> => {
     try {
         const suffix = newPage ? "/2021" : ""
         const { data } = await axios.get(`https://srk.shib.live/w/Street_Fighter_3:_3rd_Strike/${character}${suffix}`)
@@ -19,14 +16,15 @@ const getNewSRKFrameDataHTML = async (character, newPage = false) => {
         return true
     } catch (error) {
         console.log(`Unable to write HTML file for character: '${character}'`)
+        return false
     }
 }
 
-const getSRKFrameData = async (character) => {
+export const getSRKFrameData = async (character: string) => {
     try {
         const { data } = await axios.get(`https://srk.shib.live/w/Street_Fighter_3:_3rd_Strike/${character}/2021`)
         const $ = cheerio.load(data)
-        const allFrameData = []
+        const allFrameData: any[] = []
         const moveNames = []
         // console.log(data)
 
@@ -34,8 +32,8 @@ const getSRKFrameData = async (character) => {
         //     const postTitle = $(el).text()
         //     postTitles.push(postTitle)
         // })
-        $("#section-collapsible-1 > .movedata-box").each((_index, el) => {
-            const frameData = { }
+        $("#section-collapsible-1 > .movedata-box").each((_index: number, el: any) => {
+            const frameData: any = { }
             // #section-collapsible-1 > div:nth-child(4) > div.movedata-iconscol > div:nth-child(1) > big
             const name = $(el).find("div.movedata-iconscol > div:nth-child(1) > big").text()
             frameData.Name = name
@@ -72,58 +70,3 @@ const getSRKFrameData = async (character) => {
         throw error
     }
 }
-
-for (const character of characters) {
-    getNewSRKFrameDataHTML(character)
-        .then((data) => {
-            console.log(data)
-        })
-        .catch(err => console.log(err))
-}
-
-// for (const character of characters) {
-//     const allData = {}
-//     getSRKFrameData(character).then((data) => {
-//         allData[character] = data
-//         // convert JSON array to CSV string
-//         converter.json2csvAsync(data, {delimiter: { field: "\t"} }).then(csv => {
-//             // write CSV to a file
-//             fs.writeFileSync(`out/${character}.tsv`, csv)
-//         }).catch(err => console.log(err))
-//     })
-// }
-
-const writeJsonToTsv = (data, fileName) => {
-    const options = {
-        delimiter: {
-            field: "\t",
-        },
-    }
-    converter
-        .json2csvAsync(data, options)
-        .then(csv => {
-            fs.writeFileSync(fileName, csv)
-            console.log(`File written: '${fileName}'`)
-        })
-        .catch(err => {
-            console.log(`Unable to write file: '${fileName}'`)
-            console.log(err)
-        })
-}
-
-// getNewSRKFrameDataHTML()
-//     .then()
-//     .catch(err => console.log(err))
-
-// getFrameData("Ken")
-//     // .then((data) => {})
-//     .then((data) => console.log(data))
-
-// (async () => {
-//     try {
-//         await saveFrameData()
-//     } catch (e) {
-//         // Deal with the fact the chain failed
-//         console.log(e)
-//     }
-// })()

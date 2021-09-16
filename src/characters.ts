@@ -1,4 +1,4 @@
-module.exports.characters = [
+export const characters: string[] = [
     "Akuma",
     "Alex",
     "Chun-Li",
