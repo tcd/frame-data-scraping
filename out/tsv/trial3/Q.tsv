@@ -1,0 +1,4 @@
+Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Gauge Needed	Blocked Damage	gagueData_Move	gagueData_Startup	gagueData_Recovery	gagueData_Blocked Advantage	gagueData_Hit Advantage	gagueData_Crouching Hit Advantage	gagueData_Guard	gagueData_Parry
+Far Jab	-	30(5 life points)	3	No	No	No	12	8	33	-25	Down	Down	L	L	3	5	13	4	-	-	-	-	-	-	-	-	-	-
+High Speed Barrage (EX)	+	230*(for 7 hits)(30×2+40×4+50)(40 life points)	25*(for 7 hits)(3+5×6)	-	-	No	6・14・24・33・41・42・43	1・1・1・1・3・1・3	36	-23	Down	Down	HLx7	Hx7	-	-	-	25(4x7)	40	19(2+2+3×5)	High Speed Barrage (EX)	-	-	-	-	-	-	-
+Dashing Leg Attack (EX)	Hold ,+	160(28 life points)	9	-	-	Yes	26	2	34	-18	Down	Down	L	L/H	-	-	3	-	40	10	-	6	31	-19	Down	Down	HL/HL/HL/L/HL	H/H/H/L/H

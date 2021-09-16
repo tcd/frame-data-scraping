@@ -1,0 +1,34 @@
+Move	Motion	Damage	Stun Damage	Chains into itself	Special Cancel	Super Cancel	Startup	Hit	Recovery	Blocked Advantage	Hit Advantage	Crouching Hit Advantage	Guard	Parry	gagueData_Miss	gagueData_Blocked	gagueData_Hit	gagueData_Parry (Gauge for opponent)	Throw Range	Kara-Throw	Kara-Throw Range	Gauge Needed	Blocked Damage	gagueData_Move
+Taunt	HP+HK	10(5+5)	0	No	No	No	18・17	2・3	62	?	?	?	L/HL	HL/H	6(8)	?	?	8(4+4)	-	-	-	-	-	-
+Far Jab	LP	40(7 life points)	5	Yes	Yes	Yes	5	4	10	0	0	0	HL	HL	0	1	2	4	-	-	-	-	-	-
+Far Strong	MP	100(40+60)(15 life points)	16(9+7)	No	Yes	No	6	2,3	19	-2	-10	0	HL	H	2	7	12	8(4+4)	-	-	-	-	-	-
+Far Fierce	HP	140(24 life points)	17	No	No	No	13	4	19	-4	-2	0	HL	H	3	10	19	4	-	-	-	-	-	-
+Short	LK	40(7 life points)	3	Yes	Yes	Yes	3	4	6	+4	+4	+4	HL	HL	0	1	2	4	-	-	-	-	-	-
+Forward	MK	90(16 life points)	7	No	No	No	7	2	17	-2	-1	0	HL	HL	2	6	11	4	-	-	-	-	-	-
+Roundhouse	HK	130(23 life points)	11	No	No	No	10	3	11	-2	-1	0	HL	H	3	10	19	4	-	-	-	-	-	-
+Jump Jab	(Air) LP	50(8 life points)	7	No	No	No	4	10	-	-8～+7	-8～+7	+2～+7	H	H	0	1	2	4	-	-	-	-	-	-
+Jump Strong	(Air) MP	100(17 life points)	13	No	No	No	6	5	-	+3～+10/+1～+10	+3～+10/+1～+10	+8～+10	H	H	2	6	11	4	-	-	-	-	-	-
+Jump Fierce	(Air) HP	120(21 life points)	11	No	No	No	7(6 if neutral jump)	3	-	-2～+13	-2～+13	+9～+13	H	H	3	10	19	4	-	-	-	-	-	-
+Jump Short	(Air) LK	50(8 life points)	7	No	No	No	5	8	-	-7～+7	-7～+7	+2～+7	H	H	0	1	2	4	-	-	-	-	-	-
+Jump Forward	(Air) MK	90(16 life points)	9	No	No	No	7	6	-	-5～+10/-4～+10	-5～+10/-4～+10	+5～+10	H	H	2	6	11	4	-	-	-	-	-	-
+Jump Roundhouse	(Air) HK	150(40+110)(24 life points)	16(3+13)	No	No	No	9・11	2・4	-	+4～+13/+6～+13	+4～+13/+6～+13	+12～+13/+13	H	H	3	8	18	8(4+4)	-	-	-	-	-	-
+Universal Overhead	MP+MK	40(7 life points)	3	No	No	No	15	10	5	-5~+7	0~+8	+1~+9	H	H	0	1	2	4	-	-	-	-	-	-
+Body Slam	(B/F)+LP+LK	120(21 life points)	13	-	-	-	2	1	21	-	-	-	(B/F)+LP+LK	-	0	8 (for the player who blocked)	8	-	22	F.MK / DF.HK / S.MP / S.LP	50 / 36 / 34 / 32	-	-	-
+Crouch Jab	D+LP	40(7 life points)	5	No	Yes	Yes	4	4	7	-1	-1	-1	HL	HL	0	1	2	4	-	-	-	-	-	-
+Crouch Strong	D+MP	90(16 life points)	7	No	Yes	Yes	6	6	10	-3	-2	-1	HL	HL	2	6	11	4	-	-	-	-	-	-
+Crouch Fierce	D+HP	110(19 life points)	17	No	Yes	Yes	7	2	23	-7	-5	-3	HL	HL	3	10	19	4	-	-	-	-	-	-
+Crouch Short	D+LK	40(7 life points)	3	Yes	Yes	Yes	4	4	8	-2	-2	-2	L	L	0	1	2	4	-	-	-	-	-	-
+Crouch Forward	D+MK	70(12 life points)	3	No	Yes	Yes	8	3	13	-3	-2	-1	L	L	2	6	11	4	-	-	-	-	-	-
+Crouch Roundhouse	D+HK	100(17 life points)	3	No	No	No	11	2	26	-9	Down	Down	L	L	3	10	19	4	-	-	-	-	-	-
+Handstand Kick (Overhead)	F+MP	100(17 life points)	13	No	No	No	15	4	8	-2	0	+2	HL	H	2	6	11	4	-	-	-	-	-	-
+Handstand Whip (Overhead)	F+MK	80(14 life points)	7	No	No	No	11	8	18	-6	-4	-2	HL	H	2	6	11	4	-	-	-	-	-	-
+Round Arch	B+HK	140(24 life points)	17	No	No	No	12	6	12	+4	+6	+8	HL	H	3	10	19	4	-	-	-	-	-	-
+Sliding (Sweep)	DF+HK	100(21 life points)	3	No	No	No	12	6	24	-14	Down	Down	HL	L	3	10	19	4	-	-	-	-	-	-
+Target Combo	Neutral Jump or Diagonal Forward LP -> Jump MK	50+50	7+3	No	No//No	No//No	-	-	-	-	-	-	HL/HL	H/H	0+?	1+1	2+1	8(4+4)	-	-	-	-	-	-
+Target Combo	Neutral Jump or Diagonal Forward MP -> Jump HP	100+60	13+3	No	No//No	No//No	-	-	-	-	0	-	HL/HL	HL/H	0+?	1+1	2+1	8(4+4)	-	-	-	-	-	-
+Target Combo	MK -> Crouch HP	90+40	7+5	No	No/No	No/No	7	-	-	-11	Down	Down	HL/HL	H/H	2+?	6+1	11+1	8(4+4)	-	-	-	-	-	-
+Target Combo	HP -> HK	140+60	17+5	No	No/No	No/No	13	-	-	+1	+3	+5	HL/HL	H/H	3+?	10+1	19+1	8(4+4)	-	-	-	-	-	-
+Scratch Wheel (EX)	F, D, DF+KK	220(100+40x3)(35 life points)	21(13+3×3)	-	-	Yes/Yes/No/No	3・5・7・9	2・2・2・2	42(10)	-26	Down	Down	HLx4	HLx4	-	-	-	16(4+4+4+4)	-	-	-	40	12(6+2x3)	Scratch Wheel (EX)
+Rhino Horn (EX)	HCF+KK	225(45+100+80)(38 life points)	23(3+17+3)	-	-	Yes	11・15・23	3・2・8	15(9)	-2	Down	Down	HL	H	-	-	-	12(4x3)	-	-	-	40	27(5+12+10)	Rhino Horn (EX)
+Mallet Smash (EX)	HCB+PP	180(120+60)(31 life points)	18(13+5)	-	-	No	21・23	2・2	10	+4	+5	+5	Hx2	Hx2	-	-	-	8(4+4)	-	-	-	40	10(7+3)	Mallet Smash (EX)
+Lynx Tail (EX)	B, D, DB+KK	150(80+10×3+40)(23 life points)	15(3×4+5)	-	-	No	10・18・36・44・66	4x4・6	25	-15	Down	Down	Lx5	Lx4,HL	-	-	-	16(4x4)	-	-	-	40	21(10+2×3+5)	Lynx Tail (EX)
