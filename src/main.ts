@@ -1,24 +1,24 @@
 import * as fs from "fs"
 
-import { characters } from "./characters"
-import { getSRKFrameDataHTML, parseOldSRKFrameData } from "./srk"
 import { writeJsonToTsv } from "./lib"
+import { characters } from "./characters"
+import { parseOldSRKFrameData, removeImages } from "./srk"
 
 async function parse3SFrameData() {
     for (const character of characters) {
         const oldFile = `out/html/srk/old/${character}.html`
         const oldFileData = fs.readFileSync(oldFile, "utf8")
-        parseOldSRKFrameData(character, oldFileData)
-            .then((data) => {
+        await parseOldSRKFrameData(character, oldFileData)
+            .then(async (data) => {
                 // console.log(data)
-                writeJsonToTsv(data, `out/tsv/trial4/${character}.tsv`)
+                await writeJsonToTsv(data, `out/tsv/trial9/${character}.tsv`)
             })
             .catch(err => console.log(err))
     }
 }
 
 async function main() {
-
+    await parse3SFrameData()
 }
 
 (async () => {

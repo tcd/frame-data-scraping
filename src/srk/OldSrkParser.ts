@@ -1,5 +1,7 @@
 import cheerio from "cheerio"
 
+import { isNullOrUndefined } from "../lib"
+
 export class OldSrkParser {
 
     public characterName?: string
@@ -53,9 +55,9 @@ export class OldSrkParser {
                     if (followingParagraph.nextItalicText == "Comments here" || followingParagraph.paragraphText != null) {
                         this.currentGaugeData = table
                         if (rows.length == 2) {
-                            this.parseCurrentData(followingParagraph.paragraphText)
+                            this.parseCurrentData(followingParagraph.paragraphText, 2)
                         } else if (rows.length == 4) {
-                            this.parseCurrentSpecialData(followingParagraph.paragraphText)
+                            this.parseCurrentData(followingParagraph.paragraphText, 4)
                         } else {
                             this.setAllNull()
                             return
@@ -68,120 +70,87 @@ export class OldSrkParser {
         return true
     }
 
-    private parseCurrentSpecialData(description: string): void {
+    private parseCurrentData(description: string, expectedRows: number): void {
         let rows
         let headers
         let values
-        let frameData = { }
-        let move1 = { }
-        let move2 = { }
-        let move3 = { }
+        let moves = []
+        for (let i = 1; i < expectedRows; i++) { moves.push({ description }) }
 
         // =====================================================================
         // Move Data
         // =====================================================================
 
-        rows = this.$(this.currentMoveData).find("tbody > tr")
-        if (rows.length != 4) {
-            console.error(`incorrect # of rows, have '${rows.length}', expected 4`)
+        rows    = this.$(this.currentMoveData).find("tbody > tr")
+        headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
+        if (rows.length != expectedRows) {
+            if (headers.length != 1) {
+                console.log(`incorrect # of rows in 'currentMoveData', have '${rows.length}', expected ${expectedRows} (${this.characterName})`)
+                // console.log(this.$(this.currentMoveData).html())
+            }
             return
         }
-        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
-
-        values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move1[headers[i]] = values[i] }
-
-        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move2[headers[i]] = values[i] }
-
-        values = this.$(rows[3]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move3[headers[i]] = values[i] }
-
-        // =====================================================================
-        // Frame Data
-        // =====================================================================
-
-        rows = this.$(this.currentFrameData).find("tbody > tr")
-        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
-
-        values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move1[headers[i]] = values[i] }
-
-        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move2[headers[i]] = values[i] }
-
-        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move3[headers[i]] = values[i] }
-
-        // =====================================================================
-        // Gauge Data
-        // =====================================================================
-
-        rows = this.$(this.currentGaugeData).find("tbody > tr")
-        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
-
-        values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move1[`gagueData_${headers[i]}`] = values[i] }
-
-        values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move2[`gagueData_${headers[i]}`] = values[i] }
-
-        values = this.$(rows[3]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) { move3[`gagueData_${headers[i]}`] = values[i] }
-
-        this.allFrameData.push(move1, move2, move3)
-        this.setAllNull()
-    }
-
-    private parseCurrentData(description: string): void {
-        let rows
-        let headers
-        let values
-        let frameData = { description }
-
-        // =====================================================================
-        // Move Data
-        // =====================================================================
-
-        rows = this.$(this.currentMoveData).find("tbody > tr")
-        if (rows.length != 2) {
-            console.error(`incorrect # of rows, have '${rows.length}', expected 2`)
-            return
-        }
-        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
-        values  = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) {
-            frameData[headers[i]] = values[i]
-        }
-
-        // =====================================================================
-        // Frame Data
-        // =====================================================================
-
-        rows = this.$(this.currentFrameData).find("tbody > tr")
-        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
-        values  = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) {
-            frameData[headers[i]] = values[i]
-        }
-
-        // =====================================================================
-        // Gauge Data
-        // =====================================================================
-        // FIXME: not exactly correct.
-
-        rows = this.$(this.currentGaugeData).find("tbody > tr")
-        headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
-        values  = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
-        for (let i = 0; i < values.length; i++) {
-            let key   = headers[i]
-            let value = values[i]
-            if (key != "Move") {
-                frameData[`gagueData_${key}`] = value
+        for (let i = 0; i < moves.length; i++) {
+            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
+            for (let j = 0; j < values.length; j++) {
+                let value = values[j]
+                let key   = headers[j]
+                moves[i][key] = value
             }
         }
 
-        this.allFrameData.push(frameData)
+        // =====================================================================
+        // Frame Data
+        // =====================================================================
+
+        rows    = this.$(this.currentFrameData).find("tbody > tr")
+        headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
+        if (rows.length != expectedRows) {
+            if (headers.length != 1) {
+                console.log(`incorrect # of rows in 'currentFrameData', have '${rows.length}', expected ${expectedRows} (${this.characterName})`)
+                // console.log(this.$(this.currentFrameData).html())
+            }
+            return
+        }
+        for (let i = 0; i < moves.length; i++) {
+            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
+            for (let j = 0; j < values.length; j++) {
+                let value = values[j]
+                let key   = headers[j]
+                moves[i][key] = value
+            }
+        }
+
+        // =====================================================================
+        // Gauge Data
+        // =====================================================================
+
+        const nonGaugeKeys = [
+            "Move",
+            "Blocked Damage"
+        ]
+
+        rows    = this.$(this.currentGaugeData).find("tbody > tr")
+        headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
+        if (rows.length != expectedRows) {
+            if (headers.length != 1) {
+                console.log(`incorrect # of rows in 'currentGaugeData', have '${rows.length}', expected ${expectedRows} (${this.characterName})`)
+                // console.log(this.$(this.currentGaugeData).html())
+            }
+            return
+        }
+        for (let i = 0; i < rows.length; i++) {
+            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
+            for (let j = 0; j < values.length; j++) {
+                let value = values[j]
+                let key   = headers[j]
+                if (!nonGaugeKeys.includes(key)) {
+                    moves[i][`gagueData_${key}`] = value
+                }
+            }
+        }
+
+        this.allFrameData.push(...moves)
         this.setAllNull()
     }
 
@@ -190,7 +159,7 @@ export class OldSrkParser {
         const nextBoldText   = this.$(p).find("b").text()
         const nextItalicText = this.$(p).find("i").text()
         return new NextParagraphData({
-            paragraphText: p.text()?.trim(),
+            paragraphText: p.text()?.trim()?.replace(/\n\s+/g, " "),
             nextBoldText,
             nextItalicText,
             pLengthIsOne: (p.length === 1),
@@ -272,3 +241,5 @@ const headerValues = {
     Gauge_Hit: "Hit",
     Gauge_Parry: "Parry (Gauge for opponent)",
 }
+
+

@@ -4,16 +4,16 @@ export const characters: string[] = [
     "Chun-Li",
     "Dudley",
     "Elena",
-    // "Gill",
-    "Hugo",
-    "Ibuki",
+    // "Gill", // No data
+    "Hugo",    // Invalid data on v1.0.0 (images were in a different order than other characters)
+    "Ibuki",   // Looks like data is missing on v1.0.0
     "Ken",
-    "Makoto",
+    "Makoto", //
     "Necro",
     "Oro",
-    "Q",
+    "Q",   // His page uses images for "Motion", fixed in sheets.
     "Remy",
-    "Ryu",
+    "Ryu", // His page uses images for "Motion", fixed in sheets.
     "Sean",
     "Twelve",
     "Urien",
