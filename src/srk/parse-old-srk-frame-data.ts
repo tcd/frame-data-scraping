@@ -12,4 +12,3 @@ export const parseOldSRKFrameData = async (character: string, data: string) => {
         throw error
     }
 }
-

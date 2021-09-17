@@ -38,20 +38,20 @@ export class OldSrkParser {
             // console.log(followingParagraph.length)
             if (followingParagraph.pLengthIsOne) {
                 if (this.haveNone()) {
-                    if (followingParagraph.nextBoldText == "Frame Data") { 
-                        this.currentMoveData = table 
+                    if (followingParagraph.nextBoldText == "Frame Data") {
+                        this.currentMoveData = table
                         return
                     }
                 }
                 if (this.haveFirst1()) {
-                    if (followingParagraph.nextBoldText == "Gauge Increase") { 
-                        this.currentFrameData = table 
+                    if (followingParagraph.nextBoldText == "Gauge Increase") {
+                        this.currentFrameData = table
                         return
                     }
                 }
                 if (this.haveFirst2()) {
-                    if (followingParagraph.nextItalicText == "Comments here" || followingParagraph.paragraphText != null) { 
-                        this.currentGaugeData = table 
+                    if (followingParagraph.nextItalicText == "Comments here" || followingParagraph.paragraphText != null) {
+                        this.currentGaugeData = table
                         if (rows.length == 2) {
                             this.parseCurrentData(followingParagraph.paragraphText)
                         } else if (rows.length == 4) {
@@ -82,7 +82,7 @@ export class OldSrkParser {
         // =====================================================================
 
         rows = this.$(this.currentMoveData).find("tbody > tr")
-        if (rows.length != 4) { 
+        if (rows.length != 4) {
             console.error(`incorrect # of rows, have '${rows.length}', expected 4`)
             return
         }
@@ -106,7 +106,7 @@ export class OldSrkParser {
 
         values = this.$(rows[1]).find("td").map((_index, element) => this.$(element).text().trim())
         for (let i = 0; i < values.length; i++) { move1[headers[i]] = values[i] }
-        
+
         values = this.$(rows[2]).find("td").map((_index, element) => this.$(element).text().trim())
         for (let i = 0; i < values.length; i++) { move2[headers[i]] = values[i] }
 
@@ -144,7 +144,7 @@ export class OldSrkParser {
         // =====================================================================
 
         rows = this.$(this.currentMoveData).find("tbody > tr")
-        if (rows.length != 2) { 
+        if (rows.length != 2) {
             console.error(`incorrect # of rows, have '${rows.length}', expected 2`)
             return
         }
@@ -168,6 +168,7 @@ export class OldSrkParser {
         // =====================================================================
         // Gauge Data
         // =====================================================================
+        // FIXME: not exactly correct.
 
         rows = this.$(this.currentGaugeData).find("tbody > tr")
         headers = this.$(rows[0]).find("td").map((_index, element) => this.$(element).text().trim())
@@ -175,7 +176,9 @@ export class OldSrkParser {
         for (let i = 0; i < values.length; i++) {
             let key   = headers[i]
             let value = values[i]
-            frameData[`gagueData_${key}`] = value
+            if (key != "Move") {
+                frameData[`gagueData_${key}`] = value
+            }
         }
 
         this.allFrameData.push(frameData)

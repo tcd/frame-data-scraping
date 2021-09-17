@@ -4,6 +4,7 @@ export const characters: string[] = [
     "Chun-Li",
     "Dudley",
     "Elena",
+    // "Gill",
     "Hugo",
     "Ibuki",
     "Ken",
