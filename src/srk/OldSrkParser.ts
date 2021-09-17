@@ -138,7 +138,11 @@ export class OldSrkParser {
 
         const nonGaugeKeys = [
             "Move",
-            "Blocked Damage"
+            "Motion",
+            "Super Cancel",
+            "Blocked Damage",
+            "Stun Damage",
+            "Reset or Juggle",
         ]
 
         rows    = this.$(this.currentGaugeData).find("tbody > tr")
