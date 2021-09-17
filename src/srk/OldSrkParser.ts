@@ -71,6 +71,7 @@ export class OldSrkParser {
     }
 
     private parseCurrentData(description: string, expectedRows: number): void {
+        let haveIssues = false
         let rows
         let headers
         let values
@@ -85,19 +86,24 @@ export class OldSrkParser {
         headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
         if (rows.length != expectedRows) {
             if (headers.length != 1) {
+                haveIssues = true
                 console.log(`incorrect # of rows in 'currentMoveData', have '${rows.length}', expected ${expectedRows} (${this.characterName})`)
                 // console.log(this.$(this.currentMoveData).html())
             }
-            return
+            // return
         }
-        for (let i = 0; i < moves.length; i++) {
+        moves.forEach((move, i) => {
             values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
             for (let j = 0; j < values.length; j++) {
                 let value = values[j]
                 let key   = headers[j]
+                if (isNullOrUndefined(key)) {
+                    haveIssues = true
+                    console.log(`Undefined Key (${this.characterName}) - Value: '${value}'`)
+                }
                 moves[i][key] = value
             }
-        }
+        })
 
         // =====================================================================
         // Frame Data
@@ -107,19 +113,24 @@ export class OldSrkParser {
         headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
         if (rows.length != expectedRows) {
             if (headers.length != 1) {
+                haveIssues = true
                 console.log(`incorrect # of rows in 'currentFrameData', have '${rows.length}', expected ${expectedRows} (${this.characterName})`)
                 // console.log(this.$(this.currentFrameData).html())
             }
-            return
+            // return
         }
-        for (let i = 0; i < moves.length; i++) {
+        moves.forEach((move, i) => {
             values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
             for (let j = 0; j < values.length; j++) {
                 let value = values[j]
                 let key   = headers[j]
-                moves[i][key] = value
+                if (isNullOrUndefined(key)) {
+                    haveIssues = true
+                    console.log(`Undefined Key (${this.characterName}) - Value: '${value}'`)
+                }
+                move[key] = value
             }
-        }
+        })
 
         // =====================================================================
         // Gauge Data
@@ -134,23 +145,32 @@ export class OldSrkParser {
         headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
         if (rows.length != expectedRows) {
             if (headers.length != 1) {
+                haveIssues = true
                 console.log(`incorrect # of rows in 'currentGaugeData', have '${rows.length}', expected ${expectedRows} (${this.characterName})`)
                 // console.log(this.$(this.currentGaugeData).html())
             }
-            return
+            // return
         }
-        for (let i = 0; i < rows.length; i++) {
+        moves.forEach((move, i) => {
             values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
             for (let j = 0; j < values.length; j++) {
                 let value = values[j]
                 let key   = headers[j]
+                if (isNullOrUndefined(key)) {
+                    haveIssues = true
+                    console.log(`Undefined Key (${this.characterName}) - Value: '${value}'`)
+                }
                 if (!nonGaugeKeys.includes(key)) {
-                    moves[i][`gagueData_${key}`] = value
+                    move[`gagueData_${key}`] = value
                 }
             }
-        }
+        })
 
-        this.allFrameData.push(...moves)
+        if (haveIssues) {
+            console.log(moves)
+        } else {
+            this.allFrameData.push(...moves)
+        }
         this.setAllNull()
     }
 
