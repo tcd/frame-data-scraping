@@ -3,5 +3,11 @@
     "module": "CommonJS",
     "esModuleInterop": true,
     // "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "@data":  ["./src/data/index.ts"],
+      "@lib":   ["./src/lib/index.ts"],
+      "@types": ["./src/@types/index.ts"],
+    },
   },
 }

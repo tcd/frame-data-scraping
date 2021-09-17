@@ -4,6 +4,8 @@ import { isNullOrUndefined } from "../lib"
 
 export class OldSrkParser {
 
+    public lifePointPattern: RegExp = /\s*\((?<lifePointDamage>\d+)\slife points\)\s*/
+
     public characterName?: string
     public htmlString?: string
     public $?: cheerio.Root
@@ -93,7 +95,7 @@ export class OldSrkParser {
             // return
         }
         moves.forEach((move, i) => {
-            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
+            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim()?.replace(/\n\s+/g, " "))
             for (let j = 0; j < values.length; j++) {
                 let value = values[j]
                 let key   = headers[j]
@@ -101,7 +103,17 @@ export class OldSrkParser {
                     haveIssues = true
                     console.log(`Undefined Key (${this.characterName}) - Value: '${value}'`)
                 }
-                moves[i][key] = value
+                if (key == "Damage") {
+                    // let lifePointDamage =
+                    // const { groups: { lifePointDamage } } = this.lifePointPattern.exec(value)
+                    const result = this.lifePointPattern.exec(value)
+                    if (result?.groups?.lifePointDamage) {
+                        moves[i][key] = value.replace(/\s*\(\d+\slife points\)\s*/, "")
+                        moves[i]["life_point_damage"] = result.groups.lifePointDamage
+                    }
+                } else {
+                    moves[i][key] = value
+                }
             }
         })
 
@@ -120,7 +132,7 @@ export class OldSrkParser {
             // return
         }
         moves.forEach((move, i) => {
-            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
+            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim()?.replace(/\n\s+/g, " "))
             for (let j = 0; j < values.length; j++) {
                 let value = values[j]
                 let key   = headers[j]
@@ -156,7 +168,7 @@ export class OldSrkParser {
             // return
         }
         moves.forEach((move, i) => {
-            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim())
+            values = this.$(rows[i + 1]).find("td").map((_, el) => this.$(el).text().trim()?.replace(/\n\s+/g, " "))
             for (let j = 0; j < values.length; j++) {
                 let value = values[j]
                 let key   = headers[j]
@@ -171,7 +183,7 @@ export class OldSrkParser {
         })
 
         if (haveIssues) {
-            console.log(moves)
+            // console.log(moves)
         } else {
             this.allFrameData.push(...moves)
         }

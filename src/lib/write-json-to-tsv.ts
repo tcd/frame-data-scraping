@@ -11,7 +11,6 @@ export const writeJsonToTsv = async (data: any, filePath: string) => {
     try {
         const csvData = await converter.json2csvAsync(data, options)
         fs.writeFileSync(filePath, csvData)
-        fs.writeFileSync(filePath, csvData)
         console.log(`File written: '${filePath}'`)
     } catch (error) {
         console.log(`Unable to write file: '${filePath}'`)
