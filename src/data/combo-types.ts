@@ -5,4 +5,5 @@ export const COMBO_TYPES = {
     TARGET_COMBO: "Target Combo",
     SPECIAL: "Special",
     SUPER: "Super",
+    UNIVERSAL_MECHANIC: "Universal Mechanic",
 }

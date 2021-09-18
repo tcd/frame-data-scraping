@@ -1,4 +1,4 @@
 export interface IReplacementData {
-    pattern: RegExp
+    pattern: RegExp | string
     replacement: string
 }

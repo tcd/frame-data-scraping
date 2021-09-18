@@ -9,8 +9,10 @@ const PATTERNS = {
     LIFE_POINT_REMOVAL: /\s*\(\d+\slife points\)\s*/,
     ONLY_NUMBERS:       /^(\+|-)?\d+$/m,
     GUARD: {
-        ANY: /(^(HL\/)+HL$)|(^HLx\d+$)|(^HL$)/gm,
-        THROW_TECH: /^((B|F|B\/F)\+)?LP\+LK$/gm
+        ANY:        /(^(HL\/)+HL$)|(^HLx\d+$)|(^HL$)/igm,
+        THROW_TECH: /(^((B|F|B\/F)\+)?LP\+LK$)/igm,
+        LOW:        /(^l(?:x\d+)?)$/igm,
+        OVERHEAD:   /(^h(?:x\d+)?)$/igm,
     },
 }
 
@@ -28,15 +30,16 @@ export class OldSrkData {
     public isSpecial?: boolean
     public isSuper?: boolean
 
-    constructor(rawData: any) {
+    constructor(rawData: any, characterName: string) {
         this.rawData = rawData
 
-        this.combo = {
-            metadata: {},
-            damage_data: {},
-            frame_data: {},
-            meter_data: {},
-        }
+        this.combo = new Combo()
+
+        this.combo.character_name = characterName
+        this.combo.metadata    = {}
+        this.combo.damage_data = {}
+        this.combo.frame_data  = {}
+        this.combo.meter_data  = {}
 
         this.comboContent = ""
         this.tag_list = []
@@ -140,9 +143,9 @@ export class OldSrkData {
             return null
         }
 
-        // for (let r of comboReplacementPatterns) {
-        //     rawValue.replace(r.pattern, r.replacement)
-        // }
+        for (let r of comboReplacementPatterns) {
+            rawValue = rawValue.replace(r.pattern, r.replacement)
+        }
 
         this.combo.content = rawValue
     }
@@ -156,24 +159,29 @@ export class OldSrkData {
         let lowerRawValue = rawValue?.toLowerCase()
 
         if (lowerRawValue.includes("(ex)")) {
-            this.tag_list.push("EX")
+            this.tag_list.push("ex")
             this.combo.combo_type = COMBO_TYPES.SPECIAL
             this.isSpecial = true
         }
 
         if (!this.isSpecial) {
-                 if (normalNames.includes(lowerRawValue))          { this.combo.combo_type = COMBO_TYPES.NORMAL           }
-            else if (commandNormalNames.includes(lowerRawValue))   { this.combo.combo_type = COMBO_TYPES.COMMAND_NORMAL   }
-            else if (proximityNormalNames.includes(lowerRawValue)) { this.combo.combo_type = COMBO_TYPES.PROXIMITY_NORMAL }
-            else if (lowerRawValue.includes("target combo"))       { this.combo.combo_type = COMBO_TYPES.TARGET_COMBO     }
+                 if (normalNames.includes(lowerRawValue))            { this.combo.combo_type = COMBO_TYPES.NORMAL             }
+            else if (commandNormalNames.includes(lowerRawValue))     { this.combo.combo_type = COMBO_TYPES.COMMAND_NORMAL     }
+            else if (proximityNormalNames.includes(lowerRawValue))   { this.combo.combo_type = COMBO_TYPES.PROXIMITY_NORMAL   }
+            else if (universalMechanicNames.includes(lowerRawValue)) { this.combo.combo_type = COMBO_TYPES.UNIVERSAL_MECHANIC }
+            else if (lowerRawValue.includes("target combo"))         { this.combo.combo_type = COMBO_TYPES.TARGET_COMBO       }
         }
 
-        if (this.needsComboContent) {
+        for (let r of nameReplacementPatterns) {
+            rawValue = rawValue.replace(r.pattern, r.replacement)
+        }
+
+        // if (this.needsComboContent) {
             let newContent = namedMoves[lowerRawValue]
             if (!isStringEmpty(newContent)) {
                 this.combo.content = newContent
             }
-        }
+        // }
 
         this.combo.alternate_name = rawValue
     }
@@ -184,10 +192,13 @@ export class OldSrkData {
             return null
         }
 
-             if (rawValue == "l")                           { this.combo.guard_type = GUARD_TYPES.LOW        }
-        else if (rawValue == "h")                           { this.combo.guard_type = GUARD_TYPES.OVERHEAD   }
-        else if (rawValue.match(PATTERNS.GUARD.ANY))        { this.combo.guard_type = GUARD_TYPES.ANY        }
-        else if (rawValue.match(PATTERNS.GUARD.THROW_TECH)) { this.combo.guard_type = GUARD_TYPES.THROW_TECH }
+             if (rawValue == "l")                           { this.combo.guard_type = GUARD_TYPES.LOW         }
+        else if (rawValue == "h")                           { this.combo.guard_type = GUARD_TYPES.OVERHEAD    }
+        else if (rawValue == "impossible")                  { this.combo.guard_type = GUARD_TYPES.UNBLOCKABLE }
+        else if (rawValue.match(PATTERNS.GUARD.ANY))        { this.combo.guard_type = GUARD_TYPES.ANY         }
+        else if (rawValue.match(PATTERNS.GUARD.THROW_TECH)) { this.combo.guard_type = GUARD_TYPES.THROW_TECH  }
+        else if (rawValue.match(PATTERNS.GUARD.LOW))        { this.combo.guard_type = GUARD_TYPES.LOW         }
+        else if (rawValue.match(PATTERNS.GUARD.OVERHEAD))   { this.combo.guard_type = GUARD_TYPES.OVERHEAD    }
     }
 
     private addMetadata(): void {
@@ -261,7 +272,20 @@ export class OldSrkData {
     // Meter Data
     // =========================================================================
 
-    private buildMeterData(): void { }
+    private buildMeterData(): void {
+        this.parseMeterCost()
+    }
+
+    private parseMeterCost(): void {
+        let f = this.getRawValue("Gauge Needed")
+        if (this.isStringEmpty(f)) {
+            return null
+        }
+
+        if (f.match(PATTERNS.ONLY_NUMBERS)) {
+            this.combo.meter_data.meter_cost = parseInt(f)
+        }
+    }
 
     // =========================================================================
     // Frame Data
@@ -387,7 +411,7 @@ export class OldSrkData {
 
 const oldSrkKeys = [
     // "description",
-    "Move",
+    // "Move",
     // "Motion",
     // "Damage",
     // "life_point_damage",
@@ -413,7 +437,7 @@ const oldSrkKeys = [
     // "Blocked Damage",
     // "Juggle Value",
     // "Reset or Juggle",
-    "Gauge Needed",
+    // "Gauge Needed",
     "gagueData_Damage",
     "gagueData_Throw Range",
     "gagueData_Chains into itself",
@@ -445,46 +469,77 @@ const invalidMotions = [
     "Hold ,+(Hold )",
 ]
 
-const comboReplacementStrings = {
-    "QCF": "236",
-    "QCB": "214",
-    "HCF": "41236",
-    "HCB": "63214",
-    "F, D, DF": "623",
-    "B, D, DB": "421",
-    "(Close to opponent)": "close +",
-    // "(Air) ": "j.",
-}
-
 const comboReplacementPatterns: IReplacementData[] = [
+    { replacement: "236",   pattern: /QCF/gi },
+    { replacement: "214",   pattern: /QCB/gi },
+    { replacement: "41236", pattern: /HCF/gi },
+    { replacement: "63214", pattern: /HCB/gi },
+    { replacement: "623",   pattern: /F, D, DF/gi },
+    { replacement: "421",   pattern: /B, D, DB/gi },
+    // =========================================================================
+    { replacement: "6+LP+LK", pattern: /^F\+LP\+LK$/gim, },
+    { replacement: "4+LP+LK", pattern: /^B\+LP\+LK$/gim, },
+    // =========================================================================
     {
-        pattern: /QCF/i,
-        replacement: "236",
+        pattern: /->/gi,
+        replacement: ">",
     },
     {
-        pattern: /QCB/i,
-        replacement: "214",
-    },
-    {
-        pattern: /HCF/i,
-        replacement: "41236",
-    },
-    {
-        pattern: /HCB/i,
-        replacement: "63214",
-    },
-    {
-        pattern: /F, D, DF/i,
-        replacement: "623",
-    },
-    {
-        pattern: /B, D, DB/i,
-        replacement: "421",
-    },
-    {
-        pattern: /^\(close to opponent\)\s*/im,
+        pattern: /^\(close to opponent\)\s*/gim,
         replacement: "close + ",
     },
+    {
+        pattern: /((hold|charge)\sB,\s*F\s*\+)/gim,
+        replacement: "[4]+6+",
+    },
+    {
+        pattern: /((hold|charge)\sD,\s*U\s*\+)/gim,
+        replacement: "[2]+8+",
+    },
+    // =========================================================================
+    { replacement: "2LP", pattern: /^D\s*\+\s*LP$/gim, },
+    { replacement: "2MP", pattern: /^D\s*\+\s*MP$/gim, },
+    { replacement: "2HP", pattern: /^D\s*\+\s*HP$/gim, },
+    { replacement: "2LK", pattern: /^D\s*\+\s*LK$/gim, },
+    { replacement: "2MK", pattern: /^D\s*\+\s*MK$/gim, },
+    { replacement: "2HK", pattern: /^D\s*\+\s*HK$/gim, },
+
+    { replacement: "j.LP", pattern: /^\(Air\)\s*LP$/gim, },
+    { replacement: "j.MP", pattern: /^\(Air\)\s*MP$/gim, },
+    { replacement: "j.HP", pattern: /^\(Air\)\s*HP$/gim, },
+    { replacement: "j.LK", pattern: /^\(Air\)\s*LK$/gim, },
+    { replacement: "j.MK", pattern: /^\(Air\)\s*MK$/gim, },
+    { replacement: "j.HK", pattern: /^\(Air\)\s*HK$/gim, },
+
+    { replacement: "6LP", pattern: /^F\s*\+\s*LP$/gim, },
+    { replacement: "6MP", pattern: /^F\s*\+\s*MP$/gim, },
+    { replacement: "6HP", pattern: /^F\s*\+\s*HP$/gim, },
+    { replacement: "6LK", pattern: /^F\s*\+\s*LK$/gim, },
+    { replacement: "6MK", pattern: /^F\s*\+\s*MK$/gim, },
+    { replacement: "6HK", pattern: /^F\s*\+\s*HK$/gim, },
+
+    { replacement: "4LP", pattern: /^B\s*\+\s*LP$/gim, },
+    { replacement: "4MP", pattern: /^B\s*\+\s*MP$/gim, },
+    { replacement: "4HP", pattern: /^B\s*\+\s*HP$/gim, },
+    { replacement: "4LK", pattern: /^B\s*\+\s*LK$/gim, },
+    { replacement: "4MK", pattern: /^B\s*\+\s*MK$/gim, },
+    { replacement: "4HK", pattern: /^B\s*\+\s*HK$/gim, },
+
+    { replacement: "c.LP", pattern: /^close\s*\+\s*LP$/gim, },
+    { replacement: "c.MP", pattern: /^close\s*\+\s*MP$/gim, },
+    { replacement: "c.HP", pattern: /^close\s*\+\s*HP$/gim, },
+    { replacement: "c.LK", pattern: /^close\s*\+\s*LK$/gim, },
+    { replacement: "c.MK", pattern: /^close\s*\+\s*MK$/gim, },
+    { replacement: "c.HK", pattern: /^close\s*\+\s*HK$/gim, },
+]
+
+const nameReplacementPatterns: IReplacementData[] = [
+    { replacement: "(LP)", pattern: /\(Jab\)$/gim,        },
+    { replacement: "(MP)", pattern: /\(Strong\)$/gim,     },
+    { replacement: "(HP)", pattern: /\(Fierce\)$/gim,     },
+    { replacement: "(LK)", pattern: /\(Short\)$/gim,      },
+    { replacement: "(MK)", pattern: /\(Forward\)$/gim,    },
+    { replacement: "(HK)", pattern: /\(Roundhouse\)$/gim, },
 ]
 
 const namedMoves = {
@@ -543,6 +598,18 @@ const normalNames = [
     "short",
     "forward",
     "roundhouse",
+    "jump jab",
+    "jump strong",
+    "jump fierce",
+    "jump short",
+    "jump forward",
+    "jump roundhouse",
+    "crouch jab",
+    "crouch strong",
+    "crouch fierce",
+    "crouch short",
+    "crouch forward",
+    "crouch roundhouse",
 ]
 
 const commandNormalNames = [
@@ -552,6 +619,18 @@ const commandNormalNames = [
     "neutral jump short",
     "neutral jump forward",
     "neutral jump roundhouse",
+    "back jab",
+    "back strong",
+    "back fierce",
+    "back short",
+    "back forward",
+    "back roundhouse",
+    "forward jab",
+    "forward strong",
+    "forward fierce",
+    "forward short",
+    "forward forward",
+    "forward roundhouse",
 ]
 
 const proximityNormalNames = [
@@ -568,4 +647,8 @@ const proximityNormalNames = [
     "far short",
     "far forward",
     "far roundhouse",
+]
+
+const universalMechanicNames = [
+    "universal overhead",
 ]

@@ -175,7 +175,7 @@ export class OldSrkParser {
             // console.log(moves)
         } else {
             for (let move of moves) {
-                this.allFrameData.push(new OldSrkData(move))
+                this.allFrameData.push(new OldSrkData(move, this.characterName))
             }
         }
         this.setAllNull()
