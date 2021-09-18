@@ -1,9 +1,31 @@
 export const COMBO_TYPES = {
-    NORMAL: "Normal",
+    ASSIST: "Assist",
+    BLOCK_STRING: "Block String",
     COMMAND_NORMAL: "Command Normal",
+    CORNER: "Corner",
+    MIDSCREEN: "Midscreen",
+    NORMAL: "Normal",
+    OTHER: "Other",
     PROXIMITY_NORMAL: "Proximity Normal",
-    TARGET_COMBO: "Target Combo",
     SPECIAL: "Special",
     SUPER: "Super",
+    TARGET_COMBO: "Target Combo",
+    UNIQUE_MECHANIC: "Unique Mechanic",
     UNIVERSAL_MECHANIC: "Universal Mechanic",
+}
+
+export const COMBO_TYPE_IDS = {
+    "Assist":             11,
+    "Block String":       9,
+    "Command Normal":     3,
+    "Corner":             7,
+    "Midscreen":          6,
+    "Normal":             8,
+    "Other":              4,
+    "Proximity Normal":   14,
+    "Special":            1,
+    "Super":              2,
+    "Target Combo":       10,
+    "Unique Mechanic":    13,
+    "Universal Mechanic": 12,
 }
