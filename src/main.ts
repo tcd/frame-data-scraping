@@ -1,7 +1,8 @@
-import { collectKeys, parse3SFrameDataV2 } from "./srk"
+import { collectAllDataTSV, collectAllDataJSON } from "./srk"
 
 async function main() {
-    await collectKeys()
+    await collectAllDataTSV()
+    // await collectAllDataJSON()
 }
 
 (async () => {

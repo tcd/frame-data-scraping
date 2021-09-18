@@ -1,15 +1,23 @@
 import cheerio from "cheerio"
 
-import { isNullOrUndefined } from "../lib"
+import { isNullOrUndefined } from "@lib"
+import { OldSrkData } from "@types"
+
+const nonGaugeKeys = [
+    "Move",
+    "Motion",
+    "Super Cancel",
+    "Blocked Damage",
+    "Stun Damage",
+    "Reset or Juggle",
+]
 
 export class OldSrkParser {
-
-    public lifePointPattern: RegExp = /\s*\((?<lifePointDamage>\d+)\slife points\)\s*/
 
     public characterName?: string
     public htmlString?: string
     public $?: cheerio.Root
-    public allFrameData: any[]
+    public allFrameData: OldSrkData[]
 
     public currentMoveData?:  cheerio.Element
     public currentFrameData?: cheerio.Element
@@ -78,7 +86,7 @@ export class OldSrkParser {
         let headers
         let values
         let moves = []
-        for (let i = 1; i < expectedRows; i++) { moves.push({ description }) }
+        for (let i = 1; i < expectedRows; i++) { moves.push({ character: this.characterName, description }) }
 
         // =====================================================================
         // Move Data
@@ -103,17 +111,7 @@ export class OldSrkParser {
                     haveIssues = true
                     console.log(`Undefined Key (${this.characterName}) - Value: '${value}'`)
                 }
-                if (key == "Damage") {
-                    // let lifePointDamage =
-                    // const { groups: { lifePointDamage } } = this.lifePointPattern.exec(value)
-                    const result = this.lifePointPattern.exec(value)
-                    if (result?.groups?.lifePointDamage) {
-                        moves[i][key] = value.replace(/\s*\(\d+\slife points\)\s*/, "")
-                        moves[i]["life_point_damage"] = result.groups.lifePointDamage
-                    }
-                } else {
-                    moves[i][key] = value
-                }
+                moves[i][key] = value
             }
         })
 
@@ -148,15 +146,6 @@ export class OldSrkParser {
         // Gauge Data
         // =====================================================================
 
-        const nonGaugeKeys = [
-            "Move",
-            "Motion",
-            "Super Cancel",
-            "Blocked Damage",
-            "Stun Damage",
-            "Reset or Juggle",
-        ]
-
         rows    = this.$(this.currentGaugeData).find("tbody > tr")
         headers = this.$(rows[0]).find("td").map((_, el) => this.$(el).text().trim())
         if (rows.length != expectedRows) {
@@ -185,7 +174,9 @@ export class OldSrkParser {
         if (haveIssues) {
             // console.log(moves)
         } else {
-            this.allFrameData.push(...moves)
+            for (let move of moves) {
+                this.allFrameData.push(new OldSrkData(move))
+            }
         }
         this.setAllNull()
     }
@@ -209,12 +200,6 @@ export class OldSrkParser {
     private haveFirst2(): boolean {
         return this.currentMoveData  != null
             && this.currentFrameData != null
-    }
-
-    private haveAll3(): boolean {
-        return this.currentMoveData  != null
-            && this.currentFrameData != null
-            && this.currentGaugeData != null
     }
 
     private haveNone(): boolean {
