@@ -7,10 +7,12 @@ export const writeJsonToTsv = async (data: any, filePath: string) => {
             field: "\t",
         },
         emptyFieldValue: "-",
+        sortHeader: true,
     }
     try {
         const csvData = await converter.json2csvAsync(data, options)
-        fs.writeFileSync(filePath, csvData)
+        const cleanData = csvData.replace(/(?:_\d)+_/g, "")
+        fs.writeFileSync(filePath, cleanData)
         console.log(`File written: '${filePath}'`)
     } catch (error) {
         console.log(`Unable to write file: '${filePath}'`)

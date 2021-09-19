@@ -24,13 +24,12 @@ export async function parse3SFrameData(trialNumber: string) {
     } catch (error) {
         console.log(error)
     }
-
 }
 
 export async function collectAllDataTSV() {
     try {
         const rootDir      = await pkgDir(__dirname)
-        const outFile      = `${rootDir}/out/tsv/all-moves-v2.tsv`
+        const outFile      = `${rootDir}/out/tsv/all-moves-v3.tsv`
         const allFrameData = []
 
         for (const character of characters) {
@@ -44,7 +43,7 @@ export async function collectAllDataTSV() {
                 .catch(err => console.log(err))
         }
 
-        let outData = allFrameData.flat(1).map(x => flattenObject(x.toCombo().slimData()))
+        let outData = allFrameData.flat(1).map(x => x.toCombo().thickData())
 
         await writeJsonToTsv(outData, outFile)
     } catch (error) {
@@ -63,7 +62,7 @@ export async function collectAllDataJSON() {
             const oldFileData = fs.readFileSync(oldFile, "utf8")
             await parseOldSRKFrameData(character, oldFileData)
                 .then(async (moves) => {
-                    let data = moves.map(x => flattenObject(x.toCombo()))
+                    let data = moves.map(x => flattenObject(x.toCombo().thickData()))
                     allFrameData.push(...data)
                     console.log(`${character} complete`)
                 })

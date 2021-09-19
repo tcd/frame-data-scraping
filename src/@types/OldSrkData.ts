@@ -1,13 +1,16 @@
 import { isEmpty, uniq } from "lodash"
 
 import { COMBO_TYPES, GUARD_TYPES } from "@data"
-import { isStringEmpty } from "@lib"
-import { Combo, IReplacementData } from "@types"
+import { isNullOrUndefined, isStringEmpty } from "@lib"
+import { Combo, DamageData, FrameData, IReplacementData, MeterData } from "@types"
 
 const PATTERNS = {
     LIFE_POINT:         /\s*\((?<lifePointDamage>\d+)\slife points\)\s*/g,
     LIFE_POINT_REMOVAL: /\s*\(\d+\slife points\)\s*/,
     ONLY_NUMBERS:       /^(\+|-)?\d+$/m,
+    SPECIAL_ENDING_1:   /\([LMH][PK]\)$/igm,
+    SPECIAL_ENDING_2:   /\((Jab|Strong|Fierce|Short|Forward|Roundhouse)\)$/igm,
+    COMMAND_NORMAL:     /^((j\.2)|[1346])[LMH][PK]$/igm,
     GUARD: {
         ANY:        /(^(HL\/)+HL$)|(^HLx\d+$)|(^HL$)/igm,
         THROW_TECH: /(^((B|F|B\/F)\+)?LP\+LK$)/igm,
@@ -21,10 +24,6 @@ export class OldSrkData {
     public rawData?: any
     public combo?: Combo
 
-    public comboContent?: string
-    public tag_list: string[]
-    public cancel_types: string[]
-
     public hasNeutralJumpData?: boolean
     public needsComboContent?: boolean
     public isSpecial?: boolean
@@ -36,14 +35,6 @@ export class OldSrkData {
         this.combo = new Combo()
 
         this.combo.character_name = characterName
-        this.combo.metadata    = {}
-        this.combo.damage_data = {}
-        this.combo.frame_data  = {}
-        this.combo.meter_data  = {}
-
-        this.comboContent = ""
-        this.tag_list = []
-        this.cancel_types = []
 
         this.hasNeutralJumpData = false
         this.needsComboContent  = false
@@ -65,20 +56,8 @@ export class OldSrkData {
         this.parseMotion()
         this.parseMoveName()
 
-        if (this.tag_list.length > 0) {
-            this.combo.tag_list = uniq(this.tag_list).join(", ")
-        }
-
-        if (this.cancel_types.length > 0) {
-            this.combo.cancel_types = uniq(this.cancel_types).join(", ")
-        }
-
-        // if (this.combo.tag_list.length == 0)     { delete(this.combo.tag_list)     }
-        // if (this.combo.cancel_types.length == 0) { delete(this.combo.cancel_types) }
-        if (isEmpty(this.combo.damage_data))     { delete(this.combo.damage_data)  }
-        if (isEmpty(this.combo.frame_data))      { delete(this.combo.frame_data)   }
-        if (isEmpty(this.combo.meter_data))      { delete(this.combo.meter_data)   }
-        if (isEmpty(this.combo.metadata))        { delete(this.combo.metadata)     }
+        this.addSortOrder()
+        this.parseSuperData()
 
         return this.combo
     }
@@ -95,6 +74,12 @@ export class OldSrkData {
         let value = this.getRawValue(key)
         if (!this.isStringEmpty(value)) {
             this.combo.metadata[key] = value
+        }
+    }
+
+    private cleanTargetCombo(): void {
+        if (this.combo.combo_type != COMBO_TYPES.TARGET_COMBO) {
+            return
         }
     }
 
@@ -117,13 +102,13 @@ export class OldSrkData {
 
     private parseCancelTypes(): void {
         if (this.getRawValue("Chains into itself")?.toLowerCase()?.includes("yes")) {
-            this.cancel_types.push("Self")
+            this.combo.cancel_types.push("Self")
         }
         if (this.getRawValue("Special Cancel")?.toLowerCase()?.includes("yes")) {
-            this.cancel_types.push("Special")
+            this.combo.cancel_types.push("Special")
         }
         if (this.getRawValue("Super Cancel")?.toLowerCase()?.includes("yes")) {
-            this.cancel_types.push("Super")
+            this.combo.cancel_types.push("Super")
         }
     }
 
@@ -132,10 +117,13 @@ export class OldSrkData {
         let lowerRawValue = rawValue?.toLowerCase()
 
         if (lowerRawValue.includes("hold") || lowerRawValue.includes("charge")) {
-            this.tag_list.push("hold ok")
+            this.combo.tag_list.push("hold ok")
         }
         if (lowerRawValue.includes("mash")) {
-            this.tag_list.push("mash ok")
+            this.combo.tag_list.push("mash ok")
+        }
+        if (lowerRawValue.startsWith("(air)")) {
+            this.combo.tag_list.push("air only")
         }
 
         if (invalidMotions.includes(lowerRawValue)) {
@@ -143,8 +131,25 @@ export class OldSrkData {
             return null
         }
 
+        if (universalMechanicContent.includes(lowerRawValue)) {
+            this.combo.combo_type = COMBO_TYPES.UNIVERSAL_MECHANIC
+            this.combo.guard_type = GUARD_TYPES.THROW_TECH
+            this.isSpecial = false
+        }
+
         for (let r of comboReplacementPatterns) {
             rawValue = rawValue.replace(r.pattern, r.replacement)
+        }
+
+        if (rawValue.match(PATTERNS.COMMAND_NORMAL)) {
+            this.isSpecial = false
+            this.combo.combo_type = COMBO_TYPES.COMMAND_NORMAL
+        }
+
+        if (universalMechanicContent.includes(lowerRawValue)) {
+            this.combo.combo_type = COMBO_TYPES.UNIVERSAL_MECHANIC
+            this.combo.guard_type = GUARD_TYPES.THROW_TECH
+            this.isSpecial = false
         }
 
         this.combo.content = rawValue
@@ -159,55 +164,93 @@ export class OldSrkData {
         let lowerRawValue = rawValue?.toLowerCase()
 
         if (lowerRawValue.includes("(ex)")) {
-            this.tag_list.push("ex")
+            this.combo.tag_list.push("ex")
             this.combo.combo_type = COMBO_TYPES.SPECIAL
             this.isSpecial = true
+            this.isSuper   = false
+        }
+
+        if (lowerRawValue == "universal overhead") {
+            this.combo.guard_type = GUARD_TYPES.OVERHEAD
+            this.combo.combo_type = COMBO_TYPES.UNIVERSAL_MECHANIC
+            this.isSpecial = false
+            this.isSuper   = false
+        }
+
+        if (lowerRawValue.match(PATTERNS.SPECIAL_ENDING_2)) {
+            this.combo.combo_type = COMBO_TYPES.SPECIAL
         }
 
         if (!this.isSpecial) {
-                 if (normalNames.includes(lowerRawValue))            { this.combo.combo_type = COMBO_TYPES.NORMAL             }
+                 if (lowerRawValue.includes("target combo"))         { this.combo.combo_type = COMBO_TYPES.TARGET_COMBO       }
+            else if (normalNames.includes(lowerRawValue))            { this.combo.combo_type = COMBO_TYPES.NORMAL             }
             else if (commandNormalNames.includes(lowerRawValue))     { this.combo.combo_type = COMBO_TYPES.COMMAND_NORMAL     }
             else if (proximityNormalNames.includes(lowerRawValue))   { this.combo.combo_type = COMBO_TYPES.PROXIMITY_NORMAL   }
             else if (universalMechanicNames.includes(lowerRawValue)) { this.combo.combo_type = COMBO_TYPES.UNIVERSAL_MECHANIC }
-            else if (lowerRawValue.includes("target combo"))         { this.combo.combo_type = COMBO_TYPES.TARGET_COMBO       }
+            else if (uniqueMechanicNames.includes(lowerRawValue))    { this.combo.combo_type = COMBO_TYPES.UNIQUE_MECHANIC    }
         }
 
         for (let r of nameReplacementPatterns) {
             rawValue = rawValue.replace(r.pattern, r.replacement)
         }
 
-        // if (this.needsComboContent) {
-            let newContent = namedMoves[lowerRawValue]
-            if (!isStringEmpty(newContent)) {
-                this.combo.content = newContent
+        let newContent = namedMoves[lowerRawValue]
+        if (!isStringEmpty(newContent)) {
+            this.combo.content = newContent
+        } else {
+            if (rawValue.toLowerCase() != "target combo") {
+                this.combo.official_name = rawValue
             }
-        // }
+        }
 
         this.combo.alternate_name = rawValue
     }
 
     private parseGuardType(): void {
-        let rawValue = this.getRawValue("description")?.toLowerCase()
+        let lowerRawValue = this.getRawValue("Guard")?.toLowerCase()
+        if (this.isStringEmpty(lowerRawValue)) {
+            return null
+        }
+
+             if (lowerRawValue == "l")                           { this.combo.guard_type = GUARD_TYPES.LOW         }
+        else if (lowerRawValue == "h")                           { this.combo.guard_type = GUARD_TYPES.OVERHEAD    }
+        else if (lowerRawValue == "impossible")                  { this.combo.guard_type = GUARD_TYPES.UNBLOCKABLE }
+        else if (lowerRawValue.match(PATTERNS.GUARD.ANY))        { this.combo.guard_type = GUARD_TYPES.ANY         }
+        else if (lowerRawValue.match(PATTERNS.GUARD.THROW_TECH)) { this.combo.guard_type = GUARD_TYPES.THROW_TECH  }
+        else if (lowerRawValue.match(PATTERNS.GUARD.LOW))        { this.combo.guard_type = GUARD_TYPES.LOW         }
+        else if (lowerRawValue.match(PATTERNS.GUARD.OVERHEAD))   { this.combo.guard_type = GUARD_TYPES.OVERHEAD    }
+    }
+
+    private parseSuperData(): void {
+        let rawValue = this.getRawValue("Super Art Name")
         if (this.isStringEmpty(rawValue)) {
             return null
         }
 
-             if (rawValue == "l")                           { this.combo.guard_type = GUARD_TYPES.LOW         }
-        else if (rawValue == "h")                           { this.combo.guard_type = GUARD_TYPES.OVERHEAD    }
-        else if (rawValue == "impossible")                  { this.combo.guard_type = GUARD_TYPES.UNBLOCKABLE }
-        else if (rawValue.match(PATTERNS.GUARD.ANY))        { this.combo.guard_type = GUARD_TYPES.ANY         }
-        else if (rawValue.match(PATTERNS.GUARD.THROW_TECH)) { this.combo.guard_type = GUARD_TYPES.THROW_TECH  }
-        else if (rawValue.match(PATTERNS.GUARD.LOW))        { this.combo.guard_type = GUARD_TYPES.LOW         }
-        else if (rawValue.match(PATTERNS.GUARD.OVERHEAD))   { this.combo.guard_type = GUARD_TYPES.OVERHEAD    }
+        this.isSuper = true
+        this.combo.combo_type = COMBO_TYPES.SUPER
+
+        this.combo.official_name = rawValue
+        this.combo.sort_order = 1000
+    }
+
+    private addSortOrder(): void {
+        let sortOrder = sortOrders[this.combo.content]
+        if (!isNullOrUndefined(sortOrder)) {
+            this.combo.sort_order = sortOrder
+        }
     }
 
     private addMetadata(): void {
         this.setMetadata("Parry")
         this.setMetadata("Throw Range")
+        this.setMetadata("Throw Range (Front)")
+        this.setMetadata("Throw Range (Up & Down)")
         this.setMetadata("Kara-Throw")
         this.setMetadata("Kara-Throw Range")
         this.setMetadata("Juggle Value")
         this.setMetadata("Reset or Juggle")
+        this.setMetadata("Super Art Stock")
     }
 
     // =========================================================================
@@ -274,16 +317,74 @@ export class OldSrkData {
 
     private buildMeterData(): void {
         this.parseMeterCost()
+        this.parseWhiffMeterBuild()
+        this.parseHitMeterBuild()
+        this.parseParryMeterBuild()
+        this.parseBlockMeterBuild()
     }
 
     private parseMeterCost(): void {
-        let f = this.getRawValue("Gauge Needed")
-        if (this.isStringEmpty(f)) {
+        let m = this.getRawValue("Gauge Needed")
+        if (this.isStringEmpty(m)) {
             return null
         }
 
-        if (f.match(PATTERNS.ONLY_NUMBERS)) {
-            this.combo.meter_data.meter_cost = parseInt(f)
+        if (m.match(PATTERNS.ONLY_NUMBERS)) {
+            this.combo.meter_data.meter_cost = parseInt(m)
+        } else {
+            this.combo.meter_data.meter_cost_formula = m
+        }
+    }
+
+    private parseWhiffMeterBuild(): void {
+        let m = this.getRawValue("gagueData_Miss")
+        if (this.isStringEmpty(m)) {
+            return null
+        }
+
+        if (m.match(PATTERNS.ONLY_NUMBERS)) {
+            this.combo.meter_data.whiff_meter_build = parseInt(m)
+        } else {
+            this.combo.meter_data.whiff_meter_build_formula = m
+        }
+    }
+
+    private parseHitMeterBuild(): void {
+        let m = this.getRawValue("gagueData_Hit")
+        if (this.isStringEmpty(m)) {
+            return null
+        }
+
+        if (m.match(PATTERNS.ONLY_NUMBERS)) {
+            this.combo.meter_data.hit_meter_build = parseInt(m)
+        } else {
+            this.combo.meter_data.hit_meter_build_formula = m
+        }
+    }
+
+    private parseParryMeterBuild(): void {
+        let m = this.getRawValue("gagueData_Parry (Gauge for opponent)")
+        if (this.isStringEmpty(m)) {
+            return null
+        }
+
+        if (m.match(PATTERNS.ONLY_NUMBERS)) {
+            this.combo.meter_data.parry_meter_build = parseInt(m)
+        } else {
+            this.combo.meter_data.parry_meter_build_formula = m
+        }
+    }
+
+    private parseBlockMeterBuild(): void {
+        let m = this.getRawValue("gagueData_Blocked")
+        if (this.isStringEmpty(m)) {
+            return null
+        }
+
+        if (m.match(PATTERNS.ONLY_NUMBERS)) {
+            this.combo.meter_data.block_meter_build = parseInt(m)
+        } else {
+            this.combo.meter_data.block_meter_build_formula = m
         }
     }
 
@@ -382,7 +483,7 @@ export class OldSrkData {
             this.combo.frame_data.hit_frame_advantage = parseInt(f)
         } else {
             if (f.includes("down") || f.includes("kd")) {
-                this.tag_list.push("hard knockdown")
+                this.combo.tag_list.push("hard knockdown")
             } else {
                 this.combo.frame_data.hit_frame_advantage_formula = f
             }
@@ -400,7 +501,7 @@ export class OldSrkData {
             this.combo.frame_data.crouching_hit_frame_advantage = parseInt(f)
         } else {
             if (f.includes("down") || f.includes("kd")) {
-                this.tag_list.push("hard knockdown")
+                this.combo.tag_list.push("hard knockdown")
             } else {
                 this.combo.frame_data.crouching_hit_frame_advantage_formula = f
             }
@@ -427,10 +528,10 @@ const oldSrkKeys = [
     // "Crouching Hit Advantage",
     // "Guard",
     // "Parry",
-    "gagueData_Miss",
-    "gagueData_Blocked",
-    "gagueData_Hit",
-    "gagueData_Parry (Gauge for opponent)",
+    // "gagueData_Miss",
+    // "gagueData_Blocked",
+    // "gagueData_Hit",
+    // "gagueData_Parry (Gauge for opponent)",
     // "Throw Range",
     // "Kara-Throw",
     // "Kara-Throw Range",
@@ -442,8 +543,8 @@ const oldSrkKeys = [
     "gagueData_Throw Range",
     "gagueData_Chains into itself",
     "gagueData_Special Cancel",
-    "Throw Range (Front)",
-    "Throw Range (Up & Down)",
+    // "Throw Range (Front)",
+    // "Throw Range (Up & Down)",
     "gagueData_Num.",
     "gagueData_Super Art",
     "gagueData_Super Art Stock",
@@ -652,3 +753,69 @@ const proximityNormalNames = [
 const universalMechanicNames = [
     "universal overhead",
 ]
+
+const uniqueMechanicNames = [
+    "taunt",
+]
+
+const universalMechanicContent = [
+    "mp+mk",
+    "lp+lk or f+lp+lk",
+    "b/f/n+lp+lk",
+    "f/b+lp+lk",
+    "b/f+lp+lk",
+    "(b)+lp+lk",
+    "(f)+lp+lk",
+    "(b+f)+lp+lk",
+    "(b/f)+lp+lk",
+    "6+lp+lk",
+    "4+lp+lk",
+    "lp+lk",
+]
+
+const sortOrders = {
+    "LP":   110,
+    "c.LP": 111,
+    "f.LP": 112,
+    "6LP":  113,
+    "4LP":  114,
+    "MP":   120,
+    "c.MP": 121,
+    "f.MP": 122,
+    "6MP":  123,
+    "4MP":  124,
+    "HP":   130,
+    "c.HP": 131,
+    "f.HP": 132,
+    "6HP":  133,
+    "4HP":  134,
+    "LK":   140,
+    "c.LK": 141,
+    "f.LK": 142,
+    "MK":   150,
+    "c.MK": 151,
+    "f.MK": 152,
+    "HK":   160,
+    "c.HK": 162,
+    "f.HK": 163,
+
+    "2LP": 210,
+    "2MP": 220,
+    "2HP": 230,
+    "2LK": 240,
+    "2MK": 250,
+    "2HK": 260,
+
+    "j.LP": 310,
+    "8LP":  311,
+    "j.MP": 320,
+    "8MP":  321,
+    "j.HP": 330,
+    "8HP":  331,
+    "j.LK": 340,
+    "8LK":  341,
+    "j.MK": 350,
+    "8MK":  351,
+    "j.HK": 360,
+    "8HK":  361,
+}

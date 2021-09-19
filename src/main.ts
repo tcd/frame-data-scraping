@@ -1,8 +1,10 @@
-import { collectAllDataTSV, collectAllDataJSON } from "./srk"
+import { collectAllDataTSV, collectAllDataJSON, fromTSV, fromTsvToCombo } from "./srk"
 
 async function main() {
-    await collectAllDataTSV()
+    // await collectAllDataTSV()
     // await collectAllDataJSON()
+    // await fromTSV()
+    await fromTsvToCombo()
 }
 
 (async () => {

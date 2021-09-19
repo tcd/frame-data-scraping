@@ -1,4 +1,7 @@
-import { compactObject } from "@lib"
+import { isEmpty, uniq } from "lodash"
+
+import { COMBO_TYPE_IDS, GUARD_TYPE_IDS, characterIds, CANCEL_TYPE_IDS } from "@data"
+import { compactArray, compactObject } from "@lib"
 
 import { FrameData } from "./FrameData"
 import { DamageData } from "./DamageData"
@@ -6,9 +9,17 @@ import { MeterData } from "./MeterData"
 
 export class Combo {
 
-    constructor() { }
+    constructor() {
+        this.metadata = {}
 
-    public metadata?: any
+        this.tag_list     = []
+        this.cancel_types = []
+
+        this.damage_data = new DamageData()
+        this.frame_data  = new FrameData()
+        this.meter_data  = new MeterData()
+    }
+
     public confirmed?: boolean
     public sort_order?: number
     public animation_url?: string
@@ -31,20 +42,60 @@ export class Combo {
     public hits?: number
     public max_hits?: number
     public min_hits?: number
-    public hit_count?: string // (read only)
 
-    public damage_data?: DamageData
-    public meter_data?: MeterData
-    public frame_data?: FrameData
+    public tag_list?: string[]
+    public metadata?: any
+    public damage_data?: Partial<DamageData>
+    public meter_data?: Partial<MeterData>
+    public frame_data?: Partial<FrameData>
 
     // =========================================================================
     // New for scraping
     // =========================================================================
+    public game_character_id?: number
+    public combo_type_id?: number
+    public guard_type_id?: number
+    public cancel_type_ids?: number[]
+
     public character_name?: string
     public combo_type?: string
     public guard_type?: string
-    public cancel_types?: string
-    public tag_list?: string
+    public cancel_types?: string[]
+
+    // =========================================================================
+    // Private Methods
+    // =========================================================================
+
+    private getGameCharacterId(ids): number {
+        return ids[this.character_name]
+    }
+
+    private getComboTypeId(): number {
+        return COMBO_TYPE_IDS[this.combo_type] || null
+    }
+
+    private getGuardTypeId(): number {
+        return GUARD_TYPE_IDS[this.guard_type] || null
+    }
+
+    private getCancelTypeIds(): number[] {
+        if (!(this.cancel_types?.length > 0)) {
+            return null
+        }
+        return compactArray(this.cancel_types.map(x => CANCEL_TYPE_IDS[x]))
+    }
+
+    private tagListString(): string {
+        return uniq(this.tag_list).join(", ")
+    }
+
+    private cancelTypesString(): string {
+        return uniq(this.cancel_types).join(", ")
+    }
+
+    // =========================================================================
+    // Public Methods
+    // =========================================================================
 
     public slimData(): any {
         let data = {
@@ -53,8 +104,8 @@ export class Combo {
             content:        this?.content,
             combo_type:     this?.combo_type,
             guard_type:     this?.guard_type,
-            cancel_types:   this?.cancel_types,
-            tag_list:       this?.tag_list,
+            cancel_types:   this?.cancelTypesString(),
+            tag_list:       this?.tagListString(),
             // Damage Data
             damage:      this.damage_data?.damage,
             chip_damage: this.damage_data?.chip_damage,
@@ -70,5 +121,108 @@ export class Combo {
             meter_cost: this.meter_data?.meter_cost,
         }
         return compactObject(data)
+    }
+
+    public thickData(): any {
+
+        let result: any = {}
+
+        result._1_1_character_name = this.character_name
+
+        if (this.tag_list?.length > 0) { result._1_2_1_tag_list = this.tagListString() }
+        result._1_2_2_cancel_types   = this.cancel_types?.toString()
+        result._1_2_3_guard_type     = this.guard_type
+
+        result._1_3_1_description    = this?.description
+        result._1_3_2_official_name  = this?.official_name
+        result._1_3_3_sort_order     = this?.sort_order
+        result._1_3_4_combo_type     = this.combo_type
+        result._1_3_5_content        = this?.content
+        result._1_3_6_alternate_name = this?.alternate_name
+
+        if (!isEmpty(this.damage_data)) { (result.damage_data = this.damage_data.thickData()) }
+        if (!isEmpty(this.frame_data))  { (result.frame_data  = this.frame_data.thickData())  }
+        if (!isEmpty(this.meter_data))  { (result.meter_data  = this.meter_data.thickData())  }
+        if (!isEmpty(this.metadata))    { (result.metadata    = this.metadata)                }
+
+        return compactObject(result)
+    }
+
+    public toJSON(): Partial<Combo> {
+
+        let result: Partial<Combo> = {}
+
+        result.confirmed = false
+        result.character_name = this.character_name
+
+        result.game_character_id = this.getGameCharacterId(characterIds)
+        result.combo_type_id     = this.getComboTypeId()
+        result.guard_type_id     = this.getGuardTypeId()
+        result.cancel_type_ids   = this.getCancelTypeIds()
+        if (this.tag_list?.length > 0) { result.tag_list = this.tag_list }
+
+        result.description    = this?.description
+        result.official_name  = this?.official_name
+        result.sort_order     = this?.sort_order
+        result.content        = this?.content
+        result.alternate_name = this?.alternate_name
+
+        if (!isEmpty(this.damage_data)) { (result.damage_data = this.damage_data.toJSON()) }
+        if (!isEmpty(this.frame_data))  { (result.frame_data  = this.frame_data.toJSON())  }
+        if (!isEmpty(this.meter_data))  { (result.meter_data  = this.meter_data.toJSON())  }
+        if (!isEmpty(this.metadata))    { (result.metadata    = this.metadata)             }
+
+        return compactObject(result)
+    }
+
+    public static fromJSON(data: any): Combo {
+        let combo = new Combo()
+        combo.character_name = data["character_name"]
+        combo.tag_list = data["tag_list"]?.split(/,\s*/)
+        combo.cancel_types = data["cancel_types"]?.split(/,\s*/)
+        combo.guard_type = data["guard_type"]
+        combo.description = data["description"]
+        combo.official_name = data["official_name"]
+        combo.sort_order = data["sort_order"]
+        combo.combo_type = data["combo_type"]
+        combo.content = data["content"]
+        combo.alternate_name = data["alternate_name"]
+        combo.conditions = data["conditions"]
+        combo.metadata = data["metadata"]
+
+        combo.damage_data.damage = data["damage_data.damage"]
+        combo.damage_data.damage_formula = data["damage_data.damage_formula"]
+        combo.damage_data.chip_damage = data["damage_data.chip_damage"]
+        combo.damage_data.chip_damage_formula = data["damage_data.chip_damage_formula"]
+        combo.damage_data.stun_damage = data["damage_data.stun_damage"]
+        combo.damage_data.stun_damage_formula = data["damage_data.stun_damage_formula"]
+        combo.damage_data.life_point_damage = data["damage_data.life_point_damage"]
+
+        combo.frame_data.startup_frames = data["frame_data.startup_frames"]
+        combo.frame_data.startup_frames_formula = data["frame_data.startup_frames_formula"]
+        combo.frame_data.active_frames = data["frame_data.active_frames"]
+        combo.frame_data.active_frames_formula = data["frame_data.active_frames_formula"]
+        combo.frame_data.whiff_recovery_frames = data["frame_data.whiff_recovery_frames"]
+        combo.frame_data.whiff_recovery_frames_formula = data["frame_data.whiff_recovery_frames_formula"]
+        combo.frame_data.hit_frame_advantage = data["frame_data.hit_frame_advantage"]
+        combo.frame_data.hit_frame_advantage_formula = data["frame_data.hit_frame_advantage_formula"]
+        combo.frame_data.block_frame_advantage = data["frame_data.block_frame_advantage"]
+        combo.frame_data.block_frame_advantage_formula = data["frame_data.block_frame_advantage_formula"]
+        combo.frame_data.crouching_hit_frame_advantage = data["frame_data.crouching_hit_frame_advantage"]
+        combo.frame_data.crouching_hit_frame_advantage_formula = data["frame_data.crouching_hit_frame_advantage_formula"]
+        combo.frame_data.active_until_landing = data["frame_data.active_until_landing"]
+
+        combo.meter_data.meter_cost = data["meter_data.meter_cost"]
+        combo.meter_data.meter_cost_formula = data["meter_data.meter_cost_formula"]
+        combo.meter_data.whiff_meter_build = data["meter_data.whiff_meter_build"]
+        combo.meter_data.whiff_meter_build_formula = data["meter_data.whiff_meter_build_formula"]
+        combo.meter_data.block_meter_build = data["meter_data.block_meter_build"]
+        combo.meter_data.block_meter_build_formula = data["meter_data.block_meter_build_formula"]
+        combo.meter_data.hit_meter_build = data["meter_data.hit_meter_build"]
+        combo.meter_data.hit_meter_build_formula = data["meter_data.hit_meter_build_formula"]
+        combo.meter_data.parry_meter_build = data["meter_data.parry_meter_build"]
+        combo.meter_data.parry_meter_build_formula = data["meter_data.parry_meter_build_formula"]
+
+        return combo
     }
 }
