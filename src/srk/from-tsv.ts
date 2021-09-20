@@ -73,7 +73,7 @@ export const fromTsvToCombo = async (character: string) => {
                 .data
                 .filter(x => x.include == true)
                 .map(x => Combo.fromJSON(x).toJSON())
-                .filter(x => x.character_name == character)
+                // .filter(x => x.character_name == character)
         let outData = JSON.stringify(combos, null, 2)
 
         fs.writeFileSync(outFilePath, outData)

@@ -153,7 +153,8 @@ export class Combo {
         let result: Partial<Combo> = {}
 
         result.confirmed = false
-        result.character_name = this.character_name
+        result.which_notation_style = "Dynamic"
+        // result.character_name = this.character_name
 
         result.game_character_id = this.getGameCharacterId(characterIds)
         result.combo_type_id     = this.getComboTypeId()
