@@ -4,7 +4,7 @@ async function main() {
     // await collectAllDataTSV()
     // await collectAllDataJSON()
     // await fromTSV()
-    await fromTsvToCombo()
+    await fromTsvToCombo("Remy")
 }
 
 (async () => {

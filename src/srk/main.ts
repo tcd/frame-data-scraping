@@ -29,7 +29,7 @@ export async function parse3SFrameData(trialNumber: string) {
 export async function collectAllDataTSV() {
     try {
         const rootDir      = await pkgDir(__dirname)
-        const outFile      = `${rootDir}/out/tsv/all-moves-v3.tsv`
+        const outFile      = `${rootDir}/out/tsv/all-moves-v4.tsv`
         const allFrameData = []
 
         for (const character of characters) {

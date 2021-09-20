@@ -48,7 +48,7 @@ export class OldSrkData {
         this.buildMeterData()
         this.buildFrameData()
 
-        // this.addMetadata()
+        this.addMetadata()
         this.parseCancelTypes()
         this.parseGuardType()
 
@@ -58,6 +58,8 @@ export class OldSrkData {
 
         this.addSortOrder()
         this.parseSuperData()
+
+        this.cleanTargetCombo()
 
         return this.combo
     }
@@ -80,6 +82,10 @@ export class OldSrkData {
     private cleanTargetCombo(): void {
         if (this.combo.combo_type != COMBO_TYPES.TARGET_COMBO) {
             return
+        }
+
+        for (let r of targetComboReplacementPatterns) {
+            this.combo.content = this.combo.content.replace(r.pattern, r.replacement)
         }
     }
 
@@ -146,7 +152,7 @@ export class OldSrkData {
             this.combo.combo_type = COMBO_TYPES.COMMAND_NORMAL
         }
 
-        if (universalMechanicContent.includes(lowerRawValue)) {
+        if (universalMechanicContent.includes(rawValue?.toLowerCase())) {
             this.combo.combo_type = COMBO_TYPES.UNIVERSAL_MECHANIC
             this.combo.guard_type = GUARD_TYPES.THROW_TECH
             this.isSpecial = false
@@ -632,6 +638,50 @@ const comboReplacementPatterns: IReplacementData[] = [
     { replacement: "c.LK", pattern: /^close\s*\+\s*LK$/gim, },
     { replacement: "c.MK", pattern: /^close\s*\+\s*MK$/gim, },
     { replacement: "c.HK", pattern: /^close\s*\+\s*HK$/gim, },
+]
+
+const targetComboReplacementPatterns: IReplacementData[] = [
+    { replacement: "j.LP", pattern: /Jump\s*LP/gim, },
+    { replacement: "j.MP", pattern: /Jump\s*MP/gim, },
+    { replacement: "j.HP", pattern: /Jump\s*HP/gim, },
+    { replacement: "j.LK", pattern: /Jump\s*LK/gim, },
+    { replacement: "j.MK", pattern: /Jump\s*MK/gim, },
+    { replacement: "j.HK", pattern: /Jump\s*HK/gim, },
+
+    { replacement: "f.LP", pattern: /Far\s*LP/gim, },
+    { replacement: "f.MP", pattern: /Far\s*MP/gim, },
+    { replacement: "f.HP", pattern: /Far\s*HP/gim, },
+    { replacement: "f.LK", pattern: /Far\s*LK/gim, },
+    { replacement: "f.MK", pattern: /Far\s*MK/gim, },
+    { replacement: "f.HK", pattern: /Far\s*HK/gim, },
+
+    { replacement: "c.LP", pattern: /Close\s*LP/gim, },
+    { replacement: "c.MP", pattern: /Close\s*MP/gim, },
+    { replacement: "c.HP", pattern: /Close\s*HP/gim, },
+    { replacement: "c.LK", pattern: /Close\s*LK/gim, },
+    { replacement: "c.MK", pattern: /Close\s*MK/gim, },
+    { replacement: "c.HK", pattern: /Close\s*HK/gim, },
+
+    { replacement: "2LP", pattern: /Crouch\s*LP/gim, },
+    { replacement: "2MP", pattern: /Crouch\s*MP/gim, },
+    { replacement: "2HP", pattern: /Crouch\s*HP/gim, },
+    { replacement: "2LK", pattern: /Crouch\s*LK/gim, },
+    { replacement: "2MK", pattern: /Crouch\s*MK/gim, },
+    { replacement: "2HK", pattern: /Crouch\s*HK/gim, },
+
+    { replacement: "6LP", pattern: /Forward\s*LP/gim, },
+    { replacement: "6MP", pattern: /Forward\s*MP/gim, },
+    { replacement: "6HP", pattern: /Forward\s*HP/gim, },
+    { replacement: "6LK", pattern: /Forward\s*LK/gim, },
+    { replacement: "6MK", pattern: /Forward\s*MK/gim, },
+    { replacement: "6HK", pattern: /Forward\s*HK/gim, },
+
+    { replacement: "4LP", pattern: /Back\s*LP/gim, },
+    { replacement: "4MP", pattern: /Back\s*MP/gim, },
+    { replacement: "4HP", pattern: /Back\s*HP/gim, },
+    { replacement: "4LK", pattern: /Back\s*LK/gim, },
+    { replacement: "4MK", pattern: /Back\s*MK/gim, },
+    { replacement: "4HK", pattern: /Back\s*HK/gim, },
 ]
 
 const nameReplacementPatterns: IReplacementData[] = [

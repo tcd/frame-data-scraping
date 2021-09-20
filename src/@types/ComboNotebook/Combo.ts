@@ -140,10 +140,10 @@ export class Combo {
         result._1_3_5_content        = this?.content
         result._1_3_6_alternate_name = this?.alternate_name
 
-        if (!isEmpty(this.damage_data)) { (result.damage_data = this.damage_data.thickData()) }
-        if (!isEmpty(this.frame_data))  { (result.frame_data  = this.frame_data.thickData())  }
-        if (!isEmpty(this.meter_data))  { (result.meter_data  = this.meter_data.thickData())  }
-        if (!isEmpty(this.metadata))    { (result.metadata    = this.metadata)                }
+        if (!isEmpty(this.damage_data)) { (result._2_damage_data = this.damage_data.thickData())   }
+        if (!isEmpty(this.frame_data))  { (result._3_frame_data  = this.frame_data.thickData())    }
+        if (!isEmpty(this.meter_data))  { (result._4_meter_data  = this.meter_data.thickData())    }
+        if (!isEmpty(this.metadata))    { (result._9_metadata    = JSON.stringify(this.metadata))  }
 
         return compactObject(result)
     }
@@ -161,11 +161,13 @@ export class Combo {
         result.cancel_type_ids   = this.getCancelTypeIds()
         if (this.tag_list?.length > 0) { result.tag_list = this.tag_list }
 
-        result.description    = this?.description
         result.official_name  = this?.official_name
+        result.alternate_name = this?.alternate_name
+        result.description    = this?.description
         result.sort_order     = this?.sort_order
         result.content        = this?.content
-        result.alternate_name = this?.alternate_name
+        result.conditions     = this?.conditions
+        result.hits           = this?.hits
 
         if (!isEmpty(this.damage_data)) { (result.damage_data = this.damage_data.toJSON()) }
         if (!isEmpty(this.frame_data))  { (result.frame_data  = this.frame_data.toJSON())  }
@@ -177,6 +179,9 @@ export class Combo {
 
     public static fromJSON(data: any): Combo {
         let combo = new Combo()
+
+        combo.metadata = JSON.parse(data["metadata"])
+
         combo.character_name = data["character_name"]
         combo.tag_list = data["tag_list"]?.split(/,\s*/)
         combo.cancel_types = data["cancel_types"]?.split(/,\s*/)
@@ -187,8 +192,9 @@ export class Combo {
         combo.combo_type = data["combo_type"]
         combo.content = data["content"]
         combo.alternate_name = data["alternate_name"]
+
         combo.conditions = data["conditions"]
-        combo.metadata = data["metadata"]
+        combo.conditions = data["hits"]
 
         combo.damage_data.damage = data["damage_data.damage"]
         combo.damage_data.damage_formula = data["damage_data.damage_formula"]
@@ -211,6 +217,7 @@ export class Combo {
         combo.frame_data.crouching_hit_frame_advantage = data["frame_data.crouching_hit_frame_advantage"]
         combo.frame_data.crouching_hit_frame_advantage_formula = data["frame_data.crouching_hit_frame_advantage_formula"]
         combo.frame_data.active_until_landing = data["frame_data.active_until_landing"]
+        combo.frame_data.recovery_until_landing = data["frame_data.recovery_until_landing"]
 
         combo.meter_data.meter_cost = data["meter_data.meter_cost"]
         combo.meter_data.meter_cost_formula = data["meter_data.meter_cost_formula"]
