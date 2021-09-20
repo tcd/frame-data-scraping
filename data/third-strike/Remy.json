@@ -102,7 +102,7 @@
     "description": "Frame Data",
     "sort_order": 531,
     "content": "[4]+6+PP",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 120,
       "chip_damage": 8,
@@ -152,7 +152,7 @@
     "description": "Frame Data",
     "sort_order": 532,
     "content": "[4]+6+KK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 120,
       "chip_damage": 8,
@@ -229,7 +229,7 @@
     "description": "Generally useless. It doesn't do anything that the normal versions don't already do besides being 2 hits (which is a pretty easy reaction to make considering Remy flashes yellow). It can be used as a niche 2-hit anti-air, but Remy already has plenty of options on that front. At least it gets both of its hits as an anti-air.",
     "sort_order": 545,
     "content": "214+KK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 160,
       "chip_damage": 20,
@@ -305,7 +305,7 @@
     "description": "Completely invincible and functions as Remy's true reversal. If you're running SA1, you can cancel the first hit on block to make it safe, but that spends a lot of meter that Remy would much rather keep for EX Booms. Reversals are nice option to have considering some characters don't have any that aren't locked behind Supers, and can invalidate an opponent's wakeup game when properly placed.",
     "sort_order": 555,
     "content": "[2]+8+KK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 190,
       "damage_formula": "190(120+70)",
@@ -350,7 +350,7 @@
     "description": "Useless on grounded opponents, but serves as another 2-hit anti-air option select should the opponent parry the first hit.",
     "sort_order": 2001,
     "content": "c.MK > HK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "stun_damage": 14,
       "stun_damage_formula": "9+5"
@@ -396,7 +396,7 @@
     "description": "A very strange target combo that gives Remy better damage and versatility off of a close Jab anti-air as discussed previously. When point blank, close Jab xx close Jab xx close Short is a decent super confirm for both SA1 and SA2 (and is technically damage optimal for SA2), but is executionally difficult due to the fact that the close Short must be done while the stick is in the neutral position.",
     "sort_order": 2002,
     "content": "c.LP > c.LK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 65,
       "damage_formula": "30+35",
@@ -919,7 +919,7 @@
     "description": "A 2-hit tall kick that allows links to SA2 afterwards. Sounds nice, until you remember that the first hit only comes out point blank, which is a shame because it also special cancels. Still, it can act as a decent anti-air for opponents only expecting one parry.",
     "sort_order": 161,
     "content": "c.HK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 140,
       "damage_formula": "140(80+60)",
@@ -1186,7 +1186,7 @@
     "description": "Guile much? While a sweep for most characters is a risky but slightly more rewarding low, the risk-reward for Remy is definitely not in his favor. This is due to the fact that, on block, the two hits are not a true blockstring, allowing the opponent to blue parry the second hit on reaction. Not only that, but on hit you get little okizeme since you're stuck whiffing the second hit. It's not useless, but only pull this out if you are confident that the opponent isn't blocking low.",
     "sort_order": 260,
     "content": "2HK",
-    "conditions": 2,
+    "hits": 2,
     "damage_data": {
       "damage": 210,
       "stun_damage": 6,
@@ -1448,7 +1448,7 @@
     "description": "This super has 2 main advantages over Super 2. One is that it's completely safe on block with massive pushback, making it a valuable cancel from low Short. The second is that it's an incredibly obnoxious parry as an anti-air or on wake-up, making it good at shutting down characters like Dudley or Hugo who have a hard time without parries in those situations. It's pretty matchup dependent because against most characters Remy would rather take the burst damage and extra meter that Super 2 provides.",
     "sort_order": 1001,
     "content": "236+236+P",
-    "conditions": 7,
+    "hits": 7,
     "damage_data": {
       "damage": 320,
       "damage_formula": "(55x7)",
@@ -1489,7 +1489,7 @@
     "description": "This super gives Remy some nice confirming options into big damage like close Forward, close Jab xx close Jab xx close Short, and crouch Jab -> crouch Jab. Unfortunately, in juggles it loses half of its hits for some pitiful damage. It IS fast enough to hit someone out of a JP 15 air reset, meaning you can cancel any normal on air hit into it. It hits on air resets, so close Jab or any air-to-air jumping normal into SA2 is possible, though the opponent could theoretically parry out. It's a one frame parry after the freeze, so that is nightmarishly hard. Besides the super itself, it also gives Remy the most meter out of all his supers, stocking a total of 6 EX moves in the back pocket.",
     "sort_order": 1002,
     "content": "236+236+K",
-    "conditions": 10,
+    "hits": 10,
     "damage_data": {
       "damage": 390,
       "damage_formula": "(100+40+40+60+30+30+40+40+40+80)",
@@ -1528,7 +1528,7 @@
     "description": "Hilariously bad, Blue Nocturne is by and away the worst super in the entire game. It's a counter super, meaning that the opponent has to hit you after the super freeze to activate. So anytime you activate this outside of confirming it (easier said than done), the opponent could just...you know... not hit it and get a full jump in combo on Remy. The ONLY WAY to get this off in a real match is to parry a multihit attack and then activate, which is incredibly specific. Or you could pick SA2 and do close Forward -> SA2 or raw SA2 after a multihit parry instead.",
     "sort_order": 1003,
     "content": "236+236+K",
-    "conditions": 7,
+    "hits": 7,
     "damage_data": {
       "damage": 465,
       "stun_damage": 21,

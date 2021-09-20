@@ -195,7 +195,7 @@ export class Combo {
         combo.alternate_name = data["alternate_name"]
 
         combo.conditions = data["conditions"]
-        combo.conditions = data["hits"]
+        combo.hits = data["hits"]
 
         combo.damage_data.damage = data["damage_data.damage"]
         combo.damage_data.damage_formula = data["damage_data.damage_formula"]
