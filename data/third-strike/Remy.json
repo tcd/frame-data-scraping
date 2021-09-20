@@ -120,6 +120,14 @@
       "block_frame_advantage": 4,
       "crouching_hit_frame_advantage": 6
     },
+    "frame_data_v2": {
+      "startup":                 { "numeric_value": 7, "formula": "7/8" },
+      "active":                  { "numeric_value": 1 },
+      "recovery":                { "numeric_value": 23 },
+      "hit_advantage":           { "numeric_value": 5 },
+      "block_advantage":         { "numeric_value": 4 },
+      "crouching_hit_advantage": { "numeric_value": 6 }
+    },
     "meter_data": {
       "meter_cost": 40,
       "whiff_meter_build": 0,
@@ -1274,6 +1282,22 @@
       "block_frame_advantage_formula": "-3～+10",
       "crouching_hit_frame_advantage_formula": "=+7～+10"
     },
+    "frame_data_v2": {
+      "startup": { "numeric_value": 5 },
+      "active":  { "numeric_value": 14 },
+      "hit_advantage": {
+        "min": -3,
+        "max": 10
+      },
+      "block_advantage": {
+        "min": -3,
+        "max": 10
+      },
+      "crouching_hit_advantage": {
+        "min": 7,
+        "max": 10
+      }
+    },
     "meter_data": {
       "whiff_meter_build": 2,
       "block_meter_build": 6,
@@ -1310,6 +1334,22 @@
       "hit_frame_advantage_formula": "-2～+13",
       "block_frame_advantage_formula": "-2～+13",
       "crouching_hit_frame_advantage_formula": "=+8～+13"
+    },
+    "frame_data_v2": {
+      "startup": { "numeric_value": 9 },
+      "active":  { "numeric_value": 5 },
+      "hit_advantage": {
+        "min": -2,
+        "max": 13
+      },
+      "block_advantage": {
+        "min": -2,
+        "max": 13
+      },
+      "crouching_hit_advantage": {
+        "min": 8,
+        "max": 13
+      }
     },
     "meter_data": {
       "whiff_meter_build": 3,
@@ -1348,6 +1388,22 @@
       "block_frame_advantage_formula": "-4～+7",
       "crouching_hit_frame_advantage_formula": "=+1～+7"
     },
+    "frame_data_v2": {
+      "startup": { "numeric_value": 4 },
+      "active": { "numeric_value": 14 },
+      "hit_advantage": {
+        "min": -4,
+        "max": 7
+      },
+      "block_advantage": {
+        "min": -4,
+        "max": 7
+      },
+      "crouching_hit_advantage": {
+        "min": 1,
+        "max": 7
+      }
+    },
     "meter_data": {
       "whiff_meter_build": 0,
       "block_meter_build": 1,
@@ -1384,6 +1440,22 @@
       "hit_frame_advantage_formula": "-2～+10",
       "block_frame_advantage_formula": "-2～+10",
       "crouching_hit_frame_advantage_formula": "=+7～+10"
+    },
+    "frame_data_v2": {
+      "startup": { "numeric_value": 6 },
+      "active":  { "numeric_value": 4 },
+      "hit_advantage": {
+        "min": -2,
+        "max": 10
+      },
+      "block_advantage": {
+        "min": -2,
+        "max": 10
+      },
+      "crouching_hit_advantage": {
+        "min": 7,
+        "max": 10
+      }
     },
     "meter_data": {
       "whiff_meter_build": 2,
