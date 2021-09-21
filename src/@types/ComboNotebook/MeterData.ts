@@ -1,5 +1,7 @@
 import { compactObject } from "@lib"
 
+import { MeterDataV2 } from "./v2"
+
 export class MeterData {
     public meter_cost?: number
     public min_meter_cost?: number
@@ -68,5 +70,38 @@ export class MeterData {
             parry_meter_build_formula: this.parry_meter_build_formula,
         }
         return compactObject(result)
+    }
+
+    public toV2(): MeterDataV2 {
+        let result = new MeterDataV2()
+
+        result.meter_cost = {
+            numeric_value: this.meter_cost,
+            min:           this.min_meter_cost,
+            max:           this.max_meter_cost,
+            formula:       this.hit_meter_build_formula,
+        }
+
+        result.whiff_meter_build = {
+            numeric_value: this.whiff_meter_build,
+            formula:       this.whiff_meter_build_formula,
+        }
+
+        result.block_meter_build = {
+            numeric_value: this.block_meter_build,
+            formula:       this.block_meter_build_formula,
+        }
+
+        result.hit_meter_build = {
+            numeric_value: this.hit_meter_build,
+            formula:       this.hit_meter_build_formula,
+        }
+
+        result.parry_meter_build = {
+            numeric_value: this.parry_meter_build,
+            formula:       this.parry_meter_build_formula,
+        }
+
+        return result
     }
 }

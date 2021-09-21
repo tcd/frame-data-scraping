@@ -1,5 +1,7 @@
 import { compactObject } from "@lib"
 
+import { FrameDataV2 } from "./v2"
+
 export class FrameData {
     /**
      * The period of time that occurs after pressing your attack button, but before your attack is capable of making contact with the opponent.
@@ -153,5 +155,54 @@ export class FrameData {
             recovery_until_landing: this.recovery_until_landing,
         }
         return compactObject(result)
+    }
+
+    public toV2(): FrameDataV2 {
+        let result = new FrameDataV2()
+
+        result.active_until_landing =   this.active_until_landing
+        result.recovery_until_landing = this.recovery_until_landing
+
+        result.startup = {
+            numeric_value: this.startup_frames,
+            formula:       this.startup_frames_formula,
+        }
+
+        result.active = {
+            numeric_value: this.active_frames,
+            formula:       this.active_frames_formula,
+        }
+
+        // total_recovery_frames: this.total_recovery_frames,
+        result.recovery = {
+            numeric_value: this.whiff_recovery_frames,
+            formula:       this.whiff_recovery_frames_formula,
+        }
+
+        result.landing_recovery = {
+            numeric_value: this.landing_recovery_frames,
+        }
+
+        result.hit_advantage = {
+            numeric_value: this.hit_frame_advantage,
+            formula:       this.hit_frame_advantage_formula,
+        }
+
+        result.counter_hit_advantage = {
+            numeric_value: this.counter_hit_frame_advantage,
+            formula:       this.counter_hit_frame_advantage_formula,
+        }
+
+        result.block_advantage = {
+            numeric_value: this.block_frame_advantage,
+            formula:       this.block_frame_advantage_formula,
+        }
+
+        result.crouching_hit_advantage = {
+            numeric_value: this.crouching_hit_frame_advantage,
+            formula:       this.crouching_hit_frame_advantage_formula,
+        }
+
+        return result
     }
 }

@@ -6,6 +6,7 @@ import { compactArray, compactObject } from "@lib"
 import { FrameData } from "./FrameData"
 import { DamageData } from "./DamageData"
 import { MeterData } from "./MeterData"
+import { DamageDataV2, FrameDataV2, MeterDataV2 } from "./v2"
 
 export class Combo {
 
@@ -18,6 +19,10 @@ export class Combo {
         this.damage_data = new DamageData()
         this.frame_data  = new FrameData()
         this.meter_data  = new MeterData()
+
+        this.damage_data_v2 = new DamageDataV2()
+        this.frame_data_v2  = new FrameDataV2()
+        this.meter_data_v2  = new MeterDataV2()
     }
 
     public confirmed?: boolean
@@ -45,9 +50,14 @@ export class Combo {
 
     public tag_list?: string[]
     public metadata?: any
+
     public damage_data?: Partial<DamageData>
-    public meter_data?: Partial<MeterData>
     public frame_data?: Partial<FrameData>
+    public meter_data?: Partial<MeterData>
+
+    public damage_data_v2?: Partial<DamageDataV2>
+    public frame_data_v2?: Partial<FrameDataV2>
+    public meter_data_v2?: Partial<MeterDataV2>
 
     // =========================================================================
     // New for scraping
@@ -149,7 +159,6 @@ export class Combo {
     }
 
     public toJSON(): Partial<Combo> {
-
         let result: Partial<Combo> = {}
 
         result.confirmed = false
@@ -170,10 +179,11 @@ export class Combo {
         result.conditions     = this?.conditions
         result.hits           = this?.hits
 
-        if (!isEmpty(this.damage_data)) { (result.damage_data = this.damage_data.toJSON()) }
-        if (!isEmpty(this.frame_data))  { (result.frame_data  = this.frame_data.toJSON())  }
-        if (!isEmpty(this.meter_data))  { (result.meter_data  = this.meter_data.toJSON())  }
-        if (!isEmpty(this.metadata))    { (result.metadata    = this.metadata)             }
+        if (!isEmpty(this.metadata)) { (result.metadata = this.metadata) }
+
+        if (!isEmpty(this.damage_data)) { (result.damage_data_v2 = compactObject(this.damage_data.toV2().toJSON())) }
+        if (!isEmpty(this.frame_data))  { (result.frame_data_v2  = compactObject(this.frame_data.toV2().toJSON()))  }
+        if (!isEmpty(this.meter_data))  { (result.meter_data_v2  = compactObject(this.meter_data.toV2().toJSON()))  }
 
         return compactObject(result)
     }

@@ -77,6 +77,7 @@ export const fromTsvToCombo = async (character: string) => {
         let outData = JSON.stringify(combos, null, 2)
 
         fs.writeFileSync(outFilePath, outData)
+        console.log(`File written: ${outFilePath}`)
     } catch (error) {
        console.log(error)
        process.exit(1)

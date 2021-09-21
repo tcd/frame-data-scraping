@@ -1,5 +1,7 @@
 import { compactObject } from "@lib"
 
+import { DamageDataV2 } from "./v2"
+
 export class DamageData {
     public damage?: number
     public damage_formula?: string
@@ -75,5 +77,42 @@ export class DamageData {
             recovered_health: this.recovered_health,
         }
         return compactObject(result)
+    }
+
+    public toV2(): DamageDataV2 {
+        let result = new DamageDataV2()
+
+        result.life_point_damage = this.life_point_damage,
+
+        result.damage = {
+            numeric_value: this.damage,
+            min:           this.min_damage,
+            max:           this.max_damage,
+            formula:       this.damage_formula,
+        }
+
+        result.chip_damage = {
+            numeric_value: this.chip_damage,
+            formula:       this.chip_damage_formula,
+        }
+
+        result.stun_damage = {
+            numeric_value: this.stun_damage,
+            formula:       this.stun_damage_formula,
+        }
+
+        result.self_damage = {
+            numeric_value: this.self_damage,
+        }
+
+        result.self_stun_damage = {
+            numeric_value: this.self_stun_damage,
+        }
+
+        result.recovered_health = {
+            numeric_value: this.recovered_health,
+        }
+
+        return result
     }
 }
