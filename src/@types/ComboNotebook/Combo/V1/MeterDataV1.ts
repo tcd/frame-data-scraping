@@ -1,6 +1,6 @@
 import { compactObject } from "@lib"
 
-import { MeterDataV2 } from "../v2"
+import { MeterDataV2 } from "../V2"
 
 export class MeterDataV1 {
     public meter_cost?: number

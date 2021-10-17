@@ -1,6 +1,6 @@
 import { compactObject } from "@lib"
 
-import { FrameDataV2 } from "../v2"
+import { FrameDataV2 } from "../V2"
 
 export class FrameDataV1 {
     /**

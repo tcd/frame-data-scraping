@@ -1,6 +1,6 @@
 import { compactObject } from "@lib"
 
-import { DamageDataV2 } from "../v2"
+import { DamageDataV2 } from "../V2"
 
 export class DamageDataV1 {
     public damage?: number

@@ -4,8 +4,8 @@ import { compactArray, compactObject } from "@lib"
 import { COMBO_TYPE_IDS, GUARD_TYPE_IDS, CANCEL_TYPE_IDS } from "@types"
 import { characterIds } from "@data"
 
-import { DamageDataV1, FrameDataV1, MeterDataV1 } from "./v1"
-import { DamageDataV2, FrameDataV2, MeterDataV2 } from "./v2"
+import { DamageDataV1, FrameDataV1, MeterDataV1 } from "./V1"
+import { DamageDataV2, FrameDataV2, MeterDataV2 } from "./V2"
 
 export class Combo {
 
