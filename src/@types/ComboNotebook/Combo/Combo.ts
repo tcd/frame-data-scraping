@@ -1,7 +1,8 @@
 import { isEmpty, uniq } from "lodash"
 
-import { COMBO_TYPE_IDS, GUARD_TYPE_IDS, characterIds, CANCEL_TYPE_IDS } from "@data"
 import { compactArray, compactObject } from "@lib"
+import { COMBO_TYPE_IDS, GUARD_TYPE_IDS, CANCEL_TYPE_IDS } from "@types"
+import { characterIds } from "@data"
 
 import { FrameData } from "./FrameData"
 import { DamageData } from "./DamageData"

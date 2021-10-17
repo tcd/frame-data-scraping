@@ -1,8 +1,5 @@
-import { isEmpty, uniq } from "lodash"
-
-import { COMBO_TYPES, GUARD_TYPES } from "@data"
 import { isNullOrUndefined, isStringEmpty } from "@lib"
-import { Combo, DamageData, FrameData, IReplacementData, MeterData } from "@types"
+import { Combo, DamageData, FrameData, IReplacementData, MeterData, COMBO_TYPES, GUARD_TYPES } from "@types"
 
 const PATTERNS = {
     LIFE_POINT:         /\s*\((?<lifePointDamage>\d+)\slife points\)\s*/g,
