@@ -1,8 +1,8 @@
 import { compactObject } from "@lib"
 
-import { MeterDataV2 } from "./v2"
+import { MeterDataV2 } from "../v2"
 
-export class MeterData {
+export class MeterDataV1 {
     public meter_cost?: number
     public min_meter_cost?: number
     public max_meter_cost?: number
@@ -50,8 +50,8 @@ export class MeterData {
         return compactObject(result)
     }
 
-    public toJSON(): Partial<MeterData> {
-        let result: Partial<MeterData> = {
+    public toJSON(): Partial<MeterDataV1> {
+        let result: Partial<MeterDataV1> = {
             meter_cost:         this.meter_cost,
             min_meter_cost:     this.min_meter_cost,
             max_meter_cost:     this.max_meter_cost,

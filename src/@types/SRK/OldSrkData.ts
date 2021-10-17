@@ -1,5 +1,5 @@
 import { isNullOrUndefined, isStringEmpty } from "@lib"
-import { Combo, DamageData, FrameData, IReplacementData, MeterData, COMBO_TYPES, GUARD_TYPES } from "@types"
+import { Combo, DamageDataV1, FrameDataV1, IReplacementData, MeterDataV1, COMBO_TYPES, GUARD_TYPES } from "@types"
 
 const PATTERNS = {
     LIFE_POINT:         /\s*\((?<lifePointDamage>\d+)\slife points\)\s*/g,

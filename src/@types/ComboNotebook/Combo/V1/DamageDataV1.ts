@@ -1,8 +1,8 @@
 import { compactObject } from "@lib"
 
-import { DamageDataV2 } from "./v2"
+import { DamageDataV2 } from "../v2"
 
-export class DamageData {
+export class DamageDataV1 {
     public damage?: number
     public damage_formula?: string
     public min_damage?: number
@@ -55,8 +55,8 @@ export class DamageData {
         return compactObject(result)
     }
 
-    public toJSON(): Partial<DamageData> {
-        let result: Partial<DamageData> = {
+    public toJSON(): Partial<DamageDataV1> {
+        let result: Partial<DamageDataV1> = {
             damage:         this.damage,
             min_damage:     this.min_damage,
             max_damage:     this.max_damage,

@@ -4,9 +4,7 @@ import { compactArray, compactObject } from "@lib"
 import { COMBO_TYPE_IDS, GUARD_TYPE_IDS, CANCEL_TYPE_IDS } from "@types"
 import { characterIds } from "@data"
 
-import { FrameData } from "./FrameData"
-import { DamageData } from "./DamageData"
-import { MeterData } from "./MeterData"
+import { DamageDataV1, FrameDataV1, MeterDataV1 } from "./v1"
 import { DamageDataV2, FrameDataV2, MeterDataV2 } from "./v2"
 
 export class Combo {
@@ -17,9 +15,9 @@ export class Combo {
         this.tag_list     = []
         this.cancel_types = []
 
-        this.damage_data = new DamageData()
-        this.frame_data  = new FrameData()
-        this.meter_data  = new MeterData()
+        this.damage_data = new DamageDataV1()
+        this.frame_data  = new FrameDataV1()
+        this.meter_data  = new MeterDataV1()
 
         this.damage_data_v2 = new DamageDataV2()
         this.frame_data_v2  = new FrameDataV2()
@@ -52,9 +50,9 @@ export class Combo {
     public tag_list?: string[]
     public metadata?: any
 
-    public damage_data?: Partial<DamageData>
-    public frame_data?: Partial<FrameData>
-    public meter_data?: Partial<MeterData>
+    public damage_data?: Partial<DamageDataV1>
+    public frame_data?: Partial<FrameDataV1>
+    public meter_data?: Partial<MeterDataV1>
 
     public damage_data_v2?: Partial<DamageDataV2>
     public frame_data_v2?: Partial<FrameDataV2>

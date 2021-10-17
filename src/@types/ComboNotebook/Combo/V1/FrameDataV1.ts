@@ -1,8 +1,8 @@
 import { compactObject } from "@lib"
 
-import { FrameDataV2 } from "./v2"
+import { FrameDataV2 } from "../v2"
 
-export class FrameData {
+export class FrameDataV1 {
     /**
      * The period of time that occurs after pressing your attack button, but before your attack is capable of making contact with the opponent.
      * See [The Fighting Game Glossary](https://glossary.infil.net/?t=Startup) for a more thorough explanation.
@@ -126,8 +126,8 @@ export class FrameData {
         return compactObject(result)
     }
 
-    public toJSON(): Partial<FrameData> {
-        let result: Partial<FrameData> = {
+    public toJSON(): Partial<FrameDataV1> {
+        let result: Partial<FrameDataV1> = {
             startup_frames:         this.startup_frames,
             startup_frames_formula: this.startup_frames_formula,
 
