@@ -1,5 +1,5 @@
 export * from "./ComboNotebook"
+export * from "./FAT"
+export * from "./SRK"
 
 export * from "./IReplacementData"
-export * from "./NewSrkData"
-export * from "./OldSrkData"
