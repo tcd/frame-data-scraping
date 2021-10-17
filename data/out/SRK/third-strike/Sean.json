@@ -1,0 +1,3165 @@
+[
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 13,
+    "guard_type_id": 1,
+    "alternate_name": "Taunt",
+    "description": "Adds 12.5% stun to the next hit/combo with the maximum amount being 37.5% (3 times).",
+    "content": "HP+HK",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "damage": {},
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 0
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 31
+      },
+      "active": {},
+      "recovery": {
+        "numeric_value": 19
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 4
+      },
+      "block_meter_build": {
+        "numeric_value": 7
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {
+        "numeric_value": 4
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 12,
+    "guard_type_id": 3,
+    "alternate_name": "Universal Overhead",
+    "content": "MP+MK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 7,
+      "damage": {
+        "numeric_value": 40
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 15
+      },
+      "active": {
+        "numeric_value": 8
+      },
+      "recovery": {
+        "numeric_value": 7
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "0~+8"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-5~+7"
+      },
+      "crouching_hit_advantage": {
+        "formula": "=+1~+9"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 12,
+    "guard_type_id": 9,
+    "official_name": "Tomoe Throw",
+    "content": "4+LP+LK",
+    "metadata": {
+      "Throw Range": "20",
+      "Kara-Throw": "Far + HP/F + HP/Far HK/Cr.MK/Cr.HK",
+      "Kara-Throw Range": "32/34/28/33/33"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 24,
+      "damage": {
+        "numeric_value": 140
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 4
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 2
+      },
+      "active": {
+        "numeric_value": 1
+      },
+      "recovery": {
+        "numeric_value": 21
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "official_name": "Zenten",
+    "description": "Zenten lowers his hit-box to the ground which allows him to avoid throws and projectiles for however long its out on screen.  It can even avoid high hitting supers altogether when done early enough.  Its parry bait as well since opponents who know about this move will stick lows/overheads out constantly to punish you for using this.  Its throw invincible though not attack invincible.  It can help you out every once in a while to get out of pressure but its not recommended to do it all the time.",
+    "sort_order": 510,
+    "content": "214+P",
+    "hits": 3,
+    "damage_data_v2": {
+      "life_point_damage": 0,
+      "damage": {
+        "numeric_value": 0
+      },
+      "chip_damage": {
+        "numeric_value": 0
+      },
+      "stun_damage": {
+        "numeric_value": 0
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 2
+      },
+      "active": {
+        "formula": "17/27/41 (I think this means LP/MP/HP)"
+      },
+      "recovery": {
+        "numeric_value": 7
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 0
+      },
+      "hit_meter_build": {
+        "numeric_value": 0
+      },
+      "parry_meter_build": {
+        "numeric_value": 0
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 3,
+    "official_name": "Ryuubi Kyaku",
+    "description": "The secondary special AA that Sean has.  The range of this move is deceptive, it can hit very high in the air and even stuff out some of the other shoto's air tatsu's.  Useful for when the opponent tries to jump out of the corner and you smack them back down into there with it.  The EX can hit up to 3 times if you catch an Opp. jumping away or if you're up close (Akuma, Remy, Urien and Hugo).  Like the tackle, you can also combo into this off the basketball taunt, you know, for style.  This move is one that opponents tend to look out for or bait out the most because of how easy it is to parry it, even the EX so be careful.",
+    "sort_order": 520,
+    "content": "236+K",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 21,
+      "damage": {
+        "numeric_value": 120
+      },
+      "chip_damage": {
+        "numeric_value": 15
+      },
+      "stun_damage": {
+        "numeric_value": 19
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 25
+      },
+      "active": {
+        "numeric_value": 8
+      },
+      "recovery": {
+        "numeric_value": 15
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-5 to +2"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-5 to +2"
+      },
+      "crouching_hit_advantage": {
+        "formula": "-3 to 0"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 15
+      },
+      "hit_meter_build": {
+        "numeric_value": 21
+      },
+      "parry_meter_build": {
+        "numeric_value": 4
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 3,
+    "tag_list": [
+      "ex",
+      "multi hit"
+    ],
+    "official_name": "Ryuubi Kyaku (EX)",
+    "description": "Generally its -1 on hit/block but like Non-EX Wheel Kicks it depends on the distance away and/or the character.  Its off the ground in 11 frames as opposed to 15 frames (Non-EX) and hits up to 3 times.",
+    "sort_order": 525,
+    "content": "236 + KK",
+    "hits": 3,
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 32,
+      "damage": {
+        "numeric_value": 200,
+        "formula": "60+70+70"
+      },
+      "chip_damage": {
+        "numeric_value": 17,
+        "formula": "5+6+6"
+      },
+      "stun_damage": {
+        "numeric_value": 21,
+        "formula": "21(7×3)"
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 25,
+        "formula": "25・27・29・31"
+      },
+      "active": {
+        "numeric_value": 8,
+        "formula": "2・2・2・2"
+      },
+      "recovery": {
+        "numeric_value": 19
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-1 to +2"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-1 to +2"
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": -1
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {
+        "numeric_value": 40
+      },
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {
+        "formula": "8 (12 if hits 3 times)"
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      3
+    ],
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Dragon Smash (LP)",
+    "description": "Sean's version of the Shoryuken.  The variations come out in 5/7/8/9 frames respectively, but do all the same damage (except EX) and can cancel into Hadou Burst and Shoryu Cannon.  Be for-warned, you can't treat this like a normal DP.  Its slower by a few frames and it has most of its priority over Sean's head.  It also doesn't have much range either, so it has a high chance of whiff-ing plus you can't combo into it off of Cl.HK (only on Dudley, Urien, Elena, and Twelve) and he can be grabbed out of it as well (all versions).",
+    "sort_order": 531,
+    "content": "623 + LP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 23,
+      "damage": {
+        "numeric_value": 130
+      },
+      "chip_damage": {
+        "numeric_value": 16
+      },
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 6
+      },
+      "recovery": {
+        "numeric_value": 36
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -24
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      3
+    ],
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Dragon Smash (MP)",
+    "description": "Sean's version of the Shoryuken.  The variations come out in 5/7/8/9 frames respectively, but do all the same damage (except EX) and can cancel into Hadou Burst and Shoryu Cannon.  Be for-warned, you can't treat this like a normal DP.  Its slower by a few frames and it has most of its priority over Sean's head.  It also doesn't have much range either, so it has a high chance of whiff-ing plus you can't combo into it off of Cl.HK (only on Dudley, Urien, Elena, and Twelve) and he can be grabbed out of it as well (all versions).",
+    "sort_order": 532,
+    "content": "623 + MP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 23,
+      "damage": {
+        "numeric_value": 130
+      },
+      "chip_damage": {
+        "numeric_value": 16
+      },
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 7
+      },
+      "active": {
+        "numeric_value": 8
+      },
+      "recovery": {
+        "numeric_value": 39
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -30
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      3
+    ],
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Dragon Smash (HP)",
+    "description": "Sean's version of the Shoryuken.  The variations come out in 5/7/8/9 frames respectively, but do all the same damage (except EX) and can cancel into Hadou Burst and Shoryu Cannon.  Be for-warned, you can't treat this like a normal DP.  Its slower by a few frames and it has most of its priority over Sean's head.  It also doesn't have much range either, so it has a high chance of whiff-ing plus you can't combo into it off of Cl.HK (only on Dudley, Urien, Elena, and Twelve) and he can be grabbed out of it as well (all versions).",
+    "sort_order": 533,
+    "content": "623 + HP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 23,
+      "damage": {
+        "numeric_value": 130
+      },
+      "chip_damage": {
+        "numeric_value": 16
+      },
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 9
+      },
+      "active": {
+        "numeric_value": 10
+      },
+      "recovery": {
+        "numeric_value": 42
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -34
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      3
+    ],
+    "tag_list": [
+      "hard knockdown",
+      "ex"
+    ],
+    "official_name": "Dragon Smash (EX)",
+    "description": "Sean's EX Dragon Smash has the most invincibility of all the shoto DPs (8 frames) and the most hit frames and height out of the other Dragon Smashes.  He can be thrown out of this usually but there are situations where he can't.",
+    "sort_order": 535,
+    "content": "623 + PP",
+    "hits": 2,
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 31,
+      "damage": {
+        "numeric_value": 180,
+        "formula": "90+90(60)"
+      },
+      "chip_damage": {
+        "numeric_value": 18,
+        "formula": "11+7"
+      },
+      "stun_damage": {
+        "numeric_value": 16
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 8,
+        "formula": "8・9"
+      },
+      "active": {
+        "numeric_value": 12,
+        "formula": "1・11"
+      },
+      "recovery": {
+        "numeric_value": 42
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -37
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {
+        "numeric_value": 40
+      },
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {
+        "numeric_value": 8
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "tag_list": [
+      "multi hit"
+    ],
+    "official_name": "Tornado (LK)",
+    "description": "This is Sean's version of the tatsu. Its easy to combo into (LK/MK/EX versions) from HK, MP, etc.  Does good damage and its useful for pressuring opponents.  The LK tornado can be used as an anti-air and combo'd into SA1 before they hit the ground (in the corner only).  Also the HK or MK versions are great for chip out wins.  All variations of Tornado are unsafe on hit AND block (except for EX which is 99% safe) and comboing into the HK tornado works only vs Crouching opponents (still very unsafe).  The first hit all of the Tornadoes force stand which makes the move even more unsafe than it should be.",
+    "sort_order": 541,
+    "content": "214 + LK",
+    "hits": 2,
+    "metadata": {
+      "Parry": "H/H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "numeric_value": 100,
+        "formula": "50+50"
+      },
+      "chip_damage": {
+        "numeric_value": 9
+      },
+      "stun_damage": {
+        "numeric_value": 10,
+        "formula": "10(5+5)"
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 11
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 21
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -5
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -7
+      },
+      "crouching_hit_advantage": {
+        "formula": "-5 to -2"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 13
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {
+        "numeric_value": 8
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "tag_list": [
+      "multi hit"
+    ],
+    "official_name": "Tornado (MK)",
+    "description": "This is Sean's version of the tatsu. Its easy to combo into (LK/MK/EX versions) from HK, MP, etc.  Does good damage and its useful for pressuring opponents.  The LK tornado can be used as an anti-air and combo'd into SA1 before they hit the ground (in the corner only).  Also the HK or MK versions are great for chip out wins.  All variations of Tornado are unsafe on hit AND block (except for EX which is 99% safe) and comboing into the HK tornado works only vs Crouching opponents (still very unsafe).  The first hit all of the Tornadoes force stand which makes the move even more unsafe than it should be.",
+    "sort_order": 542,
+    "content": "214 + MK",
+    "hits": 3,
+    "metadata": {
+      "Parry": "H/H/H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 24,
+      "damage": {
+        "numeric_value": 150,
+        "formula": "50x3"
+      },
+      "chip_damage": {
+        "numeric_value": 13
+      },
+      "stun_damage": {
+        "numeric_value": 15,
+        "formula": "15(5x3)"
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 14
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 21
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -4
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -6
+      },
+      "crouching_hit_advantage": {
+        "formula": "-4 to -2"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 14
+      },
+      "hit_meter_build": {
+        "numeric_value": 20
+      },
+      "parry_meter_build": {
+        "numeric_value": 12
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "tag_list": [
+      "multi hit"
+    ],
+    "official_name": "Tornado (HK)",
+    "description": "This is Sean's version of the tatsu. Its easy to combo into (LK/MK/EX versions) from HK, MP, etc.  Does good damage and its useful for pressuring opponents.  The LK tornado can be used as an anti-air and combo'd into SA1 before they hit the ground (in the corner only).  Also the HK or MK versions are great for chip out wins.  All variations of Tornado are unsafe on hit AND block (except for EX which is 99% safe) and comboing into the HK tornado works only vs Crouching opponents (still very unsafe).  The first hit all of the Tornadoes force stand which makes the move even more unsafe than it should be.",
+    "sort_order": 543,
+    "content": "214 + HK",
+    "hits": 4,
+    "metadata": {
+      "Parry": "H/H/H/H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 26,
+      "damage": {
+        "numeric_value": 160,
+        "formula": "50+40×3"
+      },
+      "chip_damage": {
+        "numeric_value": 14
+      },
+      "stun_damage": {
+        "numeric_value": 18,
+        "formula": "18(5x4)"
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 16
+      },
+      "active": {
+        "numeric_value": 3
+      },
+      "recovery": {
+        "numeric_value": 21
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -4
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -6
+      },
+      "crouching_hit_advantage": {
+        "formula": "-4 to -2"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 15
+      },
+      "hit_meter_build": {
+        "numeric_value": 21
+      },
+      "parry_meter_build": {
+        "numeric_value": 16
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 1,
+    "tag_list": [
+      "ex"
+    ],
+    "official_name": "Tornado (EX)",
+    "description": "EX Tornado can leave you at -1, 0 or +1 on hit depending on the situation:",
+    "sort_order": 545,
+    "content": "214 + KK",
+    "hits": 4,
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 28,
+      "damage": {
+        "numeric_value": 175,
+        "formula": "60+40×3"
+      },
+      "chip_damage": {
+        "numeric_value": 15
+      },
+      "stun_damage": {
+        "numeric_value": 22,
+        "formula": "22(9+5×3)"
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 9,
+        "formula": "9・21・30・40"
+      },
+      "active": {
+        "numeric_value": 11,
+        "formula": "2・3・4・2"
+      },
+      "recovery": {
+        "numeric_value": 17
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -1
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -3
+      },
+      "crouching_hit_advantage": {
+        "formula": "-1 to +1"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {
+        "numeric_value": 40
+      },
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {
+        "numeric_value": 16
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 2,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Tackle (LP)",
+    "description": "This is another source of mobility in addition to Sean's already fast and lengthy dash.  Its recovery is low to the ground which gives him a 2nd move that goes underneath projectiles (the first being Zenten).  Useful to close distance from you to the opponent when used just for the dash itself.  The tackle itself is meant to be used defensively when you parry an attack with a long recovery from a long distance but it can be used to catch whiffed lows or dashes when in close enough range.  You can cancel into this (LP version) from his any of his close normals for fake outs into grab/EX DS/super but be for-warned doing this against someone who's quick enough to punish you.  You can combo into this off of his taunt for style.  Be warned, the attack is not a grab and the attack doesn't have the \"duck\" property (like Yun's jump kick and Dudley's rush attack or Sean's Zenten).  It's a move that has 0 priority until the actual tackle attack and even then its really slow.",
+    "sort_order": 551,
+    "content": "41236 + LP",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 30,
+      "damage": {
+        "numeric_value": 180
+      },
+      "chip_damage": {
+        "numeric_value": 0
+      },
+      "stun_damage": {
+        "numeric_value": 16
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 18
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 28
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -14
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 0
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {
+        "numeric_value": 4
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 2,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Tackle (MP)",
+    "description": "This is another source of mobility in addition to Sean's already fast and lengthy dash.  Its recovery is low to the ground which gives him a 2nd move that goes underneath projectiles (the first being Zenten).  Useful to close distance from you to the opponent when used just for the dash itself.  The tackle itself is meant to be used defensively when you parry an attack with a long recovery from a long distance but it can be used to catch whiffed lows or dashes when in close enough range.  You can cancel into this (LP version) from his any of his close normals for fake outs into grab/EX DS/super but be for-warned doing this against someone who's quick enough to punish you.  You can combo into this off of his taunt for style.  Be warned, the attack is not a grab and the attack doesn't have the \"duck\" property (like Yun's jump kick and Dudley's rush attack or Sean's Zenten).  It's a move that has 0 priority until the actual tackle attack and even then its really slow.",
+    "sort_order": 552,
+    "content": "41236 + MP",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 30,
+      "damage": {
+        "numeric_value": 180
+      },
+      "chip_damage": {
+        "numeric_value": 0
+      },
+      "stun_damage": {
+        "numeric_value": 16
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 22
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 28
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -14
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 0
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {
+        "numeric_value": 4
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 2,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Tackle (HP)",
+    "description": "This is another source of mobility in addition to Sean's already fast and lengthy dash.  Its recovery is low to the ground which gives him a 2nd move that goes underneath projectiles (the first being Zenten).  Useful to close distance from you to the opponent when used just for the dash itself.  The tackle itself is meant to be used defensively when you parry an attack with a long recovery from a long distance but it can be used to catch whiffed lows or dashes when in close enough range.  You can cancel into this (LP version) from his any of his close normals for fake outs into grab/EX DS/super but be for-warned doing this against someone who's quick enough to punish you.  You can combo into this off of his taunt for style.  Be warned, the attack is not a grab and the attack doesn't have the \"duck\" property (like Yun's jump kick and Dudley's rush attack or Sean's Zenten).  It's a move that has 0 priority until the actual tackle attack and even then its really slow.",
+    "sort_order": 553,
+    "content": "41236 + HP",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 30,
+      "damage": {
+        "numeric_value": 180
+      },
+      "chip_damage": {
+        "numeric_value": 0
+      },
+      "stun_damage": {
+        "numeric_value": 16
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 26
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 28
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -14
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 0
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {
+        "numeric_value": 4
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 1,
+    "guard_type_id": 2,
+    "tag_list": [
+      "hard knockdown",
+      "ex"
+    ],
+    "official_name": "Tackle (EX)",
+    "description": "EX version of Sean tackle, one of his most damaging moves (does the same as Hadou Burst).  It can cover a good distance quickly and can also be used to escape jump-ins if your AA gets parried.  Its also possible to punish with this on parry against long recovery moves such as sweeps.  Has the most stun of any special move that the shotos have and you can combo this off a taunt for style.",
+    "sort_order": 555,
+    "content": "41236 + PP",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 40,
+      "damage": {
+        "numeric_value": 260
+      },
+      "chip_damage": {
+        "numeric_value": 0
+      },
+      "stun_damage": {
+        "numeric_value": 25
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 28
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 28
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -14
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {
+        "numeric_value": 40
+      },
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {
+        "numeric_value": 4
+      }
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      1,
+      2,
+      3
+    ],
+    "alternate_name": "Jab",
+    "sort_order": 110,
+    "content": "LP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 3,
+      "damage": {
+        "numeric_value": 20
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 3
+      },
+      "active": {
+        "numeric_value": 2
+      },
+      "recovery": {
+        "numeric_value": 5
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 5
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 5
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 5
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 14,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Close Strong",
+    "sort_order": 121,
+    "content": "c.MP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "numeric_value": 90
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 9
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 4
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 13
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 1
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 0
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 2
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 14,
+    "alternate_name": "Far Strong",
+    "sort_order": 122,
+    "content": "f.MP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 14,
+      "damage": {
+        "numeric_value": 80
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {
+        "numeric_value": 13
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 1
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 0
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 2
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 14,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Close Fierce",
+    "sort_order": 131,
+    "content": "c.HP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 21,
+      "damage": {
+        "numeric_value": 120
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 13
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 20
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -2
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -4
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 0
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 10,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Close Fierce + Sean Pachiki",
+    "description": "More of a Target \"link\" rather than combo since it doesn't combo but it scales like one.",
+    "sort_order": 132,
+    "content": "c.HP > 6HP",
+    "metadata": {
+      "Parry": "H/H"
+    },
+    "damage_data_v2": {
+      "damage": {
+        "formula": "120+50+60"
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 18
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {},
+      "recovery": {
+        "numeric_value": 45
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -4
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -6
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": -2
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 15
+      },
+      "hit_meter_build": {
+        "numeric_value": 30
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 14,
+    "guard_type_id": 1,
+    "alternate_name": "Far Fierce",
+    "sort_order": 133,
+    "content": "f.HP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 21,
+      "damage": {
+        "numeric_value": 120
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 10
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 9
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {
+        "numeric_value": 23
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-5 or -4"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -7
+      },
+      "crouching_hit_advantage": {
+        "formula": "-3 to -1"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "official_name": "Sean Pachiki",
+    "sort_order": 133,
+    "content": "6HP",
+    "hits": 2,
+    "metadata": {
+      "Parry": "H/H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 22,
+      "damage": {
+        "numeric_value": 140,
+        "formula": "60+80"
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 13
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 21
+      },
+      "active": {
+        "numeric_value": 7
+      },
+      "recovery": {
+        "numeric_value": 24
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -4
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -6
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": -2
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "alternate_name": "Short",
+    "sort_order": 140,
+    "content": "LK",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 5,
+      "damage": {
+        "numeric_value": 30
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 4
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {
+        "numeric_value": 8
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 2
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 2
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 2
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 1,
+    "alternate_name": "Forward",
+    "sort_order": 150,
+    "content": "MK",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "numeric_value": 90
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 5
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 6
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {
+        "numeric_value": 15
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -1
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -2
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 0
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 14,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Close Roundhouse",
+    "sort_order": 161,
+    "content": "c.HK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 25,
+      "damage": {
+        "numeric_value": 145
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 14
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 4
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 2
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 6
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 14,
+    "guard_type_id": 3,
+    "alternate_name": "Far Roundhouse",
+    "sort_order": 162,
+    "content": "f.HK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 21,
+      "damage": {
+        "numeric_value": 120
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 7
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {
+        "numeric_value": 25
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -7
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -9
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": -5
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 14
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Rolling Sabat",
+    "sort_order": 166,
+    "content": "6HK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "formula": "90(70)"
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 9
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 15
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 18
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -5
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      1,
+      2,
+      3
+    ],
+    "alternate_name": "Crouch Jab",
+    "sort_order": 210,
+    "content": "2LP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 3,
+      "damage": {
+        "numeric_value": 20
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 4
+      },
+      "active": {
+        "numeric_value": 3
+      },
+      "recovery": {
+        "numeric_value": 7
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 3
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 3
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 3
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Crouch Strong",
+    "sort_order": 220,
+    "content": "2MP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 14,
+      "damage": {
+        "numeric_value": 80
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 7
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {
+        "numeric_value": 10
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 4
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 3
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 5
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 1,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Crouch Fierce",
+    "sort_order": 230,
+    "content": "2HP",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 21,
+      "damage": {
+        "numeric_value": 120
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 13
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 7
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 22
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -7
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -9
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": -5
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 2,
+    "cancel_type_ids": [
+      1,
+      2,
+      3
+    ],
+    "alternate_name": "Crouch Short",
+    "sort_order": 240,
+    "content": "2LK",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 3,
+      "damage": {
+        "numeric_value": 20
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 3
+      },
+      "recovery": {
+        "numeric_value": 7
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": 1
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": 1
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 1
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 2,
+    "cancel_type_ids": [
+      2,
+      3
+    ],
+    "alternate_name": "Crouch Forward",
+    "sort_order": 250,
+    "content": "2MK",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 15,
+      "damage": {
+        "numeric_value": 70
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 7
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 17
+      },
+      "landing_recovery": {},
+      "hit_advantage": {
+        "numeric_value": -3
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -4
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": -2
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 2,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "alternate_name": "Crouch Roundhouse",
+    "sort_order": 260,
+    "content": "2HK",
+    "metadata": {
+      "Parry": "L"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 21,
+      "damage": {
+        "numeric_value": 120
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 3
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 8
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 30
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -16
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Jump Jab",
+    "sort_order": 310,
+    "content": "j.LP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 8,
+      "damage": {
+        "numeric_value": 50
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 7
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 4
+      },
+      "active": {
+        "formula": "until landing"
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-5～+7"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-5～+7"
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Neutral Jump Jab",
+    "sort_order": 311,
+    "content": "8LP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 2,
+      "damage": {
+        "numeric_value": 40
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 7
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "formula": "until landing"
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-5～+7"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-5～+7"
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Jump Strong",
+    "sort_order": 320,
+    "content": "j.MP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "numeric_value": 90
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 9
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-2～+10"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-2～+10"
+      },
+      "crouching_hit_advantage": {
+        "formula": "=+7～+10"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Neutral Jump Strong",
+    "sort_order": 321,
+    "content": "8MP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "damage": {},
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 11
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 6
+      },
+      "active": {},
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Jump Fierce",
+    "sort_order": 330,
+    "content": "j.HP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 23,
+      "damage": {
+        "numeric_value": 130
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 13
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 6
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Neutral Jump Fierce",
+    "sort_order": 331,
+    "content": "8HP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 23,
+      "damage": {
+        "numeric_value": 130
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 15
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 7
+      },
+      "active": {
+        "numeric_value": 3
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-4～+10/+4～+10"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-4～+10/+4～+10"
+      },
+      "crouching_hit_advantage": {
+        "numeric_value": 10,
+        "formula": "=+4～+10/+10"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Jump Short",
+    "sort_order": 340,
+    "content": "j.LP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 8,
+      "damage": {
+        "numeric_value": 50
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 5
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 4
+      },
+      "active": {
+        "numeric_value": 10
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-8～+7"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-8～+7"
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Neutral Jump Short",
+    "sort_order": 341,
+    "content": "8LP",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "damage": {},
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 7
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 19
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 0
+      },
+      "block_meter_build": {
+        "numeric_value": 1
+      },
+      "hit_meter_build": {
+        "numeric_value": 2
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Jump Forward",
+    "sort_order": 350,
+    "content": "j.MK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "numeric_value": 90
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 9
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 6
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-3～+10"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-3～+10"
+      },
+      "crouching_hit_advantage": {
+        "formula": "=+6～+10"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Neutral Jump Forward",
+    "sort_order": 351,
+    "content": "8MK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 16,
+      "damage": {
+        "numeric_value": 90
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 9
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 5
+      },
+      "active": {
+        "numeric_value": 6
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": 10
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 2
+      },
+      "block_meter_build": {
+        "numeric_value": 6
+      },
+      "hit_meter_build": {
+        "numeric_value": 11
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 8,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Jump Roundhouse",
+    "sort_order": 360,
+    "content": "j.HK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 22,
+      "damage": {
+        "numeric_value": 110
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 13
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 6
+      },
+      "active": {
+        "numeric_value": 4
+      },
+      "recovery": {},
+      "landing_recovery": {},
+      "hit_advantage": {
+        "formula": "-1～+10"
+      },
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "formula": "-1～+10"
+      },
+      "crouching_hit_advantage": {
+        "formula": "=+4～+10"
+      }
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 3,
+    "guard_type_id": 3,
+    "tag_list": [
+      "air only"
+    ],
+    "alternate_name": "Neutral Jump Roundhouse",
+    "sort_order": 361,
+    "content": "8HK",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 23,
+      "damage": {
+        "numeric_value": 130
+      },
+      "chip_damage": {},
+      "stun_damage": {
+        "numeric_value": 13
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 7
+      },
+      "active": {
+        "numeric_value": 5
+      },
+      "recovery": {
+        "numeric_value": 7
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {},
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {
+        "numeric_value": 3
+      },
+      "block_meter_build": {
+        "numeric_value": 10
+      },
+      "hit_meter_build": {
+        "numeric_value": 19
+      },
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 2,
+    "guard_type_id": 1,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Hadou Burst",
+    "alternate_name": "Super Art 1",
+    "sort_order": 1010,
+    "content": "236+236+P",
+    "metadata": {
+      "Parry": "H"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 39,
+      "damage": {
+        "numeric_value": 220
+      },
+      "chip_damage": {
+        "numeric_value": 14
+      },
+      "stun_damage": {
+        "numeric_value": 9
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 2
+      },
+      "active": {
+        "numeric_value": 1
+      },
+      "recovery": {
+        "numeric_value": 61
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -29
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 2,
+    "guard_type_id": 1,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Shoryu Cannon",
+    "alternate_name": "Super Art 2",
+    "sort_order": 1020,
+    "content": "236+236+P+mash",
+    "metadata": {
+      "Parry": "HLx1~14"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 38,
+      "damage": {
+        "numeric_value": 390,
+        "formula": "14 hits(80+50+35+35+40×9)"
+      },
+      "chip_damage": {},
+      "stun_damage": {},
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "formula": "1・3・28・30・32・34・36・38・40・42・44・46・48・50・52・54"
+      },
+      "active": {
+        "formula": "2・7・2・2・2・(1×10)"
+      },
+      "recovery": {
+        "numeric_value": 36
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -43
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {}
+    }
+  },
+  {
+    "confirmed": false,
+    "which_notation_style": "Dynamic",
+    "game_character_id": 74,
+    "combo_type_id": 2,
+    "guard_type_id": 1,
+    "tag_list": [
+      "hard knockdown"
+    ],
+    "official_name": "Hyper Tornado",
+    "alternate_name": "Super Art 3",
+    "sort_order": 1030,
+    "content": "236+236+P",
+    "metadata": {
+      "Parry": "HL"
+    },
+    "damage_data_v2": {
+      "life_point_damage": 76,
+      "damage": {
+        "numeric_value": 460
+      },
+      "chip_damage": {
+        "numeric_value": 10
+      },
+      "stun_damage": {
+        "numeric_value": 14
+      },
+      "self_damage": {},
+      "self_stun_damage": {},
+      "recovered_health": {}
+    },
+    "frame_data_v2": {
+      "startup": {
+        "numeric_value": 2
+      },
+      "active": {
+        "numeric_value": 14
+      },
+      "recovery": {
+        "numeric_value": 53
+      },
+      "landing_recovery": {},
+      "hit_advantage": {},
+      "counter_hit_advantage": {},
+      "block_advantage": {
+        "numeric_value": -31
+      },
+      "crouching_hit_advantage": {}
+    },
+    "meter_data_v2": {
+      "meter_cost": {},
+      "whiff_meter_build": {},
+      "block_meter_build": {},
+      "hit_meter_build": {},
+      "parry_meter_build": {}
+    }
+  }
+]

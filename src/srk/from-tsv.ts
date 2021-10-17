@@ -62,8 +62,8 @@ export const fromTsvToComboAll = async () => {
 export const fromTsvToCombo = async (character: string) => {
     try {
         const rootDir  = await pkgDir(__dirname)
-        const inFilePath  = `${rootDir}/data/third-strike/${character}.tsv`
-        const outFilePath = `${rootDir}/data/third-strike/${character}.json`
+        const inFilePath  = `${rootDir}/data/in/SRK/${character}.tsv`
+        const outFilePath = `${rootDir}/data/out/SRK/third-strike/${character}.json`
 
         const fileData = fs.readFileSync(inFilePath, "utf8")
 
