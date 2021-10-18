@@ -12,31 +12,19 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "damage": {},
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 0
-      },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      }
     },
     "frame_data_v2": {
       "startup": {
         "numeric_value": 31
       },
-      "active": {},
       "recovery": {
         "numeric_value": 19
-      },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 4
       },
@@ -63,17 +51,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 7,
       "damage": {
-        "numeric_value": 40
+        "numeric_value": 40,
+        "min": 40,
+        "max": 40
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 7
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -85,20 +73,23 @@
       "recovery": {
         "numeric_value": 7
       },
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": 0,
+        "max": 8,
         "formula": "0~+8"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -5,
+        "max": 7,
         "formula": "-5~+7"
       },
       "crouching_hit_advantage": {
+        "min": 1,
+        "max": 9,
         "formula": "=+1~+9"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -107,8 +98,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -125,17 +115,17 @@
       "Kara-Throw Range": "32/34/28/33/33"
     },
     "damage_data_v2": {
-      "life_point_damage": 24,
       "damage": {
-        "numeric_value": 140
+        "numeric_value": 140,
+        "min": 140,
+        "max": 140
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 4
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 24
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -146,19 +136,7 @@
       },
       "recovery": {
         "numeric_value": 21
-      },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
-    },
-    "meter_data_v2": {
-      "meter_cost": {},
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -172,9 +150,10 @@
     "content": "214+P",
     "hits": 3,
     "damage_data_v2": {
-      "life_point_damage": 0,
       "damage": {
-        "numeric_value": 0
+        "numeric_value": 0,
+        "min": 0,
+        "max": 0
       },
       "chip_damage": {
         "numeric_value": 0
@@ -182,9 +161,9 @@
       "stun_damage": {
         "numeric_value": 0
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 0
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -195,15 +174,9 @@
       },
       "recovery": {
         "numeric_value": 7
-      },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -232,9 +205,10 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 21,
       "damage": {
-        "numeric_value": 120
+        "numeric_value": 120,
+        "min": 120,
+        "max": 120
       },
       "chip_damage": {
         "numeric_value": 15
@@ -242,9 +216,9 @@
       "stun_damage": {
         "numeric_value": 19
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 21
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -256,20 +230,23 @@
       "recovery": {
         "numeric_value": 15
       },
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -5,
+        "max": 2,
         "formula": "-5 to +2"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -5,
+        "max": 2,
         "formula": "-5 to +2"
       },
       "crouching_hit_advantage": {
+        "min": -3,
+        "max": 0,
         "formula": "-3 to 0"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -303,9 +280,10 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 32,
       "damage": {
         "numeric_value": 200,
+        "min": 200,
+        "max": 200,
         "formula": "60+70+70"
       },
       "chip_damage": {
@@ -316,9 +294,9 @@
         "numeric_value": 21,
         "formula": "21(7×3)"
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 32
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -332,12 +310,14 @@
       "recovery": {
         "numeric_value": 19
       },
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -1,
+        "max": 2,
         "formula": "-1 to +2"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -1,
+        "max": 2,
         "formula": "-1 to +2"
       },
       "crouching_hit_advantage": {
@@ -348,9 +328,6 @@
       "meter_cost": {
         "numeric_value": 40
       },
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
       "parry_meter_build": {
         "formula": "8 (12 if hits 3 times)"
       }
@@ -376,9 +353,10 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 23,
       "damage": {
-        "numeric_value": 130
+        "numeric_value": 130,
+        "min": 130,
+        "max": 130
       },
       "chip_damage": {
         "numeric_value": 16
@@ -386,9 +364,9 @@
       "stun_damage": {
         "numeric_value": 11
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 23
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -400,16 +378,11 @@
       "recovery": {
         "numeric_value": 36
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -24
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -418,8 +391,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -442,9 +414,10 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 23,
       "damage": {
-        "numeric_value": 130
+        "numeric_value": 130,
+        "min": 130,
+        "max": 130
       },
       "chip_damage": {
         "numeric_value": 16
@@ -452,9 +425,9 @@
       "stun_damage": {
         "numeric_value": 11
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 23
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -466,16 +439,11 @@
       "recovery": {
         "numeric_value": 39
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -30
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -484,8 +452,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -508,9 +475,10 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 23,
       "damage": {
-        "numeric_value": 130
+        "numeric_value": 130,
+        "min": 130,
+        "max": 130
       },
       "chip_damage": {
         "numeric_value": 16
@@ -518,9 +486,9 @@
       "stun_damage": {
         "numeric_value": 11
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 23
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -532,16 +500,11 @@
       "recovery": {
         "numeric_value": 42
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -34
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -550,8 +513,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -576,9 +538,10 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 31,
       "damage": {
         "numeric_value": 180,
+        "min": 180,
+        "max": 180,
         "formula": "90+90(60)"
       },
       "chip_damage": {
@@ -588,9 +551,9 @@
       "stun_damage": {
         "numeric_value": 16
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 31
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -604,21 +567,14 @@
       "recovery": {
         "numeric_value": 42
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -37
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
       "meter_cost": {
         "numeric_value": 40
       },
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
       "parry_meter_build": {
         "numeric_value": 8
       }
@@ -642,9 +598,10 @@
       "Parry": "H/H"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
         "numeric_value": 100,
+        "min": 100,
+        "max": 100,
         "formula": "50+50"
       },
       "chip_damage": {
@@ -654,9 +611,9 @@
         "numeric_value": 10,
         "formula": "10(5+5)"
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -668,20 +625,19 @@
       "recovery": {
         "numeric_value": 21
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -5
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -7
       },
       "crouching_hit_advantage": {
+        "min": -5,
+        "max": -2,
         "formula": "-5 to -2"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -714,9 +670,10 @@
       "Parry": "H/H/H"
     },
     "damage_data_v2": {
-      "life_point_damage": 24,
       "damage": {
         "numeric_value": 150,
+        "min": 150,
+        "max": 150,
         "formula": "50x3"
       },
       "chip_damage": {
@@ -726,9 +683,9 @@
         "numeric_value": 15,
         "formula": "15(5x3)"
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 24
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -740,20 +697,19 @@
       "recovery": {
         "numeric_value": 21
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -4
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -6
       },
       "crouching_hit_advantage": {
+        "min": -4,
+        "max": -2,
         "formula": "-4 to -2"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -786,9 +742,10 @@
       "Parry": "H/H/H/H"
     },
     "damage_data_v2": {
-      "life_point_damage": 26,
       "damage": {
         "numeric_value": 160,
+        "min": 160,
+        "max": 160,
         "formula": "50+40×3"
       },
       "chip_damage": {
@@ -798,9 +755,9 @@
         "numeric_value": 18,
         "formula": "18(5x4)"
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 26
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -812,20 +769,19 @@
       "recovery": {
         "numeric_value": 21
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -4
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -6
       },
       "crouching_hit_advantage": {
+        "min": -4,
+        "max": -2,
         "formula": "-4 to -2"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -858,9 +814,10 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 28,
       "damage": {
         "numeric_value": 175,
+        "min": 175,
+        "max": 175,
         "formula": "60+40×3"
       },
       "chip_damage": {
@@ -870,9 +827,9 @@
         "numeric_value": 22,
         "formula": "22(9+5×3)"
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 28
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -886,15 +843,15 @@
       "recovery": {
         "numeric_value": 17
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -1
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -3
       },
       "crouching_hit_advantage": {
+        "min": -1,
+        "max": 1,
         "formula": "-1 to +1"
       }
     },
@@ -902,9 +859,6 @@
       "meter_cost": {
         "numeric_value": 40
       },
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
       "parry_meter_build": {
         "numeric_value": 16
       }
@@ -927,9 +881,10 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 30,
       "damage": {
-        "numeric_value": 180
+        "numeric_value": 180,
+        "min": 180,
+        "max": 180
       },
       "chip_damage": {
         "numeric_value": 0
@@ -937,9 +892,9 @@
       "stun_damage": {
         "numeric_value": 16
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 30
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -951,16 +906,11 @@
       "recovery": {
         "numeric_value": 28
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -14
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -992,9 +942,10 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 30,
       "damage": {
-        "numeric_value": 180
+        "numeric_value": 180,
+        "min": 180,
+        "max": 180
       },
       "chip_damage": {
         "numeric_value": 0
@@ -1002,9 +953,9 @@
       "stun_damage": {
         "numeric_value": 16
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 30
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1016,16 +967,11 @@
       "recovery": {
         "numeric_value": 28
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -14
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -1057,9 +1003,10 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 30,
       "damage": {
-        "numeric_value": 180
+        "numeric_value": 180,
+        "min": 180,
+        "max": 180
       },
       "chip_damage": {
         "numeric_value": 0
@@ -1067,9 +1014,9 @@
       "stun_damage": {
         "numeric_value": 16
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 30
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1081,16 +1028,11 @@
       "recovery": {
         "numeric_value": 28
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -14
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -1123,9 +1065,10 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 40,
       "damage": {
-        "numeric_value": 260
+        "numeric_value": 260,
+        "min": 260,
+        "max": 260
       },
       "chip_damage": {
         "numeric_value": 0
@@ -1133,9 +1076,9 @@
       "stun_damage": {
         "numeric_value": 25
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 40
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1147,21 +1090,14 @@
       "recovery": {
         "numeric_value": 28
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -14
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
       "meter_cost": {
         "numeric_value": 40
       },
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
       "parry_meter_build": {
         "numeric_value": 4
       }
@@ -1185,17 +1121,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 3,
       "damage": {
-        "numeric_value": 20
+        "numeric_value": 20,
+        "min": 20,
+        "max": 20
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 3
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1207,11 +1143,9 @@
       "recovery": {
         "numeric_value": 5
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 5
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 5
       },
@@ -1220,7 +1154,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -1229,8 +1162,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1249,17 +1181,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
-        "numeric_value": 90
+        "numeric_value": 90,
+        "min": 90,
+        "max": 90
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 9
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1271,11 +1203,9 @@
       "recovery": {
         "numeric_value": 13
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 1
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 0
       },
@@ -1284,7 +1214,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -1293,8 +1222,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1309,17 +1237,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 14,
       "damage": {
-        "numeric_value": 80
+        "numeric_value": 80,
+        "min": 80,
+        "max": 80
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 11
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 14
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1331,11 +1259,9 @@
       "recovery": {
         "numeric_value": 13
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 1
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 0
       },
@@ -1344,7 +1270,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -1353,8 +1278,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1374,17 +1298,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 21,
       "damage": {
-        "numeric_value": 120
+        "numeric_value": 120,
+        "min": 120,
+        "max": 120
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 13
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 21
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1396,11 +1320,9 @@
       "recovery": {
         "numeric_value": 20
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -2
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -4
       },
@@ -1409,7 +1331,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -1418,8 +1339,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1442,27 +1362,20 @@
       "damage": {
         "formula": "120+50+60"
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 18
-      },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      }
     },
     "frame_data_v2": {
       "startup": {
         "numeric_value": 5
       },
-      "active": {},
       "recovery": {
         "numeric_value": 45
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -4
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -6
       },
@@ -1471,7 +1384,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -1480,8 +1392,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 30
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1497,17 +1408,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 21,
       "damage": {
-        "numeric_value": 120
+        "numeric_value": 120,
+        "min": 120,
+        "max": 120
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 10
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 21
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1519,20 +1430,21 @@
       "recovery": {
         "numeric_value": 23
       },
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -4,
+        "max": -5,
         "formula": "-5 or -4"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -7
       },
       "crouching_hit_advantage": {
+        "min": -3,
+        "max": -1,
         "formula": "-3 to -1"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -1541,8 +1453,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1559,18 +1470,18 @@
       "Parry": "H/H"
     },
     "damage_data_v2": {
-      "life_point_damage": 22,
       "damage": {
         "numeric_value": 140,
+        "min": 140,
+        "max": 140,
         "formula": "60+80"
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 13
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 22
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1582,24 +1493,15 @@
       "recovery": {
         "numeric_value": 24
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -4
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -6
       },
       "crouching_hit_advantage": {
         "numeric_value": -2
       }
-    },
-    "meter_data_v2": {
-      "meter_cost": {},
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
-      "parry_meter_build": {}
     }
   },
   {
@@ -1614,17 +1516,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 5,
       "damage": {
-        "numeric_value": 30
+        "numeric_value": 30,
+        "min": 30,
+        "max": 30
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 5
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1636,11 +1538,9 @@
       "recovery": {
         "numeric_value": 8
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 2
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 2
       },
@@ -1649,7 +1549,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -1658,8 +1557,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1675,17 +1573,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
-        "numeric_value": 90
+        "numeric_value": 90,
+        "min": 90,
+        "max": 90
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 5
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1697,11 +1595,9 @@
       "recovery": {
         "numeric_value": 15
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -1
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -2
       },
@@ -1710,7 +1606,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -1719,8 +1614,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1740,17 +1634,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 25,
       "damage": {
-        "numeric_value": 145
+        "numeric_value": 145,
+        "min": 145,
+        "max": 145
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 11
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 25
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1762,11 +1656,9 @@
       "recovery": {
         "numeric_value": 14
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 4
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 2
       },
@@ -1775,7 +1667,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -1784,8 +1675,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1801,17 +1691,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 21,
       "damage": {
-        "numeric_value": 120
+        "numeric_value": 120,
+        "min": 120,
+        "max": 120
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 11
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 21
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1823,11 +1713,9 @@
       "recovery": {
         "numeric_value": 25
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -7
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -9
       },
@@ -1836,7 +1724,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -1845,8 +1732,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 14
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1865,17 +1751,15 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
         "formula": "90(70)"
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 9
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1887,20 +1771,9 @@
       "recovery": {
         "numeric_value": 18
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -5
-      },
-      "crouching_hit_advantage": {}
-    },
-    "meter_data_v2": {
-      "meter_cost": {},
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1921,17 +1794,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 3,
       "damage": {
-        "numeric_value": 20
+        "numeric_value": 20,
+        "min": 20,
+        "max": 20
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 3
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -1943,11 +1816,9 @@
       "recovery": {
         "numeric_value": 7
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 3
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 3
       },
@@ -1956,7 +1827,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -1965,8 +1835,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -1986,17 +1855,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 14,
       "damage": {
-        "numeric_value": 80
+        "numeric_value": 80,
+        "min": 80,
+        "max": 80
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 7
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 14
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2008,11 +1877,9 @@
       "recovery": {
         "numeric_value": 10
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 4
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 3
       },
@@ -2021,7 +1888,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -2030,8 +1896,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2051,17 +1916,17 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 21,
       "damage": {
-        "numeric_value": 120
+        "numeric_value": 120,
+        "min": 120,
+        "max": 120
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 13
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 21
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2073,11 +1938,9 @@
       "recovery": {
         "numeric_value": 22
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -7
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -9
       },
@@ -2086,7 +1949,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -2095,8 +1957,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2117,17 +1978,17 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 3,
       "damage": {
-        "numeric_value": 20
+        "numeric_value": 20,
+        "min": 20,
+        "max": 20
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 3
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2139,11 +2000,9 @@
       "recovery": {
         "numeric_value": 7
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": 1
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": 1
       },
@@ -2152,7 +2011,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -2161,8 +2019,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2182,17 +2039,17 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 15,
       "damage": {
-        "numeric_value": 70
+        "numeric_value": 70,
+        "min": 70,
+        "max": 70
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 15
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2204,11 +2061,9 @@
       "recovery": {
         "numeric_value": 17
       },
-      "landing_recovery": {},
       "hit_advantage": {
         "numeric_value": -3
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -4
       },
@@ -2217,7 +2072,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -2226,8 +2080,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2246,17 +2099,17 @@
       "Parry": "L"
     },
     "damage_data_v2": {
-      "life_point_damage": 21,
       "damage": {
-        "numeric_value": 120
+        "numeric_value": 120,
+        "min": 120,
+        "max": 120
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 3
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 21
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2268,16 +2121,11 @@
       "recovery": {
         "numeric_value": 30
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -16
-      },
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -2286,8 +2134,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2306,17 +2153,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 8,
       "damage": {
-        "numeric_value": 50
+        "numeric_value": 50,
+        "min": 50,
+        "max": 50
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 7
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 8
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2325,19 +2172,22 @@
       "active": {
         "formula": "until landing"
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -5,
+        "max": 7,
         "formula": "-5～+7"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -5,
+        "max": 7,
         "formula": "-5～+7"
       },
-      "crouching_hit_advantage": {}
+      "crouching_hit_advantage": {
+        "min": 4,
+        "max": 7
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -2346,8 +2196,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2365,17 +2214,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 2,
       "damage": {
-        "numeric_value": 40
+        "numeric_value": 40,
+        "min": 40,
+        "max": 40
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 7
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 2
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2384,19 +2233,22 @@
       "active": {
         "formula": "until landing"
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -5,
+        "max": 7,
         "formula": "-5～+7"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -5,
+        "max": 7,
         "formula": "-5～+7"
       },
-      "crouching_hit_advantage": {}
+      "crouching_hit_advantage": {
+        "min": 4,
+        "max": 7
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -2405,8 +2257,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2425,17 +2276,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
-        "numeric_value": 90
+        "numeric_value": 90,
+        "min": 90,
+        "max": 90
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 9
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2444,21 +2295,23 @@
       "active": {
         "numeric_value": 5
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -2,
+        "max": 10,
         "formula": "-2～+10"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -2,
+        "max": 10,
         "formula": "-2～+10"
       },
       "crouching_hit_advantage": {
+        "min": 7,
+        "max": 10,
         "formula": "=+7～+10"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -2467,8 +2320,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2487,29 +2339,16 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "damage": {},
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 11
-      },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      }
     },
     "frame_data_v2": {
       "startup": {
         "numeric_value": 6
-      },
-      "active": {},
-      "recovery": {},
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -2518,8 +2357,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2538,17 +2376,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 23,
       "damage": {
-        "numeric_value": 130
+        "numeric_value": 130,
+        "min": 130,
+        "max": 130
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 13
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 23
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2557,15 +2395,20 @@
       "active": {
         "numeric_value": 4
       },
-      "recovery": {},
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
+      "hit_advantage": {
+        "min": -4,
+        "max": 10
+      },
+      "block_advantage": {
+        "min": -4,
+        "max": 10
+      },
+      "crouching_hit_advantage": {
+        "min": 4,
+        "max": 10
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -2574,8 +2417,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2594,17 +2436,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 23,
       "damage": {
-        "numeric_value": 130
+        "numeric_value": 130,
+        "min": 130,
+        "max": 130
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 15
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 23
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2613,13 +2455,14 @@
       "active": {
         "numeric_value": 3
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": 4,
+        "max": 10,
         "formula": "-4～+10/+4～+10"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": 4,
+        "max": 10,
         "formula": "-4～+10/+4～+10"
       },
       "crouching_hit_advantage": {
@@ -2628,7 +2471,6 @@
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -2637,8 +2479,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2657,17 +2498,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 8,
       "damage": {
-        "numeric_value": 50
+        "numeric_value": 50,
+        "min": 50,
+        "max": 50
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 5
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 8
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2676,19 +2517,22 @@
       "active": {
         "numeric_value": 10
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -8,
+        "max": 7,
         "formula": "-8～+7"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -8,
+        "max": 7,
         "formula": "-8～+7"
       },
-      "crouching_hit_advantage": {}
+      "crouching_hit_advantage": {
+        "min": 0,
+        "max": 7
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -2697,8 +2541,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2717,14 +2560,9 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "damage": {},
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 7
-      },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2732,16 +2570,9 @@
       },
       "active": {
         "numeric_value": 19
-      },
-      "recovery": {},
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 0
       },
@@ -2750,8 +2581,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 2
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2770,17 +2600,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
-        "numeric_value": 90
+        "numeric_value": 90,
+        "min": 90,
+        "max": 90
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 9
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2789,21 +2619,23 @@
       "active": {
         "numeric_value": 6
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -3,
+        "max": 10,
         "formula": "-3～+10"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -3,
+        "max": 10,
         "formula": "-3～+10"
       },
       "crouching_hit_advantage": {
+        "min": 6,
+        "max": 10,
         "formula": "=+6～+10"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -2812,8 +2644,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2832,17 +2663,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 16,
       "damage": {
-        "numeric_value": 90
+        "numeric_value": 90,
+        "min": 90,
+        "max": 90
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 9
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 16
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2851,17 +2682,20 @@
       "active": {
         "numeric_value": 6
       },
-      "recovery": {},
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
+      "hit_advantage": {
+        "min": -2,
+        "max": 10
+      },
       "block_advantage": {
+        "max": -2,
         "formula": 10
       },
-      "crouching_hit_advantage": {}
+      "crouching_hit_advantage": {
+        "min": 6,
+        "max": 10
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 2
       },
@@ -2870,8 +2704,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 11
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2890,17 +2723,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 22,
       "damage": {
-        "numeric_value": 110
+        "numeric_value": 110,
+        "min": 110,
+        "max": 110
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 13
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 22
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2909,21 +2742,23 @@
       "active": {
         "numeric_value": 4
       },
-      "recovery": {},
-      "landing_recovery": {},
       "hit_advantage": {
+        "min": -1,
+        "max": 10,
         "formula": "-1～+10"
       },
-      "counter_hit_advantage": {},
       "block_advantage": {
+        "min": -1,
+        "max": 10,
         "formula": "-1～+10"
       },
       "crouching_hit_advantage": {
+        "min": 4,
+        "max": 10,
         "formula": "=+4～+10"
       }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -2932,8 +2767,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -2952,17 +2786,17 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 23,
       "damage": {
-        "numeric_value": 130
+        "numeric_value": 130,
+        "min": 130,
+        "max": 130
       },
-      "chip_damage": {},
       "stun_damage": {
         "numeric_value": 13
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 23
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -2974,14 +2808,20 @@
       "recovery": {
         "numeric_value": 7
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
-      "block_advantage": {},
-      "crouching_hit_advantage": {}
+      "hit_advantage": {
+        "min": 2,
+        "max": 10
+      },
+      "block_advantage": {
+        "min": 2,
+        "max": 10
+      },
+      "crouching_hit_advantage": {
+        "min": 7,
+        "max": 10
+      }
     },
     "meter_data_v2": {
-      "meter_cost": {},
       "whiff_meter_build": {
         "numeric_value": 3
       },
@@ -2990,8 +2830,7 @@
       },
       "hit_meter_build": {
         "numeric_value": 19
-      },
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -3011,9 +2850,10 @@
       "Parry": "H"
     },
     "damage_data_v2": {
-      "life_point_damage": 39,
       "damage": {
-        "numeric_value": 220
+        "numeric_value": 220,
+        "min": 220,
+        "max": 220
       },
       "chip_damage": {
         "numeric_value": 14
@@ -3021,9 +2861,9 @@
       "stun_damage": {
         "numeric_value": 9
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 39
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -3035,20 +2875,9 @@
       "recovery": {
         "numeric_value": 61
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -29
-      },
-      "crouching_hit_advantage": {}
-    },
-    "meter_data_v2": {
-      "meter_cost": {},
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -3068,16 +2897,18 @@
       "Parry": "HLx1~14"
     },
     "damage_data_v2": {
-      "life_point_damage": 38,
       "damage": {
         "numeric_value": 390,
+        "min": 390,
+        "max": 390,
         "formula": "14 hits(80+50+35+35+40×9)"
       },
-      "chip_damage": {},
-      "stun_damage": {},
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "chip_damage": {
+        "max": 90
+      },
+      "life_point_damage": {
+        "numeric_value": 38
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -3089,20 +2920,9 @@
       "recovery": {
         "numeric_value": 36
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -43
-      },
-      "crouching_hit_advantage": {}
-    },
-    "meter_data_v2": {
-      "meter_cost": {},
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
-      "parry_meter_build": {}
+      }
     }
   },
   {
@@ -3122,9 +2942,10 @@
       "Parry": "HL"
     },
     "damage_data_v2": {
-      "life_point_damage": 76,
       "damage": {
-        "numeric_value": 460
+        "numeric_value": 460,
+        "min": 460,
+        "max": 460
       },
       "chip_damage": {
         "numeric_value": 10
@@ -3132,9 +2953,9 @@
       "stun_damage": {
         "numeric_value": 14
       },
-      "self_damage": {},
-      "self_stun_damage": {},
-      "recovered_health": {}
+      "life_point_damage": {
+        "numeric_value": 76
+      }
     },
     "frame_data_v2": {
       "startup": {
@@ -3146,20 +2967,9 @@
       "recovery": {
         "numeric_value": 53
       },
-      "landing_recovery": {},
-      "hit_advantage": {},
-      "counter_hit_advantage": {},
       "block_advantage": {
         "numeric_value": -31
-      },
-      "crouching_hit_advantage": {}
-    },
-    "meter_data_v2": {
-      "meter_cost": {},
-      "whiff_meter_build": {},
-      "block_meter_build": {},
-      "hit_meter_build": {},
-      "parry_meter_build": {}
+      }
     }
   }
 ]

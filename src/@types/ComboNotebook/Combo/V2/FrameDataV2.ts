@@ -54,9 +54,20 @@ export class FrameDataV2 {
     public cancel?: number
 
     /**
-        * Only applies to Street Fighter 3: Third Strike.
-        */
+     * Only applies to Street Fighter 3: Third Strike.
+     */
     public crouching_hit_advantage?: ComboDataComponent
+
+    constructor() {
+        this.active                  = {}
+        this.startup                 = {}
+        this.recovery                = {}
+        this.landing_recovery        = {}
+        this.hit_advantage           = {}
+        this.counter_hit_advantage   = {}
+        this.block_advantage         = {}
+        this.crouching_hit_advantage = {}
+    }
 
     // =========================================================================
     // Methods

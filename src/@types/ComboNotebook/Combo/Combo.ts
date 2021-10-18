@@ -180,9 +180,12 @@ export class Combo {
 
         if (!isEmpty(this.metadata)) { (result.metadata = this.metadata) }
 
-        if (!isEmpty(this.damage_data)) { (result.damage_data_v2 = compactObject(this.damage_data.toV2().toJSON())) }
-        if (!isEmpty(this.frame_data))  { (result.frame_data_v2  = compactObject(this.frame_data.toV2().toJSON()))  }
-        if (!isEmpty(this.meter_data))  { (result.meter_data_v2  = compactObject(this.meter_data.toV2().toJSON()))  }
+        // if (!isEmpty(this.damage_data)) { (result.damage_data_v2 = compactObject(this.damage_data.toV2().toJSON())) }
+        // if (!isEmpty(this.frame_data))  { (result.frame_data_v2  = compactObject(this.frame_data.toV2().toJSON()))  }
+        // if (!isEmpty(this.meter_data))  { (result.meter_data_v2  = compactObject(this.meter_data.toV2().toJSON()))  }
+        result.damage_data_v2 = compactObject(this.damage_data_v2.toJSON())
+        result.frame_data_v2  = compactObject(this.frame_data_v2.toJSON())
+        result.meter_data_v2  = compactObject(this.meter_data_v2.toJSON())
 
         return compactObject(result)
     }
@@ -204,41 +207,123 @@ export class Combo {
         combo.alternate_name = data["alternate_name"]
 
         combo.conditions = data["conditions"]
-        combo.hits = data["hits"]
 
-        combo.damage_data.damage = data["damage"]
-        combo.damage_data.damage_formula = data["damage_formula"]
-        combo.damage_data.chip_damage = data["chip_damage"]
-        combo.damage_data.chip_damage_formula = data["chip_damage_formula"]
-        combo.damage_data.stun_damage = data["stun_damage"]
-        combo.damage_data.stun_damage_formula = data["stun_damage_formula"]
-        combo.damage_data.life_point_damage = data["life_point_damage"]
+        combo.hits     = data["hits"]
+        combo.min_hits = data["max_hits"]
+        combo.max_hits = data["min_hits"]
 
-        combo.frame_data.startup_frames = data["startup"]
-        combo.frame_data.startup_frames_formula = data["startup_formula"]
-        combo.frame_data.active_frames = data["active"]
-        combo.frame_data.active_frames_formula = data["active_formula"]
-        combo.frame_data.whiff_recovery_frames = data["whiff_recovery"]
-        combo.frame_data.whiff_recovery_frames_formula = data["whiff_recovery_formula"]
-        combo.frame_data.hit_frame_advantage = data["hit_advantage"]
-        combo.frame_data.hit_frame_advantage_formula = data["hit_advantage_formula"]
-        combo.frame_data.block_frame_advantage = data["block_advantage"]
-        combo.frame_data.block_frame_advantage_formula = data["block_advantage_formula"]
-        combo.frame_data.crouching_hit_frame_advantage = data["crouching_hit_advantage"]
+        // =====================================================================
+        // V1
+        // =====================================================================
+
+        combo.damage_data.damage               = data["damage"]
+        combo.damage_data.min_damage           = data["damage_min"]
+        combo.damage_data.max_damage           = data["damage_max"]
+        combo.damage_data.damage_formula       = data["damage_formula"]
+        combo.damage_data.chip_damage          = data["chip_damage"]
+        combo.damage_data.chip_damage_formula  = data["chip_damage_formula"]
+        combo.damage_data.stun_damage          = data["stun_damage"]
+        combo.damage_data.stun_damage_formula  = data["stun_damage_formula"]
+        combo.damage_data.life_point_damage    = data["life_point_damage"]
+
+        combo.frame_data.startup_frames                        = data["startup"]
+        combo.frame_data.startup_frames_formula                = data["startup_formula"]
+        combo.frame_data.active_frames                         = data["active"]
+        combo.frame_data.active_frames_formula                 = data["active_formula"]
+        combo.frame_data.whiff_recovery_frames                 = data["whiff_recovery"]
+        combo.frame_data.whiff_recovery_frames_formula         = data["whiff_recovery_formula"]
+        combo.frame_data.hit_frame_advantage                   = data["hit_advantage"]
+        combo.frame_data.hit_frame_advantage_formula           = data["hit_advantage_formula"]
+        combo.frame_data.block_frame_advantage                 = data["block_advantage"]
+        combo.frame_data.block_frame_advantage_formula         = data["block_advantage_formula"]
+        combo.frame_data.crouching_hit_frame_advantage         = data["crouching_hit_advantage"]
         combo.frame_data.crouching_hit_frame_advantage_formula = data["crouching_hit_advantage_formula"]
-        combo.frame_data.active_until_landing = data["active_until_landing"]
-        combo.frame_data.recovery_until_landing = data["recovery_until_landing"]
+        combo.frame_data.active_until_landing                  = data["active_until_landing"]
+        combo.frame_data.recovery_until_landing                = data["recovery_until_landing"]
 
-        combo.meter_data.meter_cost = data["meter_cost"]
-        combo.meter_data.meter_cost_formula = data["meter_cost_formula"]
-        combo.meter_data.whiff_meter_build = data["whiff_meter_build"]
+        combo.meter_data.meter_cost                = data["meter_cost"]
+        combo.meter_data.meter_cost_formula        = data["meter_cost_formula"]
+        combo.meter_data.whiff_meter_build         = data["whiff_meter_build"]
         combo.meter_data.whiff_meter_build_formula = data["whiff_meter_build_formula"]
-        combo.meter_data.block_meter_build = data["block_meter_build"]
+        combo.meter_data.block_meter_build         = data["block_meter_build"]
         combo.meter_data.block_meter_build_formula = data["block_meter_build_formula"]
-        combo.meter_data.hit_meter_build = data["hit_meter_build"]
-        combo.meter_data.hit_meter_build_formula = data["hit_meter_build_formula"]
-        combo.meter_data.parry_meter_build = data["parry_meter_build"]
+        combo.meter_data.hit_meter_build           = data["hit_meter_build"]
+        combo.meter_data.hit_meter_build_formula   = data["hit_meter_build_formula"]
+        combo.meter_data.parry_meter_build         = data["parry_meter_build"]
         combo.meter_data.parry_meter_build_formula = data["parry_meter_build_formula"]
+
+        // =====================================================================
+        // V2
+        // =====================================================================
+
+        // ---------------------------------------------------------------------
+        // Damage Data
+        // ---------------------------------------------------------------------
+
+        combo.damage_data_v2.damage.numeric_value = data["damage"]
+        combo.damage_data_v2.damage.min           = data["damage"] // FIXME: min damage
+        combo.damage_data_v2.damage.max           = data["damage"] // FIXME: max damage
+        combo.damage_data_v2.damage.formula       = data["damage_formula"]
+
+        combo.damage_data_v2.chip_damage.numeric_value = data["chip_damage"]
+        combo.damage_data_v2.chip_damage.min           = data["chip_damage_min"]
+        combo.damage_data_v2.chip_damage.max           = data["chip_damage_max"]
+        combo.damage_data_v2.chip_damage.formula       = data["chip_damage_formula"]
+
+        combo.damage_data_v2.stun_damage.numeric_value = data["stun_damage"]
+        combo.damage_data_v2.stun_damage.formula       = data["stun_damage_formula"]
+
+        combo.damage_data_v2.life_point_damage.numeric_value = data["life_point_damage"]
+
+        // ---------------------------------------------------------------------
+        // Frame Data
+        // ---------------------------------------------------------------------
+
+        combo.frame_data_v2.startup.numeric_value = data["startup"]
+        combo.frame_data_v2.startup.formula       = data["startup_formula"]
+
+        combo.frame_data_v2.active.numeric_value = data["active"]
+        combo.frame_data_v2.active.formula       = data["active_formula"]
+
+        combo.frame_data_v2.recovery.numeric_value = data["whiff_recovery"]
+        combo.frame_data_v2.recovery.formula       = data["whiff_recovery_formula"]
+
+        combo.frame_data_v2.hit_advantage.numeric_value = data["hit_advantage"]
+        combo.frame_data_v2.hit_advantage.min           = data["hit_advantage_min"]
+        combo.frame_data_v2.hit_advantage.max           = data["hit_advantage_max"]
+        combo.frame_data_v2.hit_advantage.formula       = data["hit_advantage_formula"]
+
+        combo.frame_data_v2.block_advantage.numeric_value = data["block_advantage"]
+        combo.frame_data_v2.block_advantage.min           = data["block_advantage_min"]
+        combo.frame_data_v2.block_advantage.max           = data["block_advantage_max"]
+        combo.frame_data_v2.block_advantage.formula       = data["block_advantage_formula"]
+
+        combo.frame_data_v2.crouching_hit_advantage.numeric_value = data["crouching_hit_advantage"]
+        combo.frame_data_v2.crouching_hit_advantage.min           = data["crouching_hit_advantage_min"]
+        combo.frame_data_v2.crouching_hit_advantage.max           = data["crouching_hit_advantage_max"]
+        combo.frame_data_v2.crouching_hit_advantage.formula       = data["crouching_hit_advantage_formula"]
+
+        // combo.frame_data_v2.active_until_landing                  = data["active_until_landing"]
+        // combo.frame_data_v2.recovery_until_landing                = data["recovery_until_landing"]
+
+        // ---------------------------------------------------------------------
+        // Meter Data
+        // ---------------------------------------------------------------------
+
+        combo.meter_data_v2.meter_cost.numeric_value = data["meter_cost"]
+        combo.meter_data_v2.meter_cost.formula       = data["meter_cost_formula"]
+
+        combo.meter_data_v2.whiff_meter_build.numeric_value = data["whiff_meter_build"]
+        combo.meter_data_v2.whiff_meter_build.formula       = data["whiff_meter_build_formula"]
+
+        combo.meter_data_v2.block_meter_build.numeric_value = data["block_meter_build"]
+        combo.meter_data_v2.block_meter_build.formula       = data["block_meter_build_formula"]
+
+        combo.meter_data_v2.hit_meter_build.numeric_value = data["hit_meter_build"]
+        combo.meter_data_v2.hit_meter_build.formula       = data["hit_meter_build_formula"]
+
+        combo.meter_data_v2.parry_meter_build.numeric_value = data["parry_meter_build"]
+        combo.meter_data_v2.parry_meter_build.formula       = data["parry_meter_build_formula"]
 
         return combo
     }

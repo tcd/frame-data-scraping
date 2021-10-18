@@ -17,6 +17,14 @@ export class MeterDataV2 {
     /** In Street Fighter 3: Third Strike, how much super gauge **your opponent** builds by parrying this move. */
     public parry_meter_build?: ComboDataComponent
 
+    constructor() {
+        this.meter_cost        = {}
+        this.whiff_meter_build = {}
+        this.block_meter_build = {}
+        this.hit_meter_build   = {}
+        this.parry_meter_build = {}
+    }
+
     // =========================================================================
     // Methods
     // =========================================================================

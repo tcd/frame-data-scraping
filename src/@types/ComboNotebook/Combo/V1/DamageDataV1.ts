@@ -82,7 +82,9 @@ export class DamageDataV1 {
     public toV2(): DamageDataV2 {
         let result = new DamageDataV2()
 
-        result.life_point_damage = this.life_point_damage,
+        result.life_point_damage = {
+            numeric_value: this.life_point_damage,
+        }
 
         result.damage = {
             numeric_value: this.damage,
